@@ -1,0 +1,34 @@
+@font-face {
+font-family: SalesforceSansBold;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansBold), url('SalesforceSans-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansRegular;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansRegular), url('SalesforceSans-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansThin;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansThin), url('SalesforceSans-Thin.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansLight;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansLight), url('SalesforceSans-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: NeutratextRegular;
+font-style: normal;
+font-weight: normal;
+src: local(NeutratextRegular), url('neutratext-demi.woff') format('woff');
+}
