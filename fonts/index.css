@@ -2,33 +2,33 @@
 font-family: SalesforceSansBold;
 font-style: normal;
 font-weight: normal;
-src: local(SalesforceSansBold), url('SalesforceSans-Bold.woff') format('woff');
+src: local(SalesforceSansBold), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Bold.woff') format('woff');
 }
 
 @font-face {
 font-family: SalesforceSansRegular;
 font-style: normal;
 font-weight: normal;
-src: local(SalesforceSansRegular), url('SalesforceSans-Regular.woff') format('woff');
+src: local(SalesforceSansRegular), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Regular.woff') format('woff');
 }
 
 @font-face {
 font-family: SalesforceSansThin;
 font-style: normal;
 font-weight: normal;
-src: local(SalesforceSansThin), url('SalesforceSans-Thin.woff') format('woff');
+src: local(SalesforceSansThin), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Thin.woff') format('woff');
 }
 
 @font-face {
 font-family: SalesforceSansLight;
 font-style: normal;
 font-weight: normal;
-src: local(SalesforceSansLight), url('SalesforceSans-Light.woff') format('woff');
+src: local(SalesforceSansLight), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Light.woff') format('woff');
 }
 
 @font-face {
 font-family: NeutratextRegular;
 font-style: normal;
 font-weight: normal;
-src: local(NeutratextRegular), url('neutratext-demi.woff') format('woff');
+src: local(NeutratextRegular), url('https://alexey13.github.io/SalesforceReport/fonts/neutratext-demi.woff') format('woff');
 }

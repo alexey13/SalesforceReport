@@ -1,3 +1,39 @@
+@font-face {
+font-family: SalesforceSansBold;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansBold), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansRegular;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansRegular), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansThin;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansThin), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Thin.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansLight;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansLight), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: NeutratextRegular;
+font-style: normal;
+font-weight: normal;
+src: local(NeutratextRegular), url('https://alexey13.github.io/SalesforceReport/fonts/neutratext-demi.woff') format('woff');
+}
+
+
 body {
 	margin: 0;
 }
@@ -697,11 +733,24 @@ body {
 [data-anime] {
 	visibility: hidden;
 }
+
 .animate__animated {
 	--animate-duration: 2s;
 	--animate-delay: 0;
-	visibility: visible;
-	animation-delay: var(--animate-delay);
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+
+	-webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: visible;
+
+  animation-delay: 0s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
 }
 span.animate__animated {
 	display: inline-block;
@@ -709,8 +758,6 @@ span.animate__animated {
 .word {
 	display: inline-block;
 }
-
-
 
 @keyframes fromTop {
   0% {
@@ -739,7 +786,33 @@ span.animate__animated {
   animation-name: bubblesToRight;
 }
 
+/* Zooming entrances */
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
 
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
 
 
 
