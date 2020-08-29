@@ -220,7 +220,7 @@ function parallax() {
 
 
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
 	addAnimeParams();
 	charElements();
 	scrollAnimate();
