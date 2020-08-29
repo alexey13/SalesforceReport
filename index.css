@@ -241,6 +241,9 @@ body {
 	position: relative;
 	padding: 4rem 0;
 }
+.section--bigpadding {
+	padding: 8rem 0;
+}
 @media screen and (max-width: 1478px) {
 	.section {
 		padding: 4rem 0;
@@ -918,7 +921,7 @@ span.animate__animated {
 @keyframes fromTop {
   0% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(30px);
 	}
 	50% {
 	  opacity: 1;
