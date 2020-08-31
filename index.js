@@ -225,7 +225,8 @@ window.addEventListener('load', function() {
 	charElements();
 	scrollAnimate();
 	parallax();
-	runBubbles()
+	runBubbles();
+	rotateOnScroll();
 }, false)
 
 
@@ -271,6 +272,59 @@ function runBubbles() {
 	
 	update()
 }
+
+
+
+function rotateOnScroll() {
+	var pos = 0;
+	var targetPos = pos;
+
+	var el = document.querySelector('.salesforce-report');
+
+	var trottledOnScroll = throttle(onScroll, 100);
+
+	function onScroll() {
+		pos = window.scrollY / 5;
+	}
+
+
+	function update(e) {
+		targetPos += (pos - targetPos)*0.05;
+	  el.style.setProperty('--rotate', targetPos);
+	  requestAnimationFrame(update);
+	}	
+
+	update()
+
+	window.addEventListener('scroll', trottledOnScroll);
+
+
+
+
+	/*var scrollHeight = 0;
+	var scrollOffset = 0;
+	var scrollPercent = 0;
+
+	var indicatorPosition = scrollPercent;
+
+	resize();
+
+	function loop() {
+	  scrollOffset = window.pageYOffset || window.scrollTop;
+	  scrollPercent = scrollOffset/scrollHeight || 0;
+
+	  indicatorPosition += (scrollPercent-indicatorPosition)*0.05;
+	  var transformString = 'rotate('+(indicatorPosition*300)+'px)';
+
+	  el.style.setProperty('--rotate', transformString);
+
+	  requestAnimationFrame(loop);
+	}
+
+	loop();
+*/
+}
+
 
 
 
