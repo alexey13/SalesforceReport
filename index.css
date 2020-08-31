@@ -67,7 +67,7 @@ body {
 	color: rgb(1, 156, 220);
 }
 .color--skycyan {
-	color: #91d0ed;
+	color: #ddf4ff;
 }
 .color--orange {
 	color: #f05924;
@@ -79,7 +79,7 @@ body {
 	background-color: #214285 !important;
 }
 .background--sky {
-	background-color: #91d0ed !important;
+	background-color: #ddf4ff !important;
 }
 
 
@@ -532,7 +532,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 }
 .background--hero {
 	position: absolute;
@@ -799,7 +799,7 @@ body {
 	height: 100px;
 	margin-right: 1.25rem;
 	border-radius: 50%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 }
 
 
@@ -875,7 +875,7 @@ body {
 	align-items: center;
 	padding: 2rem 1.5rem;
 	border-radius: 30px;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 	font-size: 1.15rem;
 }
 .card__image {
@@ -883,9 +883,11 @@ body {
 	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
-	margin-right: 25px;
+	margin-right: 1.5rem;
 	width: 125px;
 	height: 125px;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 	border-radius: 50%;
 	background: #fff;
 }
@@ -893,7 +895,10 @@ body {
 	font-size: 1.9rem;
 	margin-bottom: 0.5rem;
 }
-
+.card__link {
+	text-decoration: none;
+	color: rgb(1, 156, 220);
+}
 
 
 
@@ -1073,7 +1078,7 @@ span.animate__animated {
 	width: 75px;
 	height: 75px;
 	border-radius: 100%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 	z-index: -1;
 }
 .animation__fly {
