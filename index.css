@@ -298,6 +298,9 @@ body {
 .column-8 {
 	width: 66.666%;
 }
+.column-9 {
+	width: 74.996%;
+}
 @media screen and (max-width: 767.9px) {
 	.column-2,
 	.column-3,
@@ -545,7 +548,7 @@ body {
 	}
 }
 .section--hero .title {
-	font-size: 4rem;
+	font-size: 3.8rem;
 }
 @media screen and (max-width: 1478px) {
 	.section--hero .title {
@@ -612,7 +615,7 @@ body {
 	}
 }
 .section--report .title {
-	font-size: 5.83rem;
+	font-size: 5.45rem;
 	margin-bottom: 5rem;
 }
 @media screen and (max-width: 1478px) {
@@ -650,7 +653,7 @@ body {
 	margin-left: 8rem;
 }
 .impact--2 {
-	margin-right: 8rem;
+	margin-right: 4rem;
 }
 @media screen and (max-width: 767.9px) {
 	.impact--1 {
