@@ -1,4 +1,4 @@
-;(function(){
+
 
 /**
  * Animation API
@@ -342,5 +342,4 @@ function throttle(func, ms) {
 }
 
 
-}());
 
