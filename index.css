@@ -915,7 +915,9 @@ body {
 [data-parallax="3"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 6px)) translateY(calc(var(--y) * 6px));
 }
-
+[data-letters-anime] {
+	visibility: hidden;
+}
 /*Animations*/
 [data-anime] {
 	visibility: hidden;
