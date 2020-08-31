@@ -274,7 +274,7 @@ function runBubbles() {
 }
 
 
-
+/*Rotate on scoll*/
 function rotateOnScroll() {
 	var pos = 0;
 	var targetPos = pos;
@@ -287,42 +287,14 @@ function rotateOnScroll() {
 		pos = window.scrollY / 5;
 	}
 
-
-	function update(e) {
+	function update() {
 		targetPos += (pos - targetPos)*0.05;
 	  el.style.setProperty('--rotate', targetPos);
 	  requestAnimationFrame(update);
 	}	
 
-	update()
-
+	update();
 	window.addEventListener('scroll', trottledOnScroll);
-
-
-
-
-	/*var scrollHeight = 0;
-	var scrollOffset = 0;
-	var scrollPercent = 0;
-
-	var indicatorPosition = scrollPercent;
-
-	resize();
-
-	function loop() {
-	  scrollOffset = window.pageYOffset || window.scrollTop;
-	  scrollPercent = scrollOffset/scrollHeight || 0;
-
-	  indicatorPosition += (scrollPercent-indicatorPosition)*0.05;
-	  var transformString = 'rotate('+(indicatorPosition*300)+'px)';
-
-	  el.style.setProperty('--rotate', transformString);
-
-	  requestAnimationFrame(loop);
-	}
-
-	loop();
-*/
 }
 
 
