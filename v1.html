@@ -68,7 +68,7 @@ body {
 	color: rgb(1, 156, 220);
 }
 .color--skycyan {
-	color: #91d0ed;
+	color: #ddf4ff;
 }
 .color--orange {
 	color: #f05924;
@@ -80,7 +80,7 @@ body {
 	background-color: #214285 !important;
 }
 .background--sky {
-	background-color: #91d0ed !important;
+	background-color: #ddf4ff !important;
 }
 
 
@@ -128,13 +128,13 @@ body {
 	margin-bottom: 2rem;
 }
 .title--middle {
-	font-size: 4.3rem;
+	font-size: 4.2rem;
 	margin-bottom: 0;
 }
 .subtitle {
 	margin-bottom: 0;
 	font-family: NeutratextRegular;
-	font-size: 2.9rem;
+	font-size: 2.6rem;
 	color: rgb(33, 45, 100);
 }
 .subtitle__impact {
@@ -309,7 +309,8 @@ body {
 	.column-5,
 	.column-6,
 	.column-7,
-	.column-8 {
+	.column-8,
+	.column-9 {
 		width: 100%;
 	}
 }
@@ -479,6 +480,7 @@ body {
 	height: auto;
 }
 
+
 /*Fixed container*/
 .download-pdf {
 	position: fixed;
@@ -531,7 +533,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 }
 .background--hero {
 	position: absolute;
@@ -798,10 +800,10 @@ body {
 	height: 100px;
 	margin-right: 1.25rem;
 	border-radius: 50%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 }
 
-/*Section 6*/
+
 .bubbles {
 
 }
@@ -866,38 +868,39 @@ body {
 	right: 0;
 	z-index: 0;
 }
-
-/*Section 8*/
-.section--8 {
-	padding-bottom: 0;
-	background-color: #91d0ed;
-	z-index: 2;
-}
-
-
-/*Section 9*/
-.section--9 {
-	background: rgb(255,255,255);
-	background: linear-gradient(180deg, #91d0ed 50%, rgba(255,255,255,1) 50%);
-}
+/*Card*/
 .card {
 	display: flex;
-	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	padding: 2rem 1.5rem;
 	border-radius: 30px;
-	padding: 4rem;
+	background-color: #ddf4ff;
+	font-size: 1.15rem;
 }
-.card__subtitle {
-	font-size: 2.1rem;
-}
-.card__photo {
-	width: 30%;
+.card__image {
+	display: flex;
 	flex-shrink: 0;
-	padding-top: 30%;
-	margin-right: 10%;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1.5rem;
+	width: 125px;
+	height: 125px;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	border-radius: 50%;
+	background: #fff;
 }
-.card__content {
-	flex-grow: 1;
+.subtitle__card {
+	font-size: 1.9rem;
+	margin-bottom: 0.5rem;
 }
+.card__link {
+	text-decoration: none;
+	color: rgb(1, 156, 220);
+}
+
 
 
 /*Parallax*/
@@ -913,7 +916,9 @@ body {
 [data-parallax="3"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 6px)) translateY(calc(var(--y) * 6px));
 }
-
+[data-letters-anime] {
+	visibility: hidden;
+}
 /*Animations*/
 [data-anime] {
 	visibility: hidden;
@@ -1076,7 +1081,7 @@ span.animate__animated {
 	width: 75px;
 	height: 75px;
 	border-radius: 100%;
-	background-color: #91d0ed;
+	background-color: #ddf4ff;
 	z-index: -1;
 }
 .animation__fly {
@@ -1122,7 +1127,6 @@ span.animate__animated {
 }
 
 </style>
-
 <div class="salesforce-report">
 
 	<div class="download-pdf">
@@ -1311,10 +1315,10 @@ span.animate__animated {
 
 
 	<section class="section">
-		<div class="container">
+		<div class="container mb-3">
 			<div class="title text-center" data-letters-anime="animate__fromTop" data-letters-delay="0.02" data-letters-duration="1.4" data-letters>Making an Impact</div>
 			<div class="row">
-				<div class="column-4">
+				<div class="column-4" data-anime="animate__bubblesToRight" data-anime-duration="0.6" data-anime-delay="0.5">
 					<div class="text-center mb-3">
 						<div class="actions__circle"></div>
 						<div class="title title--middle">Technology</div>
@@ -1328,7 +1332,7 @@ span.animate__animated {
 						<div class="text--description">Capturing 360-degree views across the entire educational journey, covering recruitment, admissions, and student services.</div>
 					</div>
 				</div>
-				<div class="column-4">
+				<div class="column-4" data-anime="animate__bubblesToRight" data-anime-duration="0.5" data-anime-delay="0.8">
 					<div class="text-center mb-3">
 						<div class="actions__circle"></div>
 						<div class="title title--middle">Partnerships</div>
@@ -1342,7 +1346,7 @@ span.animate__animated {
 						<div class="text--description">Oﬀering solutions to help expand capacity and create niche functionality.</div>
 					</div>
 				</div>
-				<div class="column-4">
+				<div class="column-4" data-anime="animate__bubblesToRight" data-anime-duration="0.4" data-anime-delay="1">
 					<div class="text-center mb-3">
 						<div class="actions__circle"></div>
 						<div class="title title--middle">Community</div>
@@ -1358,144 +1362,49 @@ span.animate__animated {
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-
-	<section class="section section--4 section--pill">
 		<div class="container">
-			<div class="title text-center">Action + Results</div>
-			<div class="actions">
-				<div class="actions__item" data-anime="animate__bubblesToRight" data-anime-duration="0.6" data-anime-delay="0.5">
-					<div class="actions__circle"></div>
-					<div class="actions__title">Technology</div>
-					<div class="text-left">Delivering technology to nonproﬁt, educational and philanthropic organizations</div>
-				</div>
-				<div class="actions__item" data-anime="animate__bubblesToRight" data-anime-duration="0.5" data-anime-delay="0.8">
-					<div class="actions__circle"></div>
-					<div class="actions__title">Partnership</div>
-					<div class="text-left">Building a future-ready, diverse, talented and skilled workforce through technology and ﬁnancial grants</div>
-				</div>
-				<div class="actions__item" data-anime="animate__bubblesToRight" data-anime-duration="0.45" data-anime-delay="1">
-					<div class="actions__circle"></div>
-					<div class="actions__title">Community</div>
-					<div class="text-left">Empowering an army of citizen philanthropists and driving community innovation</div>
-				</div>
-				<div class="actions__item" data-anime="animate__bubblesToRight" data-anime-duration="0.4" data-anime-delay="1.2">
-					<div class="actions__circle"></div>
-					<div class="actions__title">Impact</div>
-					<div class="text-left"></div>
-				</div>
-			</div>
-		</div>
-	</section>	
-
-	<section class="section section--6 section--pill">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="column-6">
-					<div class="title title--middle mb-1">Our annual social value to the social sector</div>
-					<div class="text--description-big mb-2">At Salesforce, we believe business is a powerful platform for change, and to achieve intentional change, we must understand the full scale of our work.</div>
-					<button class="button">Download the report to learn more</button>
-				</div>
-				<div class="column-6">
-					<div class="bubbles">
-						<div class="bubbles__item bubbles__xl animation__fly animation__fly__tran--7" data-anime="animate__zoomIn" data-anime-duration="0.3">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">$70.9M</div>
-								<div class="bubbles__text">Grants & Employee Giving</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__md animation__fly animation__fly__tran--5" data-anime="animate__zoomIn" data-anime-duration="0.3">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">XX</div>
-								<div class="bubbles__text">Product Donation & Discounts</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__xsm animation__fly animation__fly__tran--3" data-anime="animate__zoomIn" data-anime-duration="0.3">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">$18.7M</div>
-								<div class="bubbles__subtitle">$195/hour*</div>
-								<div class="bubbles__text">Grants & Employee Giving</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__sm animation__fly animation__fly__tran--4" data-anime="animate__zoomIn" data-anime-duration="0.3">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">$24.9M</div>
-								<div class="bubbles__subtitle">$25.43/hr**</div>
-								<div class="bubbles__text">Volunteering Value</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section section--8">
-		<div class="container">
-
-			<div class="title text-center mb-1">COVID-19 Overview</div>
-			<div class="text--description-big text-center">We have seen historic  levels of global disruption due to the SARS-CoV-2 virus — shocks to our global community continue at levels not seen since 1918’s Spanish Inﬂuenza.</div>
-
 			<div class="row">
-				<div class="column-5">
-
-					<div class="bubbles bubbles--section-8">
-						<div class="bubbles__item bubbles__xl">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">73%</div>
-								<div class="bubbles__subtitle">global nonproﬁts (all causes) are reporting a drop in revenue</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__md">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">82%</div>
-								<div class="bubbles__subtitle">digitize some/all of their programmatic work</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__xsm">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">82%</div>
-								<div class="bubbles__subtitle">move to remote work</div>
-							</div>
-						</div>
-						<div class="bubbles__item bubbles__sm">
-							<div class="bubbles__item-inner">
-								<div class="bubbles__title">51%</div>
-								<div class="bubbles__subtitle">mid-sized nonprofits have laid off staff</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="column-7">
-					
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="section section--9">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="column-7">
+				<div class="column-4">
 					<div class="card">
-						<div class="card__photo">
-							
+						<div class="card__image">
+							<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-1.png" alt="">
 						</div>
 						<div class="card__content">
-							<div class="subtitle card__subtitle mb-2">Impact in Action:<br>Help Heroes - UK NHS</div>
-							<button class="button button--left">Learn how one app helped NHS staff access groceries and PPE in the UK</button>
+							<div class="card__text mb-1">"When we’re doing less of that kind of grunt work, we can do more high level thinking."</div>
+							<div class="subtitle subtitle__card">Small Nonproﬁt</div>
+						</div>
+					</div>
+				</div>
+				<div class="column-4">
+					<div class="card">
+						<div class="card__image">
+							<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-2.png" alt="">
+						</div>
+						<div class="card__content">
+							<div class="subtitle subtitle__card">Impact in Action</div>
+							<div class="card__text mb-1">The Center fosters connection for New York City’s LGBTQ community during social isolation, providing in-person services such as mental health counseling.</div>
+							<a href="" class="card__link">Learn more in the report >></a>
+						</div>
+					</div>
+				</div>
+				<div class="column-4">
+					<div class="card">
+						<div class="card__image">
+							<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-3.png" alt="">
+						</div>
+						<div class="card__content">
+							<div class="subtitle subtitle__card">Impact in Action</div>
+							<div class="card__text mb-1">WELD Seattle equips individuals impacted by the criminal justice system re-enter society by providing housing, employment, and resources.</div>
+							<a href="" class="card__link">Learn more in the report >></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-</div>
+	
 
+</div>
 <script>
 	;(function(){
 
