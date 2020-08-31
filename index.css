@@ -724,10 +724,11 @@ body {
 	position: relative;
 	width: 100%;
 	padding-top: 100%;
+}
+.image-cropped-container--white {
 	border-radius: 50%;
 	background-color: #fff;
 }
-
 .actions {
 	display: flex;
 	flex-wrap: wrap;
