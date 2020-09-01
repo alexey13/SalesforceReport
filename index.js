@@ -1,6 +1,6 @@
 /*Local enviroment change width of parent container */
-document.querySelector('.mvp-main-box').style.width = null;
-
+const mvpEl = document.querySelector('.mvp-main-box');
+console.log(mvpEl)
 /**
  * Animation API
  * [data-letters] - divide by words and letters phrase
