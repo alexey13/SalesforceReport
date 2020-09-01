@@ -731,6 +731,8 @@ body {
 	display: flex;
 	width: 100%;
 	padding-top: 100%;
+	margin: 0 !important;
+	line-height: 0;
 }
 .image-cropped-container--white {
 	border-radius: 50%;
