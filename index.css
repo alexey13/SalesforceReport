@@ -890,12 +890,12 @@ body {
 }
 .card__image {
 	display: flex;
+	width: 125px;
+	height: 125px;
 	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
 	margin-right: 1.5rem;
-	width: 30%;
-	padding-top: 30%;
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
 	border-radius: 50%;
