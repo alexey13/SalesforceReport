@@ -1085,7 +1085,6 @@ span.animate__animated {
 	height: 75px;
 	border-radius: 100%;
 	background-color: #ddf4ff;
-	z-index: 0;
 }
 .animation__fly {
 	--bubbleX: 0px;
