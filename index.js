@@ -1,9 +1,7 @@
 /*Local enviroment change width of parent container */
-const mvpEl = document.querySelector('.mvp-main-box');
-console.log(document.querySelectorAll('.mvp-main-box'))
-console.log(mvpEl.style.width)
+const mvpEl = document.querySelector('#mvp-article-cont .mvp-main-box');
 mvpEl.style.width = 'auto';
-console.log(mvpEl.style.width)
+
 /**
  * Animation API
  * [data-letters] - divide by words and letters phrase
