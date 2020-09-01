@@ -381,17 +381,6 @@ body {
 .pr-2 {
 	padding-right: 2rem;
 }
-@media screen and (max-width: 980px) {
-	.pl-1,
-	.pl-2,
-	.pl-3,
-	.pl-4 {
-		padding-left: 0;
-	}
-	.pr-2 {
-		padding-right: 0;
-	}
-}
 @media screen and (max-width: 1200px) {
 	.mb-1 {
 	margin-bottom: 0.66rem;
@@ -475,6 +464,15 @@ body {
 	}
 }
 @media screen and (max-width: 767.9px) {
+	.pl-1,
+	.pl-2,
+	.pl-3,
+	.pl-4 {
+		padding-left: 0;
+	}
+	.pr-2 {
+		padding-right: 0;
+	}
 	.mb-xs-1 {
 		margin-bottom: 1rem;
 	}
@@ -655,6 +653,11 @@ body {
 /*Section 2*/
 .section--report {
 	margin-top: 80px;
+}
+@media screen and (max-width: 980px) {
+	.section--report {
+		margin-top: 30px;
+	}
 }
 @media screen and (max-width: 767.9px) {
 	.section--report {
@@ -1004,7 +1007,7 @@ body {
 
 .ceo {
 	position: relative;
-	padding: 1.5rem;
+	padding: 3rem;
 	text-align: center;
 }
 .ceo > * {
@@ -1013,16 +1016,15 @@ body {
 .ceo::before {
 	content: '';
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 110%;
-	padding-top: 110%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%;
 	background-color: #a3d8ec;
 	border-radius: 100%;
-	transform: translate(-50%, -50%);
 }
 .ceo__title {
-	font-size: 2.8rem;
+	font-size: 2.4rem;
 }
 .ceo__profile {
 	display: inline-block;
@@ -1061,11 +1063,11 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1380px) {
 	.ceo {
-		padding: 1.3vw;
-		font-size: 2vw;
+		padding: 2.8vw;
+		font-size: 1.8vw;
 	}
 	.ceo__title {
-		font-size: 3vw;
+		font-size: 2.6vw;
 	}
 	.ceo__name {
 		font-size: 1.9vw;
@@ -1076,6 +1078,49 @@ body {
 	.ceo__avatar {
 		width: 7vw;
 		left: -10vw;
+	}
+}
+@media screen and (max-width: 767.9px) {
+	.ceo {
+		padding: 2rem;
+		max-width: 300px;
+		margin-bottom: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ceo__title {
+		font-size: 1.4rem;
+	}
+	.ceo__name {
+		font-size: 1rem;
+	}
+	.ceo__quote {
+		width: 50px;
+	}
+	.ceo__avatar {
+		width: 75px;
+	}
+}
+
+@media screen and (max-width: 379.9px) {
+	.ceo {
+		padding: 1.5rem;
+		max-width: 250px;
+		font-size: 0.8rem;
+		margin-bottom: 3rem;
+	}
+	.ceo__title {
+		font-size: 1.3rem;
+	}
+	.ceo__name {
+		font-size: 0.9rem;
+	}
+	.ceo__quote {
+		width: 40px;
+	}
+	.ceo__avatar {
+		width: 40px;
+		left: -48%;
 	}
 }
 
