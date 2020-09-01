@@ -685,6 +685,7 @@ body {
 	bottom: 0%;
 }
 .impact__image {
+	position: relative;
 	width: 100%;
 	padding-top: 100%;
 	border-radius: 50%;
@@ -1125,10 +1126,10 @@ span.animate__animated {
 	height: 85px;
 }
 .bubble__standart--lg {
-	width: 125px;
-	height: 125px;
+	width: 9vw;
+	height: 9vw;
 }
 .bubble__standart--xlg {
-	width: 205px;
-	height: 205px;
+	width: 14vw;
+	height: 14vw;
 }
