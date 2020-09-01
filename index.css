@@ -894,8 +894,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-right: 1.5rem;
-	width: 125px;
-	height: 125px;
+	width: 30%;
+	padding-top: 30%;
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
 	border-radius: 50%;
@@ -1087,8 +1087,8 @@ span.animate__animated {
 .bubble__standart {
 	display: inline-block;
 	position: absolute;
-	width: 75px;
-	height: 75px;
+	width: 5.4vw;
+	height: 5.4vw;
 	border-radius: 100%;
 	background-color: #ddf4ff;
 }
@@ -1114,16 +1114,16 @@ span.animate__animated {
 	transition-duration: 14s;
 }
 .bubble__standart--xsm {
-	width: 45px;
-	height: 45px;
+	width: 3.2vw;
+	height: 3.2vw;
 }
 .bubble__standart--sm {
-	width: 65px;
-	height: 65px;
+	width: 4.7vw;
+	height: 4.7vw;
 }
 .bubble__standart--md {
-	width: 85px;
-	height: 85px;
+	width: 6.5vw;
+	height: 6.5vw;
 }
 .bubble__standart--lg {
 	width: 9vw;
