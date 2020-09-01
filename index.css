@@ -60,6 +60,10 @@ body {
 	box-sizing: border-box;
 }
 
+.salesforce-report a {
+	box-shadow: none !important;
+}
+
 /* Colors */
 .color--blue {
 	color: rgb(33, 45, 100);
@@ -151,6 +155,7 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	transition: all 0.2s;
+	box-shadow: none;
 }
 @media screen and (max-width: 1478px) {
 	.button {
