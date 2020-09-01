@@ -1,4 +1,5 @@
-
+/*Local enviroment change width of parent container */
+document.querySelector('.mvp-main-box').style.width = 'none'
 
 /**
  * Animation API
