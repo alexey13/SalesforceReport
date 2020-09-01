@@ -932,7 +932,12 @@ body {
 	padding-top: 74%;
 }
 .ceo {
-
+	position: relative;
+	padding: 1.5rem;
+	text-align: center;
+}
+.ceo > * {
+	position: relative;
 }
 .ceo:before {
 	content: '';
@@ -941,9 +946,43 @@ body {
 	top: -5%;
 	width: 110%;
 	padding-top: 110%;
-	background-color: red;
+	background-color: #b9e0ef;
 	border-radius: 100%;
 }
+.ceo__title {
+	font-size: 2.8rem;
+}
+.ceo__profile {
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	color: rgb(33, 45, 100);
+}
+.ceo__name {
+	color: rgb(33, 45, 100);
+	font-size: 1.6rem;
+	font-family: SalesforceSansBold;
+}
+.ceo__avatar {
+	position: absolute;
+	left: -70%;
+	top: -50%;
+	z-index: 1;
+}
+.button--last-section {
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.background--last-section {
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
+}
+
+
 
 /*Parallax*/
 [data-parallax="1"]:not([data-anime]) {
