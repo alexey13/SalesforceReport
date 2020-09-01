@@ -54,8 +54,13 @@ body {
 	font-size: 1.4rem;
 	font-family: SalesforceSansLight;
 	line-height: 1.2;
+	overflow-x: hidden;
 }
-
+@media screen and (max-width: 767.9px) {
+	.salesforce-report {
+		font-size: 1rem;
+	}
+}
 .salesforce-report * {
 	box-sizing: border-box;
 }
@@ -169,6 +174,11 @@ body {
 		padding: 0.88rem 2.1rem;
 	}
 }
+@media screen and (max-width: 767.9px) {
+	.button {
+		text-align: left;
+	}
+}
 
 
 .button:hover,
@@ -226,7 +236,11 @@ body {
 		font-size: 1.45rem;
 	}
 }
-
+@media screen and (max-width: 767.9px) {
+	.title {
+		line-height: 1;
+	}
+}
 
 
 /*Images*/
@@ -460,7 +474,20 @@ body {
 		padding-right: 1rem;
 	}
 }
-
+@media screen and (max-width: 767.9px) {
+	.mb-xs-1 {
+		margin-bottom: 1rem;
+	}
+	.mb-xs-2 {
+		margin-bottom: 2rem;
+	}
+	.order-xs-1 {
+		order: -1;
+	}
+	.pb-xs-0 {
+		padding-bottom: 0;
+	}
+}
 
 
 .text-center {
@@ -846,12 +873,28 @@ body {
 	margin-bottom: 0rem;
 	font-family: SalesforceSansBold;
 }
+@media screen and (max-width: 1200px) {
+	.bubbles__title {
+		font-size: 1.98rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 980px) {
+	.bubbles__title {
+		font-size: 1.5rem;
+	}
+}
 .bubbles__subtitle {
 	font-size: 1.2rem;
 	font-family: SalesforceSansBold;
 }
 .bubbles__text {
 	margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.bubbles__subtitle,
+	.bubbles__text {
+		font-size: 1rem;
+	}
 }
 .bubbles__xl {
 	width: 53%;
@@ -889,6 +932,7 @@ body {
 	right: 0;
 	z-index: 0;
 }
+
 /*Card*/
 .card {
 	display: flex;
@@ -898,7 +942,7 @@ body {
 	padding: 2rem 1.5rem;
 	border-radius: 50px;
 	background-color: #ddf4ff;
-	font-size: 1.15rem;
+	font-size: 1rem;
 }
 .card__image {
 	display: flex;
@@ -914,7 +958,7 @@ body {
 	background: #fff;
 }
 .subtitle__card {
-	font-size: 1.9rem;
+	font-size: 1.7rem;
 	margin-bottom: 0.5rem;
 }
 .card__link {
@@ -926,11 +970,38 @@ body {
 .card__link:hover {
 	background: transparent !important;
 }
+@media screen and (min-width: 768px) and (max-width: 1380px) {
+	.card {
+		padding: 3vw 1.5vw;
+		font-size: 1.3vw;
+	}
+	.card__image {
+		width: 7vw;
+		height: 7vw;
+		margin-right: 1vw;
+		padding-left: 0.75vw;
+		padding-right: 0.75vw;
+	}
+	.subtitle__card {
+		font-size: 1.5vw;
+		margin-bottom: 0.5vw;
+	}
+}
+@media screen and (max-width: 564px) {
+	.card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+}
+
+
 .ipad__last-section {
 	position: relative;
 	width: 100%;
 	padding-top: 74%;
 }
+
 .ceo {
 	position: relative;
 	padding: 1.5rem;
@@ -939,15 +1010,16 @@ body {
 .ceo > * {
 	position: relative;
 }
-.ceo:before {
+.ceo::before {
 	content: '';
 	position: absolute;
-	left: -5%;
-	top: -5%;
+	left: 50%;
+	top: 50%;
 	width: 110%;
 	padding-top: 110%;
-	background-color: #b9e0ef;
+	background-color: #a3d8ec;
 	border-radius: 100%;
+	transform: translate(-50%, -50%);
 }
 .ceo__title {
 	font-size: 2.8rem;
@@ -969,19 +1041,43 @@ body {
 	top: -50%;
 	z-index: 1;
 }
+.wrapper__last-button {
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 2;
+}
 .button--last-section {
-	position: absolute;
-	left: 50%;
-	bottom: -20px;
 	padding-left: 6rem;
 	padding-right: 6rem;
-	transform: translateX(-50%);
-	z-index: 2;
+}
+@media screen and (max-width: 450px) {
+	.button--last-section {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 .background--last-section {
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
 }
-
+@media screen and (min-width: 768px) and (max-width: 1380px) {
+	.ceo {
+		padding: 1.3vw;
+		font-size: 2vw;
+	}
+	.ceo__title {
+		font-size: 3vw;
+	}
+	.ceo__name {
+		font-size: 1.9vw;
+	}
+	.ceo__quote {
+		width: 7vw;
+	}
+	.ceo__avatar {
+		width: 7vw;
+		left: -10vw;
+	}
+}
 
 
 /*Parallax*/
