@@ -906,10 +906,14 @@ body {
 	margin-bottom: 0.5rem;
 }
 .card__link {
-	text-decoration: none;
-	color: rgb(1, 156, 220);
+	text-decoration: none !important;
+	color: rgb(1, 156, 220) !important;
+	font-family: SalesforceSansLight !important;
+	font-weight: normal !important;
 }
-
+.card__link:hover {
+	background: transparent !important;
+}
 
 
 /*Parallax*/
