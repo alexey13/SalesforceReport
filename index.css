@@ -364,12 +364,18 @@ body {
 .pl-4 {
 	padding-left: 4rem;
 }
+.pr-2 {
+	padding-right: 2rem;
+}
 @media screen and (max-width: 980px) {
 	.pl-1,
 	.pl-2,
 	.pl-3,
 	.pl-4 {
 		padding-left: 0;
+	}
+	.pr-2 {
+		padding-right: 0;
 	}
 }
 @media screen and (max-width: 1200px) {
@@ -409,6 +415,9 @@ body {
 	.pl-4 {
 		padding-left: 2.64rem;
 	}
+	.pr-2 {
+		padding-right: 1.32rem;
+	}
 }
 @media screen and (max-width: 980px) {
 	.mb-1 {
@@ -446,6 +455,9 @@ body {
 	}
 	.pl-4 {
 		padding-left: 2rem;
+	}
+	.pr-2 {
+		padding-right: 1rem;
 	}
 }
 
@@ -914,7 +926,24 @@ body {
 .card__link:hover {
 	background: transparent !important;
 }
+.ipad__last-section {
+	position: relative;
+	width: 100%;
+	padding-top: 74%;
+}
+.ceo {
 
+}
+.ceo:before {
+	content: '';
+	position: absolute;
+	left: -5%;
+	top: -5%;
+	width: 110%;
+	padding-top: 110%;
+	background-color: red;
+	border-radius: 100%;
+}
 
 /*Parallax*/
 [data-parallax="1"]:not([data-anime]) {

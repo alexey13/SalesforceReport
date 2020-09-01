@@ -1,6 +1,9 @@
 /*Local enviroment change width of parent container */
 const mvpEl = document.querySelector('#mvp-article-cont .mvp-main-box');
-if(mvpEl) mvpEl.style.width = 'auto';
+if(mvpEl) {
+	mvpEl.style.width = 'auto';
+	mvpEl.style.margin = '0px';
+}
 
 /**
  * Animation API
