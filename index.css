@@ -56,6 +56,9 @@ body {
 	line-height: 1.2;
 	overflow-x: hidden;
 }
+.salesforce-report div, .salesforce-report section {
+	margin: 0;
+}
 @media screen and (max-width: 767.9px) {
 	.salesforce-report {
 		font-size: 1rem;
@@ -150,6 +153,7 @@ body {
 	font-size: 2.4rem;
 }
 .button {
+	height: auto;
 	padding: 1.25rem 3.25rem;
 	background-color: #f05924;
 	font-size: 1.9rem;
@@ -161,6 +165,7 @@ body {
 	text-decoration: none;
 	transition: all 0.2s;
 	box-shadow: none;
+	text-transform: none;
 }
 @media screen and (max-width: 1478px) {
 	.button {

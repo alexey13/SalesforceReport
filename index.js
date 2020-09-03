@@ -4,6 +4,12 @@ if(mvpEl) {
 	mvpEl.style.width = 'auto';
 	mvpEl.style.margin = '0px';
 }
+const slfEl = document.querySelector('.page-b.contain');
+if(slfEl) {
+	slfEl.style.maxWidth = '100%';
+	slfEl.style.borderLeft = '0';
+	slfEl.style.borderRight = '0';
+}
 
 /**
  * Animation API
