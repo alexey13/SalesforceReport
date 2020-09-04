@@ -56,9 +56,6 @@ body {
 	line-height: 1.2;
 	overflow-x: hidden;
 }
-.salesforce-report div, .salesforce-report section {
-	margin: 0;
-}
 @media screen and (max-width: 767.9px) {
 	.salesforce-report {
 		font-size: 1rem;
@@ -74,13 +71,13 @@ body {
 
 /* Colors */
 .color--blue {
-	color: rgb(33, 45, 100);
+	color: #252b5f;
 }
 .color--cyan {
 	color: rgb(1, 156, 220);
 }
 .color--skycyan {
-	color: #ddf4ff;
+	color: #e7f6f8;
 }
 .color--orange {
 	color: #f05924;
@@ -92,9 +89,14 @@ body {
 	background-color: #214285 !important;
 }
 .background--sky {
-	background-color: #ddf4ff !important;
+	background-color: #e7f6f8 !important;
 }
-
+.background-skydarker {
+	background-color: #c0e3f3 !important;
+}
+.color-cyan2 {
+	color: #3f99d5;
+}
 
 /*Text*/
 .text--uppercase {
@@ -103,15 +105,16 @@ body {
 .text--description {
 	font-size: 1.66rem;
 }
+
 .text--description-big {
-	font-size: 2.2rem;
+	font-size: 1.8rem;
 }
 @media screen and (max-width: 1478px) {
 	.text--description {
 		font-size: 1.27rem;
 	}
 	.text--description-big {
-		font-size: 1.69rem;
+		font-size: 1.38rem;
 	}
 }
 @media screen and (max-width: 1200px) {
@@ -119,7 +122,7 @@ body {
 		font-size: 1.09rem;
 	}
 	.text--description-big {
-		font-size: 1.45rem;
+		font-size: 1.18rem;
 	}
 }
 @media screen and (max-width: 980px) {
@@ -127,7 +130,7 @@ body {
 		font-size: 1rem;
 	}
 	.text--description-big {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 	}
 }
 
@@ -135,8 +138,7 @@ body {
 .title {
 	font-size: 8.3rem;
 	font-family: NeutratextRegular;
-	color: rgb(33, 45, 100);
-	line-height: 1.2;
+	color: #252b5f;
 	margin-bottom: 2rem;
 }
 .title--middle {
@@ -147,36 +149,38 @@ body {
 	margin-bottom: 0;
 	font-family: NeutratextRegular;
 	font-size: 2.6rem;
-	color: rgb(33, 45, 100);
+	color: #252b5f;
 }
 .subtitle__impact {
 	font-size: 2.4rem;
 }
+
+
 .button {
 	height: auto;
-	padding: 1.25rem 3.25rem;
-	background-color: #f05924;
-	font-size: 1.9rem;
+	padding: 1.35rem 1.9rem;
+	background-color: #e84d14;
+	font-size: 1.39rem;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 3rem;
 	color: #ffffff;
 	font-family: SalesforceSansBold;
 	cursor: pointer;
 	text-decoration: none;
 	transition: all 0.2s;
 	box-shadow: none;
-	text-transform: none;
+	text-transform: uppercase;
 }
 @media screen and (max-width: 1478px) {
 	.button {
-		font-size: 1.46rem;
-		padding: 0.9rem 2.5rem;
+		font-size: 1.15rem;
+		padding: 1.26rem 1.62rem;
 	}
 }
 @media screen and (max-width: 1200px) {
 	.button {
-		font-size: 1.25rem;
-		padding: 0.88rem 2.1rem;
+		font-size: 1rem;
+		padding: 1.23rem 1.35rem;
 	}
 }
 @media screen and (max-width: 767.9px) {
@@ -188,21 +192,16 @@ body {
 
 .button:hover,
 .button:active {
-	background-color: #d9420d;
-}
-.button--left {
-	padding-right: 2rem;
-	padding-left: 2rem;
-	text-align: left;
+	background-color: #f05924;
 }
 .button--download {
 	padding: 0.5rem 1.25rem;
 	background-color: #fff;
-	color: rgb(33, 45, 100);
+	color: #252b5f;
 	font-size: 1.08rem;
 }
 .button--download:hover {
-	background-color: rgb(33, 45, 100);
+	background-color: #252b5f;
 	color: #fff;
 }
 @media screen and (max-width: 1478px) {
@@ -264,33 +263,33 @@ body {
 /*Layout*/
 .section {
 	position: relative;
-	padding: 4rem 0;
+	padding: 5rem 0;
 }
 .section--bigpadding {
-	padding: 8rem 0;
+	padding: 10rem 0;
 }
 .section--last {
-	margin-top: 4rem;
+	margin-top: 54rem;
 }
 @media screen and (max-width: 1478px) {
 	.section {
-		padding: 4rem 0;
+		padding: 5rem 0;
 	}
 }
 @media screen and (max-width: 1200px) {
 	.section {
-		padding: 4rem 0;
+		padding: 5rem 0;
 	}
 	.section--last {
-		margin-top: 3rem;
+		margin-top: 3.7rem;
 	}
 }
 @media screen and (max-width: 980px) {
 	.section {
-		padding: 4rem 0;
+		padding: 5rem 0;
 	}
 	.section--last {
-		margin-top: 2rem;
+		margin-top: 2.4rem;
 	}
 }
 
@@ -310,6 +309,9 @@ body {
 .row > * {
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+.column-1 {
+	width: 8.333%;
 }
 .column-2 {
 	width: 16.666%;
@@ -346,6 +348,9 @@ body {
 	.column-9 {
 		width: 100%;
 	}
+	.column-1 {
+		display: none;
+	}
 }
 
 
@@ -364,6 +369,9 @@ body {
 }
 .mb-5 {
 	margin-bottom: 5rem;
+}
+.mb-7 {
+	margin-bottom: 7rem;
 }
 .mr-2 {
 	margin-right: 2rem;
@@ -411,6 +419,9 @@ body {
 	.mb-5 {
 		margin-bottom: 3.3rem;
 	}
+	.mb-7 {
+		margin-bottom: 4.62rem;
+	}
 	.mr-5 {
 		margin-right: 3.3rem;
 	}
@@ -438,7 +449,7 @@ body {
 }
 @media screen and (max-width: 980px) {
 	.mb-1 {
-	margin-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 	.mb-2 {
 		margin-bottom: 1rem;
@@ -451,6 +462,9 @@ body {
 	}
 	.mb-5 {
 		margin-bottom: 2.5rem;
+	}
+	.mb-7 {
+		margin-bottom: 3.5rem;
 	}
 	.mr-5 {
 		margin-right: 2.5rem;
@@ -535,7 +549,14 @@ body {
 	max-width: 100%;
 	height: auto;
 }
-
+.width-80 {
+	width: 80%;
+}
+@media screen and (max-width: 767.9px) {
+	.width-80 {
+		width: auto;
+	}
+}
 
 /*Fixed container*/
 .download-pdf {
@@ -589,7 +610,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #ddf4ff;
+	background-color: #e7f6f8;
 }
 .background--hero {
 	position: absolute;
@@ -608,6 +629,7 @@ body {
 }
 .section--hero .title {
 	font-size: 3.8rem;
+	line-height: 1;
 }
 @media screen and (max-width: 1478px) {
 	.section--hero .title {
@@ -679,34 +701,36 @@ body {
 	}
 }
 .section--report .title {
-	font-size: 5.45rem;
+	font-size: 4.9rem;
 	margin-bottom: 5rem;
 }
 @media screen and (max-width: 1478px) {
 	.section--report .title {
-		font-size: 4.4rem;
+		font-size: 4rem;
 		margin-bottom: 3.85rem;
 	}
 }
 @media screen and (max-width: 1200px) {
 	.section--report .title {
-		font-size: 3.81rem;
+		font-size: 3.46rem;
 		margin-bottom: 3.3rem;
 	}
 }
 @media screen and (max-width: 980px) {
 	.section--report .title {
-		font-size: 2.9rem;
+		font-size: 2.6rem;
 		margin-bottom: 2.5rem;
 	}
 }
 .section--report .subtitle {
 	margin-top: 2rem;
 	line-height: 1.2;
-	color: rgb(35, 66, 130);
+	color: #253a7b;
+	width: 80%;
 }
 @media screen and (max-width: 767.9px) {
 	.section--report .subtitle {
+		width: auto;
 		margin-top: 0;
 	}
 }
@@ -714,32 +738,21 @@ body {
 	position: relative;
 }
 .impact--1 {
-	margin-left: 8rem;
+	margin-left: 4rem;
 }
 .impact--2 {
 	margin-right: 4rem;
 }
 @media screen and (max-width: 767.9px) {
 	.impact--1 {
-		padding-left: 0;
+		margin-left: 0;
 	}
 	.impact--2 {
-		padding-right: 0;
+		margin-right: 0;
 	}
 }
 
-.impact__bubble--1 {
-	left: -8%;
-	bottom: -8%;
-}
-.impact__bubble--2 {
-	right: 1%;
-	top: 1%;
-}
-.impact__bubble--3 {
-	right: -7%;
-	bottom: 0%;
-}
+
 .impact__image {
 	position: relative;
 	width: 100%;
@@ -747,12 +760,32 @@ body {
 	border-radius: 50%;
 	background-color: rgb(1, 156, 220);
 }
+.impact__center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: #3f99d5;
+}
 .image-absolute-full {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/*Impact number component*/
+.impact-number {
+	display: flex;
+	align-items: center;
+}
+.impact-number__value {
+	font-size: 6rem;
+	color: #3279b1;
+	font-family: SalesforceSansBold;
+	margin-right: 5%;
 }
 
 
@@ -865,7 +898,7 @@ body {
 	height: 100px;
 	margin-right: 1.25rem;
 	border-radius: 50%;
-	background-color: #ddf4ff;
+	background-color: #e7f6f8;
 }
 
 
@@ -884,20 +917,21 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	color: #fff;
+	z-index: 2;
 }
 .bubbles__title {
-	font-size: 3rem;
+	font-size: 5rem;
 	margin-bottom: 0rem;
 	font-family: SalesforceSansBold;
 }
 @media screen and (max-width: 1200px) {
 	.bubbles__title {
-		font-size: 1.98rem;
+		font-size: 3.2rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 980px) {
 	.bubbles__title {
-		font-size: 1.5rem;
+		font-size: 2.49rem;
 	}
 }
 .bubbles__subtitle {
@@ -926,7 +960,6 @@ body {
 .bubbles__sm {
 	width: 40%;
 	padding-top: 40%;
-	left: 9%;
 	background-color: rgb(200, 156, 220);
 }
 .bubbles__xsm {
@@ -942,50 +975,37 @@ body {
 }
 .bubbles__item-left {
 	position: relative;
-	z-index: 1;
+	margin-right: 3%;
 }
 .bubbles__item-rigth {
-	position: absolute;
-	right: 0;
-	z-index: 0;
+	position: relative;
+	margin-left: 3%;
 }
+
 
 /*Card*/
 .card {
 	display: flex;
 	width: 100%;
-	height: 100%;
 	align-items: center;
-	padding: 2rem 1.5rem;
+	padding: 3rem 3rem;
 	border-radius: 50px;
-	background-color: #ddf4ff;
+	background-color: #e7f6f8;
 	font-size: 1rem;
 }
 .card__image {
 	display: flex;
-	width: 125px;
-	height: 125px;
+	width: 175px;
+	height: 175px;
 	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
-	margin-right: 1.5rem;
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+	margin-right: 3rem;
 	border-radius: 50%;
 	background: #fff;
 }
 .subtitle__card {
 	font-size: 1.7rem;
-	margin-bottom: 0.5rem;
-}
-.card__link {
-	text-decoration: none !important;
-	color: rgb(1, 156, 220) !important;
-	font-family: SalesforceSansLight !important;
-	font-weight: normal !important;
-}
-.card__link:hover {
-	background: transparent !important;
 }
 @media screen and (min-width: 768px) and (max-width: 1380px) {
 	.card {
@@ -996,12 +1016,9 @@ body {
 		width: 7vw;
 		height: 7vw;
 		margin-right: 1vw;
-		padding-left: 0.75vw;
-		padding-right: 0.75vw;
 	}
 	.subtitle__card {
 		font-size: 1.5vw;
-		margin-bottom: 0.5vw;
 	}
 }
 @media screen and (max-width: 564px) {
@@ -1041,36 +1058,18 @@ body {
 	font-size: 2.4rem;
 }
 .ceo__profile {
-	display: inline-block;
-	position: relative;
+	display: inline-flex;
+	align-items: center;
 	text-align: left;
-	color: rgb(33, 45, 100);
+	color: #252b5f;
 }
 .ceo__name {
-	color: rgb(33, 45, 100);
+	color: #252b5f;
 	font-size: 1.6rem;
 	font-family: SalesforceSansBold;
 }
 .ceo__avatar {
-	position: absolute;
-	left: -70%;
-	top: -50%;
-	z-index: 1;
-}
-.wrapper__last-button {
-	transform: translateY(-50%);
-	text-align: center;
-	z-index: 2;
-}
-.button--last-section {
-	padding-left: 6rem;
-	padding-right: 6rem;
-}
-@media screen and (max-width: 450px) {
-	.button--last-section {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
+	position: relative;
 }
 .background--last-section {
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
@@ -1088,10 +1087,6 @@ body {
 	}
 	.ceo__quote {
 		width: 7vw;
-	}
-	.ceo__avatar {
-		width: 7vw;
-		left: -10vw;
 	}
 }
 @media screen and (max-width: 767.9px) {
@@ -1111,9 +1106,6 @@ body {
 	.ceo__quote {
 		width: 50px;
 	}
-	.ceo__avatar {
-		width: 75px;
-	}
 }
 
 @media screen and (max-width: 379.9px) {
@@ -1131,10 +1123,6 @@ body {
 	}
 	.ceo__quote {
 		width: 40px;
-	}
-	.ceo__avatar {
-		width: 40px;
-		left: -48%;
 	}
 }
 
@@ -1185,6 +1173,7 @@ span.animate__animated {
 }
 .word {
 	display: inline-block;
+	white-space: nowrap;
 }
 
 @keyframes fromTop {
@@ -1241,6 +1230,69 @@ span.animate__animated {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }
+
+
+
+
+/* Zooming entrances */
+@-webkit-keyframes zoomInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomInFromLeft {
+  -webkit-animation-name: zoomInFromLeft;
+  animation-name: zoomInFromLeft;
+}
+
+
+
+
+/* Zooming entrances */
+@-webkit-keyframes zoomInFromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInFromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomInFromRight {
+  -webkit-animation-name: zoomInFromRight;
+  animation-name: zoomInFromRight;
+}
+
 
 
 /* appearFromLeft */
@@ -1317,11 +1369,11 @@ span.animate__animated {
 	width: 5.4vw;
 	height: 5.4vw;
 	border-radius: 100%;
-	background-color: #ddf4ff;
+	background-color: #e7f6f8;
 }
 .animation__fly {
-	--bubbleX: 0px;
-	--bubbleY: 0px;
+	--bubbleX: 0;
+	--bubbleY: 0;
 	transform: translateX(var(--bubbleX)) translateY(var(--bubbleY));
 	transition-timing-function: linear;
 }

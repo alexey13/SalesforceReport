@@ -157,8 +157,9 @@ function scrollAnimate() {
     removeFromList(element)
     //On animation end remove anime attr because if parallax used it should start only after animation played
     element.addEventListener('animationend',function(){
-    	element.removeAttribute('data-anime');
     	element.classList.remove(animeElement);
+    	element.offsetHeight;//without reflow dom bublles junk sometimes
+    	element.removeAttribute('data-anime');
     })
   }
 
