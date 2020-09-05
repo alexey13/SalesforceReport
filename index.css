@@ -95,7 +95,10 @@ body {
 	background-color: #c0e3f3 !important;
 }
 .color-cyan2 {
-	color: #3f99d5;
+	color: #3f99d5 !important;
+}
+.color--white {
+	color: #fff !important;
 }
 
 /*Text*/
@@ -143,6 +146,10 @@ body {
 }
 .title--middle {
 	font-size: 4.2rem;
+	margin-bottom: 0;
+}
+.title--sm {
+	font-size: 2.8rem;
 	margin-bottom: 0;
 }
 .subtitle {
@@ -212,6 +219,9 @@ body {
 	.title--middle {
 		font-size: 3.3rem;
 	}
+	.title--sm {
+		font-size: 2.7rem;
+	}
 	.subtitle {
 		font-size: 2.23rem;
 	}
@@ -224,6 +234,9 @@ body {
 	.title--middle {
 		font-size: 2.83rem;
 	}
+	.title--sm {
+		font-size: 2.2rem;
+	}
 	.subtitle {
 		font-size: 1.91rem;
 	}
@@ -235,6 +248,9 @@ body {
 	}
 	.title--middle {
 		font-size: 2.15rem;
+	}
+	.title--sm {
+		font-size: 1.7rem;
 	}
 	.subtitle {
 		font-size: 1.45rem;
@@ -269,7 +285,7 @@ body {
 	padding: 10rem 0;
 }
 .section--last {
-	margin-top: 54rem;
+	margin-top: 5rem;
 }
 @media screen and (max-width: 1478px) {
 	.section {
@@ -299,6 +315,9 @@ body {
 	padding-right: 1rem;
 	padding-left: 1rem;
 	margin: 0 auto;
+}
+.container--1920 {
+	max-width: 1920px;
 }
 .row {
 	display: flex;
@@ -688,16 +707,11 @@ body {
 
 /*Section 2*/
 .section--report {
-	margin-top: 80px;
+	padding-top: 2rem;
 }
 @media screen and (max-width: 980px) {
 	.section--report {
-		margin-top: 30px;
-	}
-}
-@media screen and (max-width: 767.9px) {
-	.section--report {
-		margin-top: 0;
+		padding-top: 1rem;
 	}
 }
 .section--report .title {
@@ -798,39 +812,6 @@ body {
 	margin-right: 5%;
 }
 
-
-.focus {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -3%;
-	margin-right: -3%;
-}
-.focus__item {
-	width: 25%;
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	font-size: 1.2rem;
-}
-@media screen and (max-width: 767.9px) {
-	.focus {
-		margin-top: -5%;
-	}
-	.focus__item {
-		width: 50%;
-		padding-top: 5%;
-	}
-}
-.focus__circle {
-	content: "";
-	display: inline-block;
-	width: 50%;
-	padding-top: 50%;
-	margin-bottom: 1rem;
-	border-radius: 50%;
-	background-color: rgb(1, 156, 220);
-}
-
 .image-cropped-container {
 	position: relative;
 	display: flex;
@@ -843,78 +824,72 @@ body {
 	border-radius: 50%;
 	background-color: #fff;
 }
-.actions {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -3%;
-	margin-right: -3%;
+
+
+.section--gap {
+	padding-top: 0;
+	padding-bottom: 0;
+	z-index: 2;
 }
-.actions__item {
-	width: 25%;
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	font-size: 1.2rem;
-}
-@media screen and (max-width: 767.9px) {
-	.actions {
-		margin-top: -5%;
-	}
-	.actions__item {
-		width: 50%;
-		padding-top: 5%;
-		font-size: 1rem;
-	}
-}
-.actions__title {
-	font-family: NeutratextRegular;
-	font-size: 3.3rem;
-	margin-bottom: 1.5rem;
-}
-@media screen and (max-width: 767.9px) {
-	.actions__title {
-		font-size: 1.6rem;
-		margin-bottom: 1rem;
-	}
-}
-.actions__circle {
-	content: "";
+.gap {
 	display: inline-block;
-	width: 80%;
-	padding-top: 80%;
-	margin-bottom: 1.5rem;
-	border-radius: 50%;
-	background-color: rgb(1, 156, 220);
+	position: relative;
+	width: 33%;
+	height: 38vw;
+	text-align: center;
+	vertical-align: middle;
 }
-@media screen and (max-width: 767.9px) {
-	.actions__circle {
-		width: 60%;
-		padding-top: 60%;
+@media screen and (min-width: 1921px) {
+	.gap {
+		display: inline-block;
+		position: relative;
+		width: calc(1920 / 3px);
+		height: calc(1920 / 3 * 1.42px);
 	}
 }
 
-
-
-.icons-list {
-
+.gap__current-background {
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  width: 110%;
+  height: 100%;
+  background-color: #3f99d5;
+  border-top-right-radius: 17vw;
+  border-bottom-left-radius: 17vw;
+  z-index: -1;
 }
-.icons-list__item {
-	display: flex;
-	margin-bottom: 0.75rem;
+.gap__potential-background {
+	position: absolute;
+  right: -10%;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  background-color: #252b5f;
+  border-top-left-radius: 14vw;
+  z-index: -1;
+}
+.tshirt-logo {
+	width: 80%;
+	height: auto;
+}
+.gap__title-center {
+	margin-top: 45%;
+}
+.gap__title-rigth {
+	margin-top: 20%;
+}
+.gap__bubble {
+	display: flex !important;
+	justify-content: center;
 	align-items: center;
-}
-.icons-list__icon {
-	width: 100px;
-	height: 100px;
-	margin-right: 1.25rem;
-	border-radius: 50%;
-	background-color: #e7f6f8;
+	color: #fff;
+	font-size: 1.75rem;
+	font-family: NeutratextRegular;
 }
 
 
-.bubbles {
 
-}
 .bubbles__item {
 	display: inline-block;
 	position: relative;
@@ -934,14 +909,23 @@ body {
 	margin-bottom: 0rem;
 	font-family: SalesforceSansBold;
 }
+.bubbles__title--sm {
+	font-size: 3.5rem;
+}
 @media screen and (max-width: 1200px) {
 	.bubbles__title {
 		font-size: 3.2rem;
+	}
+	.bubbles__title--sm {
+		font-size: 2.45rem;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 980px) {
 	.bubbles__title {
 		font-size: 2.49rem;
+	}
+	.bubbles__title--sm {
+		font-size: 1.7rem;
 	}
 }
 .bubbles__subtitle {
@@ -1135,6 +1119,17 @@ body {
 		width: 40px;
 	}
 }
+
+/*Assets*/
+.arrow-down {
+	display: block;
+	width: 30%;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 
 
 /*Parallax*/
@@ -1365,6 +1360,86 @@ span.animate__animated {
   -webkit-animation-name: reportCircle;
   animation-name: reportCircle;
 }
+
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+.animate__flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-iteration-count: 6;
+}
+
+
+@-webkit-keyframes dasharrayLine {
+  to {
+  	stroke-dashoffset: 0;
+  }
+}
+@keyframes dasharrayLine {
+ 	to {
+  	stroke-dashoffset: 0;
+  }
+}
+.animate__line {
+	-webkit-animation-name: dasharrayLine;
+  animation-name: dasharrayLine;
+  animation-fill-mode: forwards;
+  stroke-dasharray: 481;
+  stroke-dashoffset: 481;
+}
+
+
+
+@-webkit-keyframes dots {
+	from {
+		transform: rotate(0);
+	}
+  to {
+  	transform: rotate(360deg);
+  }
+}
+@keyframes dots {
+ 	from {
+		transform: rotate(0);
+	}
+  to {
+  	transform: rotate(360deg);
+  }
+}
+.animate__dots {
+	-webkit-animation-name: dots;
+  animation-name: dots;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+}
+
+
+
+
 
 
 /*Onscroll rotation*/
