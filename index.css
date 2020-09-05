@@ -774,8 +774,18 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
+	z-index: 2;
 }
-
+.full-white-circle {
+	position: absolute;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	left: -10px;
+	top: -10px;
+	background: #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
 /*Impact number component*/
 .impact-number {
 	display: flex;
