@@ -392,6 +392,9 @@ body {
 .mb-7 {
 	margin-bottom: 7rem;
 }
+.mb-10 {
+	margin-bottom: 10rem;
+}
 .mr-2 {
 	margin-right: 2rem;
 }
@@ -441,6 +444,9 @@ body {
 	.mb-7 {
 		margin-bottom: 4.62rem;
 	}
+	.mb-10 {
+		margin-bottom: 6.66rem;
+	}
 	.mr-5 {
 		margin-right: 3.3rem;
 	}
@@ -484,6 +490,9 @@ body {
 	}
 	.mb-7 {
 		margin-bottom: 3.5rem;
+	}
+	.mb-10 {
+		margin-bottom: 5rem;
 	}
 	.mr-5 {
 		margin-right: 2.5rem;
@@ -1434,8 +1443,105 @@ span.animate__animated {
   transform-origin: center;
 }
 
+@-webkit-keyframes impactLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes impactLine {
+ 	to {
+    stroke-dashoffset: 0;
+  }
+}
+.animate__impact-line {
+	-webkit-animation-name: impactLine;
+  animation-name: impactLine;
+  animation-fill-mode: forwards;
+  stroke-dashoffset: 600px;
+  animation-iteration-count: infinite;
+}
 
 
+/*@-webkit-keyframes bubble-technology {
+	0% {
+		transform: translate(-74%, 62%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes bubble-technology {
+	0% {
+		transform: translate(-74%, 62%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-64%, 52%) scale(0.25);
+		animation-timing-function: ease-in;
+	}
+}
+.animate__bubble-technology {
+	-webkit-animation-name: bubble-technology;
+  animation-name: bubble-technology;
+}
+
+
+@-webkit-keyframes bubble-partnership {
+	0% {
+		transform: translate(-203%, 129%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-183%, 129%) scale(0.25);
+		animation-timing-function: ease-in;
+	}
+}
+@keyframes bubble-partnership {
+	0% {
+		transform: translate(-203%, 129%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-30%, 0%) scale(0.3);
+		animation-timing-function: ease-in;
+	}
+}
+.animate__bubble-partnership {
+	-webkit-animation-name: bubble-partnership;
+  animation-name: bubble-partnership;
+}
+
+
+
+@-webkit-keyframes bubble-community {
+	0% {
+		transform: translate(-333%, 110%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes bubble-community {
+	0% {
+		transform: translate(-333%, 110%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+.animate__bubble-community {
+	-webkit-animation-name: bubble-community;
+  animation-name: bubble-community;
+}*/
 
 
 

@@ -236,7 +236,7 @@ window.addEventListener('load', function() {
 	addAnimeParams();
 	charElements();
 	scrollAnimate();
-	parallax();
+	//parallax();
 	runBubbles();
 	rotateOnScroll();
 }, false)
