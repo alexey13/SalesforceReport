@@ -202,7 +202,10 @@ body {
 	background-color: #f05924;
 }
 .button--download {
-	padding: 0.5rem 1.25rem;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 0;
 	background-color: #fff;
 	color: #252b5f;
 	font-size: 1.08rem;
@@ -614,7 +617,7 @@ body {
 	z-index: -1;
 }
 .download-pdf__inner {
-	width: 166px;
+	width: 180px;
 }
 .download-pdf__content {
 	color: #999;
