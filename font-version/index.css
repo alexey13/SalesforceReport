@@ -1,0 +1,1505 @@
+@font-face {
+font-family: SalesforceSansBold;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansBold), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansRegular;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansRegular), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Regular.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansThin;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansThin), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Thin.woff') format('woff');
+}
+
+@font-face {
+font-family: SalesforceSansLight;
+font-style: normal;
+font-weight: normal;
+src: local(SalesforceSansLight), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Light.woff') format('woff');
+}
+
+@font-face {
+font-family: NeutratextRegular;
+font-style: normal;
+font-weight: normal;
+src: local(NeutratextRegular), url('https://alexey13.github.io/SalesforceReport/fonts/neutratext-demi.woff') format('woff');
+}
+
+/* 
+Responsive styles formula
+Minimum - 1 rem
+font, margins:
+	1478: 0.77;
+	1200: 0.66;
+	980: 0.5;
+	767.9: 0.77?;
+*/
+body {
+	margin: 0;
+}
+
+
+/*Main wrapper*/
+.salesforce-report {
+	--rotate: 0;
+	color: #58575c;
+	font-size: 1.4rem;
+	font-family: SalesforceSansLight;
+	line-height: 1.2;
+	overflow-x: hidden;
+}
+@media screen and (max-width: 767.9px) {
+	.salesforce-report {
+		font-size: 1rem;
+	}
+}
+.salesforce-report * {
+	box-sizing: border-box;
+}
+
+.salesforce-report a {
+	box-shadow: none !important;
+}
+
+/* Colors */
+.color--blue {
+	color: #252b5f;
+}
+.color--cyan {
+	color: rgb(1, 156, 220);
+}
+.color--skycyan {
+	color: #e7f6f8;
+}
+.color--orange {
+	color: #f05924;
+}
+.background--bluelight {
+	background-color: #3279b1 !important;
+}
+.background--bluedarker {
+	background-color: #214285 !important;
+}
+.background--sky {
+	background-color: #e7f6f8 !important;
+}
+.background-skydarker {
+	background-color: #c0e3f3 !important;
+}
+.color-cyan2 {
+	color: #3f99d5 !important;
+}
+.color--white {
+	color: #fff !important;
+}
+
+/*Text*/
+.text--uppercase {
+	text-transform: uppercase;
+}
+.text--description {
+	font-size: 1.27rem;
+}
+.text--description-big {
+	font-size: 1.38rem;
+}
+@media screen and (max-width: 1200px) {
+	.text--description {
+		font-size: 1.09rem;
+	}
+	.text--description-big {
+		font-size: 1.18rem;
+	}
+}
+@media screen and (max-width: 980px) {
+	.text--description {
+		font-size: 1rem;
+	}
+	.text--description-big {
+		font-size: 0.9rem;
+	}
+}
+
+/*Elements*/
+.title {
+	font-size: 5.4rem;
+	font-family: SalesforceSansLight, sans-serif;
+	color: #252b5f;
+	margin-bottom: 1.5rem;
+}
+.title--middle {
+	font-size: 2.83rem;
+	margin-bottom: 0;
+}
+.title--sm {
+	font-size: 2.2rem;
+	margin-bottom: 0;
+}
+.subtitle {
+	margin-bottom: 0;
+	font-family: NeutratextRegular;
+	font-size: 1.9rem;
+	color: #252b5f;
+}
+
+.button {
+	height: auto;
+	padding: 1.35rem 1.9rem;
+	background-color: #e84d14;
+	font-size: 1.39rem;
+	border: 0;
+	border-radius: 3rem;
+	color: #ffffff;
+	font-family: SalesforceSansBold;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.2s;
+	box-shadow: none;
+	text-transform: uppercase;
+}
+/*Smaller*/
+.button {
+	font-size: 11px;
+	line-height: 45px;
+	height: 45px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	min-width: 150px;
+	padding: 0 25px;
+	border-radius: 100px;
+	text-align: center;
+}
+/*Smaller end*/
+
+.button:hover,
+.button:active {
+	background-color: #f05924;
+}
+.button--download {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 0;
+	background-color: #fff;
+	color: #252b5f;
+	font-size: 1.08rem;
+}
+/*Smaller*/
+.button--download {
+	line-height: 1;
+	height: auto;
+	min-width: 0;
+}
+/*Smaller end*/
+
+
+@media screen and (max-width: 980px) {
+	.title {
+		font-size: 4.15rem;
+		margin-bottom: 1rem;
+	}
+	.title--middle {
+		font-size: 2.15rem;
+	}
+	.title--sm {
+		font-size: 1.7rem;
+	}
+	.subtitle {
+		font-size: 1.45rem;
+	}
+}
+@media screen and (max-width: 767.9px) {
+	.title {
+		line-height: 1;
+	}
+}
+
+
+/*Images*/
+.image-contain {
+	display: inline-block;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.image--ipad {
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/ipad.png');	
+}
+
+
+/*Layout*/
+.section {
+	position: relative;
+	padding: 5rem 0;
+}
+.section--bigpadding {
+	padding: 10rem 0;
+}
+.section--last {
+	margin-top: 5rem;
+}
+@media screen and (max-width: 1478px) {
+	.section {
+		padding: 5rem 0;
+	}
+}
+@media screen and (max-width: 1200px) {
+	.section {
+		padding: 5rem 0;
+	}
+	.section--last {
+		margin-top: 3.7rem;
+	}
+}
+@media screen and (max-width: 980px) {
+	.section {
+		padding: 5rem 0;
+	}
+	.section--last {
+		margin-top: 2.4rem;
+	}
+}
+
+.container {
+	max-width: 1380px;
+	width: 100%;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin: 0 auto;
+}
+.container--1920 {
+	max-width: 1920px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+.row > * {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.column-1 {
+	width: 8.333%;
+}
+.column-2 {
+	width: 16.666%;
+}
+.column-3 {
+	width: 25%;
+}
+.column-4 {
+	width: 33.333%;
+}
+.column-5 {
+	width: 41.666%;
+}
+.column-6 {
+	width: 50%;
+}
+.column-7 {
+	width: 58.33%;
+}
+.column-8 {
+	width: 66.666%;
+}
+.column-9 {
+	width: 74.996%;
+}
+@media screen and (max-width: 767.9px) {
+	.column-2,
+	.column-3,
+	.column-4,
+	.column-5,
+	.column-6,
+	.column-7,
+	.column-8,
+	.column-9 {
+		width: 100%;
+	}
+	.column-1 {
+		display: none;
+	}
+}
+
+
+/*Helpers */
+.mb-1 {
+	margin-bottom: 1rem;
+}
+.mb-2 {
+	margin-bottom: 2rem;
+}
+.mb-3 {
+	margin-bottom: 3rem;
+}
+.mb-4 {
+	margin-bottom: 4rem;
+}
+.mb-5 {
+	margin-bottom: 5rem;
+}
+.mb-7 {
+	margin-bottom: 7rem;
+}
+.mb-10 {
+	margin-bottom: 10rem;
+}
+.mr-2 {
+	margin-right: 2rem;
+}
+.mr-3 {
+	margin-right: 3rem;
+}
+.mr-5 {
+	margin-right: 5rem;
+}
+.ml-auto {
+	margin-left: auto;
+}
+.mr-auto {
+	margin-right: auto;
+}
+.pl-1 {
+	padding-left: 1rem;
+}
+.pl-2 {
+	padding-left: 2rem;
+}
+.pl-3 {
+	padding-left: 3rem;
+}
+.pl-4 {
+	padding-left: 4rem;
+}
+.pr-2 {
+	padding-right: 2rem;
+}
+@media screen and (max-width: 1200px) {
+	.mb-1 {
+	margin-bottom: 0.66rem;
+	}
+	.mb-2 {
+		margin-bottom: 1.32rem;
+	}
+	.mb-3 {
+		margin-bottom: 1.98rem;
+	}
+	.mb-4 {
+		margin-bottom: 2.64rem;
+	}
+	.mb-5 {
+		margin-bottom: 3.3rem;
+	}
+	.mb-7 {
+		margin-bottom: 4.62rem;
+	}
+	.mb-10 {
+		margin-bottom: 6.66rem;
+	}
+	.mr-5 {
+		margin-right: 3.3rem;
+	}
+	.mr-3 {
+		margin-right: 1.98rem;
+	}
+	.mr-2 {
+		margin-right: 1.32rem;
+	}
+	.pl-1 {
+		padding-left: 0.66rem;
+	}
+	.pl-2 {
+		padding-left: 1.32rem;
+	}
+	.pl-3 {
+		padding-left: 1.98rem;
+	}
+	.pl-4 {
+		padding-left: 2.64rem;
+	}
+	.pr-2 {
+		padding-right: 1.32rem;
+	}
+}
+@media screen and (max-width: 980px) {
+	.mb-1 {
+		margin-bottom: 0.5rem;
+	}
+	.mb-2 {
+		margin-bottom: 1rem;
+	}
+	.mb-3 {
+		margin-bottom: 1.5rem;
+	}
+	.mb-4 {
+		margin-bottom: 2rem;
+	}
+	.mb-5 {
+		margin-bottom: 2.5rem;
+	}
+	.mb-7 {
+		margin-bottom: 3.5rem;
+	}
+	.mb-10 {
+		margin-bottom: 5rem;
+	}
+	.mr-5 {
+		margin-right: 2.5rem;
+	}
+	.mr-3 {
+		margin-right: 1.5rem;
+	}
+	.mr-2 {
+		margin-right: 1rem;
+	}
+	.pl-1 {
+		padding-left: 0.5rem;
+	}
+	.pl-2 {
+		padding-left: 1rem;
+	}
+	.pl-3 {
+		padding-left: 1.5rem;
+	}
+	.pl-4 {
+		padding-left: 2rem;
+	}
+	.pr-2 {
+		padding-right: 1rem;
+	}
+}
+@media screen and (max-width: 767.9px) {
+	.pl-1,
+	.pl-2,
+	.pl-3,
+	.pl-4 {
+		padding-left: 0;
+	}
+	.pr-2 {
+		padding-right: 0;
+	}
+	.mb-xs-1 {
+		margin-bottom: 1rem;
+	}
+	.mb-xs-2 {
+		margin-bottom: 2rem;
+	}
+	.order-xs-1 {
+		order: -1;
+	}
+	.pb-xs-0 {
+		padding-bottom: 0;
+	}
+}
+
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.align-items-center {
+	align-items: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.position-relative {
+	position: relative;
+}
+@media screen and (max-width: 767.9px) {
+	.text-center {
+		text-align: left;
+	}
+	.text-right {
+		text-align: left;
+	}
+}
+.img-fluid {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+}
+.width-80 {
+	width: 80%;
+}
+@media screen and (max-width: 767.9px) {
+	.width-80 {
+		width: auto;
+	}
+}
+
+
+
+/*Section 1*/
+.section--hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.background-color--hero {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #e7f6f8;
+}
+.background--hero {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media screen and (min-width: 768px) {
+	.section--hero {
+		padding: 0;
+	}
+}
+.section--hero .title {
+	font-size: 3.64rem;
+	letter-spacing: -.036em;
+	font-family: SalesforceSansThin, sans-serif;
+}
+@media screen and (max-width: 980px) {
+	.section--hero .title {
+		font-size: 2rem;
+	}
+}
+.ipad {
+	position: relative;
+	top: 40px;
+	width: 100%;
+	padding-top: 74%;
+}
+@media screen and (max-width: 767.9px) {
+	.ipad {
+		top: 0;
+		margin-bottom: 1rem;
+	}
+}
+.section--hero__bubble-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+.section--hero__bubble-wrapper > * {
+	background-color: #fff !important;
+}
+.section--hero__bubble--1 {
+	left: 5%;
+	top: 3%;
+	z-index: 1;
+}
+.section--hero__bubble--2 {
+	right: 3%;
+	bottom: 2%;
+	z-index: 1;
+}
+.section--hero__bubble--3 {
+	right: 7%;
+	top: 2%;
+	z-index: 1;
+}
+
+/*Section 2*/
+.section--report {
+	padding-top: 2rem;
+}
+@media screen and (max-width: 980px) {
+	.section--report {
+		padding-top: 1rem;
+	}
+}
+.section--report .title {
+	font-size: 3.46rem;
+	margin-bottom: 3.3rem;
+}
+@media screen and (max-width: 980px) {
+	.section--report .title {
+		font-size: 2.6rem;
+		margin-bottom: 2.5rem;
+	}
+}
+.section--report .subtitle {
+	margin-top: 2rem;
+	line-height: 1.2;
+	color: #253a7b;
+	width: 80%;
+}
+@media screen and (max-width: 767.9px) {
+	.section--report .subtitle {
+		width: auto;
+		margin-top: 0;
+	}
+}
+.impact {
+	position: relative;
+}
+.impact--1 {
+	margin-left: 4rem;
+}
+.impact--2 {
+	margin-right: 4rem;
+}
+@media screen and (max-width: 767.9px) {
+	.impact--1 {
+		margin-left: 0;
+	}
+	.impact--2 {
+		margin-right: 0;
+	}
+}
+
+
+.impact__center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	color: #3f99d5;
+}
+.image-absolute-full {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.full-white-circle {
+	position: absolute;
+	width: calc(100% + 20px);
+	height: calc(100% + 20px);
+	left: -10px;
+	top: -10px;
+	background: #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
+/*Impact number component*/
+.impact-number {
+	display: flex;
+	align-items: center;
+}
+.impact-number__value {
+	font-size: 6rem;
+	color: #3279b1;
+	font-family: SalesforceSansBold;
+	margin-right: 5%;
+}
+
+.image-cropped-container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	padding-top: 100%;
+	margin: 0 !important;
+	line-height: 0;
+}
+.image-cropped-container--white {
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+
+.section--gap {
+	padding-top: 4rem;
+	padding-bottom: 0;
+	z-index: 2;
+}
+.gap {
+	display: inline-block;
+	position: relative;
+	width: 33%;
+	height: 38vw;
+	text-align: center;
+	vertical-align: middle;
+}
+@media screen and (min-width: 1921px) {
+	.gap {
+		display: inline-block;
+		position: relative;
+		width: calc(1920 / 3px);
+		height: calc(1920 / 3 * 1.42px);
+	}
+}
+
+.gap__current-background {
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  width: 110%;
+  height: 100%;
+  background-color: #3f99d5;
+  border-top-right-radius: 17vw;
+  border-bottom-left-radius: 17vw;
+  z-index: -1;
+}
+.gap__potential-background {
+	position: absolute;
+  right: -10%;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  background-color: #252b5f;
+  border-top-left-radius: 14vw;
+  z-index: -1;
+}
+.tshirt-logo {
+	width: 80%;
+	height: auto;
+}
+.gap__title {
+	font-size: 1.5vw;
+	letter-spacing: 0.05vw;
+	font-family: SalesforceSansBold, sans-serif;
+}
+.gap__title-center {
+	margin-top: 45%;
+}
+.gap__title-rigth {
+	margin-top: 20%;
+}
+.gap__bubble {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 0.9vw;
+	font-family: SalesforceSansBold, sans-serif;
+}
+
+
+
+.bubbles__item {
+	display: inline-block;
+	position: relative;
+	border-radius: 100%;
+}
+.bubbles__item-inner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	z-index: 2;
+}
+.bubbles__title {
+	font-size: 5rem;
+	margin-bottom: 0rem;
+	font-family: SalesforceSansBold;
+}
+.bubbles__title--sm {
+	font-size: 3.5rem;
+}
+@media screen and (max-width: 1200px) {
+	.bubbles__title {
+		font-size: 3.2rem;
+	}
+	.bubbles__title--sm {
+		font-size: 2.45rem;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 980px) {
+	.bubbles__title {
+		font-size: 2.49rem;
+	}
+	.bubbles__title--sm {
+		font-size: 1.7rem;
+	}
+}
+.bubbles__subtitle {
+	font-size: 1.2rem;
+	font-family: SalesforceSansBold;
+}
+.bubbles__text {
+	margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.bubbles__subtitle,
+	.bubbles__text {
+		font-size: 1rem;
+	}
+}
+.bubbles__xl {
+	width: 53%;
+	padding-top: 53%;
+	background-color: rgb(1, 156, 220);
+}
+.bubbles__md {
+	width: 45%;
+	padding-top: 45%;
+	background-color: rgb(100, 156, 220);
+}
+.bubbles__sm {
+	width: 40%;
+	padding-top: 40%;
+	background-color: rgb(200, 156, 220);
+}
+.bubbles__xsm {
+	width: 30%;
+	padding-top: 30%;
+	vertical-align: top;
+	left: 4%;
+	top: 10%;
+	background-color: rgb(100, 156, 0);
+}
+.bubbles--pair {
+	position: relative;
+}
+.bubbles__item-left {
+	position: relative;
+	margin-right: 3%;
+}
+.bubbles__item-rigth {
+	position: relative;
+	margin-left: 3%;
+}
+
+
+/*Card*/
+.card {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding: 3rem 3rem;
+	border-radius: 50px;
+	background-color: #e7f6f8;
+	font-size: 1rem;
+}
+.card__image {
+	display: flex;
+	width: 175px;
+	height: 175px;
+	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
+	margin-right: 3rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.subtitle__card {
+	font-size: 1.7rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1380px) {
+	.card {
+		padding: 3vw 1.5vw;
+		font-size: 1.3vw;
+	}
+	.card__image {
+		width: 7vw;
+		height: 7vw;
+		margin-right: 1vw;
+	}
+	.subtitle__card {
+		font-size: 1.5vw;
+	}
+}
+@media screen and (max-width: 564px) {
+	.card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+}
+
+
+.ipad__last-section {
+	position: relative;
+	width: 100%;
+	padding-top: 74%;
+}
+
+.ceo {
+	position: relative;
+	padding: 3rem;
+	text-align: center;
+}
+.ceo > * {
+	position: relative;
+}
+.ceo::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%;
+	background-color: #a3d8ec;
+	border-radius: 100%;
+}
+.ceo__title {
+	font-size: 2.4rem;
+}
+.ceo__profile {
+	display: inline-flex;
+	align-items: center;
+	text-align: left;
+	color: #252b5f;
+}
+.ceo__name {
+	color: #252b5f;
+	font-size: 1.6rem;
+	font-family: SalesforceSansBold;
+}
+.ceo__avatar {
+	position: relative;
+}
+.background--last-section {
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
+}
+@media screen and (min-width: 768px) and (max-width: 1380px) {
+	.ceo {
+		padding: 2.8vw;
+		font-size: 1.8vw;
+	}
+	.ceo__title {
+		font-size: 2.6vw;
+	}
+	.ceo__name {
+		font-size: 1.9vw;
+	}
+	.ceo__quote {
+		width: 7vw;
+	}
+}
+@media screen and (max-width: 767.9px) {
+	.ceo {
+		padding: 2rem;
+		max-width: 300px;
+		margin-bottom: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ceo__title {
+		font-size: 1.4rem;
+	}
+	.ceo__name {
+		font-size: 1rem;
+	}
+	.ceo__quote {
+		width: 50px;
+	}
+}
+
+@media screen and (max-width: 379.9px) {
+	.ceo {
+		padding: 1.5rem;
+		max-width: 250px;
+		font-size: 0.8rem;
+		margin-bottom: 3rem;
+	}
+	.ceo__title {
+		font-size: 1.3rem;
+	}
+	.ceo__name {
+		font-size: 0.9rem;
+	}
+	.ceo__quote {
+		width: 40px;
+	}
+}
+
+/*Assets*/
+.arrow-down {
+	display: block;
+	width: 30%;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/*Parallax*/
+[data-parallax="1"]:not([data-anime]) {
+	transform: translateX(calc(var(--x) * 20px)) translateY(calc(var(--y) * 20px));
+}
+[data-parallax="2"]:not([data-anime]) {
+	transform: translateX(calc(var(--x) * 10px)) translateY(calc(var(--y) * 10px));
+}
+[data-parallax="-2"]:not([data-anime]) {
+	transform: translateX(calc(var(--x) * 13px)) translateY(calc(var(--y) * 13px));
+}
+[data-parallax="3"]:not([data-anime]) {
+	transform: translateX(calc(var(--x) * 6px)) translateY(calc(var(--y) * 6px));
+}
+[data-letters-anime] {
+	visibility: hidden;
+}
+/*Animations*/
+[data-anime] {
+	visibility: hidden;
+}
+
+.animate__animated {
+	--animate-duration: 2s;
+	--animate-delay: 0;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+
+	-webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  visibility: visible;
+
+  animation-delay: 0s;
+  -webkit-animation-delay: var(--animate-delay);
+  animation-delay: var(--animate-delay);
+
+  backface-visibility: hidden;
+}
+span.animate__animated {
+	display: inline-block;
+}
+.word {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+	}
+	50% {
+	  opacity: 1;
+	}
+}
+.animate__fromTop {
+  animation-name: fromTop;
+}
+
+
+@keyframes bubblesToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+	}
+	50% {
+	  opacity: 1;
+	}
+}
+.animate__bubblesToRight {
+  animation-name: bubblesToRight;
+}
+
+/* Zooming entrances */
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+
+
+
+/* Zooming entrances */
+@-webkit-keyframes zoomInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInFromLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomInFromLeft {
+  -webkit-animation-name: zoomInFromLeft;
+  animation-name: zoomInFromLeft;
+}
+
+
+
+
+/* Zooming entrances */
+@-webkit-keyframes zoomInFromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInFromRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+.animate__zoomInFromRight {
+  -webkit-animation-name: zoomInFromRight;
+  animation-name: zoomInFromRight;
+}
+
+
+
+/* appearFromLeft */
+@keyframes appearFromLeft {
+  from {
+    transform: scaleX(0);
+  }
+
+  25% {
+    transform: scaleX(1);
+  }
+}
+.animate__appearFromLeft {
+	transform-origin: left;
+  -webkit-animation-name: appearFromLeft;
+  animation-name: appearFromLeft;
+}
+
+
+/* Opacity */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  65% {
+  	opacity: 1;
+  }
+}
+.animate__appear {
+  -webkit-animation-name: appear;
+  animation-name: appear;
+}
+
+/* Ipad */
+@keyframes ipad {
+  0% {
+  	opacity: 0;
+    transform: translateY(30px);
+	}
+	15% {
+	  opacity: 1;
+	}
+}
+.animate__ipad {
+  -webkit-animation-name: ipad;
+  animation-name: ipad;
+}
+
+
+/*Report */
+@keyframes reportCircle {
+  0% {
+  	opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+.animate__reportCircle {
+  -webkit-animation-name: reportCircle;
+  animation-name: reportCircle;
+}
+
+
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+.animate__flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-iteration-count: 6;
+}
+
+
+@-webkit-keyframes dasharrayLine {
+  to {
+  	stroke-dashoffset: 0;
+  }
+}
+@keyframes dasharrayLine {
+ 	to {
+  	stroke-dashoffset: 0;
+  }
+}
+.animate__line {
+	-webkit-animation-name: dasharrayLine;
+  animation-name: dasharrayLine;
+  animation-fill-mode: forwards;
+  stroke-dasharray: 481;
+  stroke-dashoffset: 481;
+}
+
+
+
+@-webkit-keyframes dots {
+	from {
+		transform: rotate(0);
+	}
+  to {
+  	transform: rotate(360deg);
+  }
+}
+@keyframes dots {
+ 	from {
+		transform: rotate(0);
+	}
+  to {
+  	transform: rotate(360deg);
+  }
+}
+.animate__dots {
+	-webkit-animation-name: dots;
+  animation-name: dots;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: center;
+}
+
+@-webkit-keyframes impactLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes impactLine {
+ 	to {
+    stroke-dashoffset: 0;
+  }
+}
+.animate__impact-line {
+	-webkit-animation-name: impactLine;
+  animation-name: impactLine;
+  animation-fill-mode: forwards;
+  stroke-dashoffset: 600px;
+  animation-iteration-count: infinite;
+}
+
+
+/*@-webkit-keyframes bubble-technology {
+	0% {
+		transform: translate(-74%, 62%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes bubble-technology {
+	0% {
+		transform: translate(-74%, 62%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-64%, 52%) scale(0.25);
+		animation-timing-function: ease-in;
+	}
+}
+.animate__bubble-technology {
+	-webkit-animation-name: bubble-technology;
+  animation-name: bubble-technology;
+}
+
+
+@-webkit-keyframes bubble-partnership {
+	0% {
+		transform: translate(-203%, 129%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-183%, 129%) scale(0.25);
+		animation-timing-function: ease-in;
+	}
+}
+@keyframes bubble-partnership {
+	0% {
+		transform: translate(-203%, 129%) scale(0);
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+	75% {
+		transform: translate(-30%, 0%) scale(0.3);
+		animation-timing-function: ease-in;
+	}
+}
+.animate__bubble-partnership {
+	-webkit-animation-name: bubble-partnership;
+  animation-name: bubble-partnership;
+}
+
+
+
+@-webkit-keyframes bubble-community {
+	0% {
+		transform: translate(-333%, 110%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+@keyframes bubble-community {
+	0% {
+		transform: translate(-333%, 110%) scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+.animate__bubble-community {
+	-webkit-animation-name: bubble-community;
+  animation-name: bubble-community;
+}*/
+
+
+
+/*Onscroll rotation*/
+[data-onscroll-rotate] {
+	transform: translateZ(0) rotate(calc(var(--rotate) * 1deg));
+}
+
+/*Flying bubles*/
+.bubble__standart {
+	display: inline-block;
+	position: absolute;
+	width: 5.4vw;
+	height: 5.4vw;
+	border-radius: 100%;
+	background-color: #e7f6f8;
+}
+.animation__fly {
+	--bubbleX: 0;
+	--bubbleY: 0;
+	transform: translateX(var(--bubbleX)) translateY(var(--bubbleY));
+	transition-timing-function: linear;
+}
+.animation__fly__tran--3 {
+	transition-duration: 6s;
+}
+.animation__fly__tran--4 {
+	transition-duration: 8s;
+}
+.animation__fly__tran--5 {
+	transition-duration: 10s;
+}
+.animation__fly__tran--6 {
+	transition-duration: 12s;
+}
+.animation__fly__tran--7 {
+	transition-duration: 14s;
+}
+.bubble__standart--xsm {
+	width: 3.2vw;
+	height: 3.2vw;
+}
+.bubble__standart--sm {
+	width: 4.7vw;
+	height: 4.7vw;
+}
+.bubble__standart--md {
+	width: 6.5vw;
+	height: 6.5vw;
+}
+.bubble__standart--lg {
+	width: 9vw;
+	height: 9vw;
+}
+.bubble__standart--xlg {
+	width: 14vw;
+	height: 14vw;
+}
