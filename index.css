@@ -218,7 +218,7 @@ body {
 }
 @media screen and (max-width: 767.9px) {
 	.title {
-		line-height: 1;
+		line-height: 1.2;
 	}
 }
 
@@ -255,7 +255,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
 	.section {
-		padding: 5rem 0;
+		padding: 3.5rem 0;
 	}
 	.section--last {
 		margin-top: 3.7rem;
@@ -263,7 +263,7 @@ body {
 }
 @media screen and (max-width: 980px) {
 	.section {
-		padding: 5rem 0;
+		padding: 2.5rem 0;
 	}
 	.section--last {
 		margin-top: 2.4rem;
@@ -450,10 +450,10 @@ body {
 		margin-bottom: 2.5rem;
 	}
 	.mb-7 {
-		margin-bottom: 3.5rem;
+		margin-bottom: 3rem;
 	}
 	.mb-10 {
-		margin-bottom: 5rem;
+		margin-bottom: 4rem;
 	}
 	.mr-5 {
 		margin-right: 2.5rem;
@@ -533,6 +533,9 @@ body {
 	.text-right {
 		text-align: left;
 	}
+	.text-center-xs {
+		text-align: center !important;
+	}
 }
 .img-fluid {
 	position: relative;
@@ -591,7 +594,7 @@ body {
 }
 .ipad {
 	position: relative;
-	top: 40px;
+	top: 25px;
 	width: 100%;
 	padding-top: 74%;
 }
@@ -716,7 +719,11 @@ body {
 	font-family: SalesforceSansLight, sans-serif;
 	margin-right: 5%;
 }
-
+@media screen and (max-width: 767.7px) {
+	.impact-number__value {
+		font-size: 2.5rem;
+	}
+}
 .image-cropped-container {
 	position: relative;
 	display: flex;
@@ -832,6 +839,14 @@ body {
 		font-size: 1.7rem;
 	}
 }
+@media screen and (max-width: 767.9px) {
+	.bubbles__title {
+		font-size: 2.2rem;
+	}
+	.bubbles__title--sm {
+		font-size: 1.45rem;
+	}
+}
 .bubbles__subtitle {
 	font-size: 1.2rem;
 	font-family: SalesforceSansLight, sans-serif;
@@ -879,7 +894,13 @@ body {
 	position: relative;
 	margin-left: 3%;
 }
-
+@media screen and (max-width: 767.9px) {
+	.bubbles__xl {
+		width: 50%;
+		padding-top: 50%;
+		background-color: rgb(1, 156, 220);
+	}
+}
 
 /*Card*/
 .card {
@@ -902,30 +923,44 @@ body {
 	border-radius: 50%;
 	background: #fff;
 }
+.card__image img {
+	max-width: 80% !important;
+}
 .subtitle__card {
 	font-size: 1.7rem;
 }
-@media screen and (min-width: 768px) and (max-width: 1380px) {
+
+@media screen and (max-width: 1300px) {
 	.card {
-		padding: 3vw 1.5vw;
-		font-size: 1.3vw;
+		padding: 2rem 2rem;
 	}
 	.card__image {
-		width: 7vw;
-		height: 7vw;
-		margin-right: 1vw;
+		width: 135px;
+		height: 135px;
+		margin-right: 2rem;
 	}
+}
+
+@media screen and (max-width: 980px) {
 	.subtitle__card {
-		font-size: 1.5vw;
+		font-size: 1rem;
 	}
 }
-@media screen and (max-width: 564px) {
+@media screen and (max-width: 767.9px) {
 	.card {
-		flex-direction: column;
-		align-items: flex-start;
+		padding: 1rem 1rem;
 	}
-	
+	.card__image {
+		width: 20vw;
+		height: 20vw;
+		margin-right: 5vw;
+	}
+	.card__image--section-quote {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
+
 
 
 .ipad__last-section {
@@ -952,9 +987,6 @@ body {
 	background-color: #a3d8ec;
 	border-radius: 100%;
 }
-.ceo__title {
-	font-size: 2.4rem;
-}
 .ceo__profile {
 	display: inline-flex;
 	align-items: center;
@@ -969,60 +1001,18 @@ body {
 .ceo__avatar {
 	position: relative;
 }
+.ceo__image {
+	width: 10vw;
+	max-width: 150px;
+	min-width: 100px;
+}
+
+
+
 .background--last-section {
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
 }
-@media screen and (min-width: 768px) and (max-width: 1380px) {
-	.ceo {
-		padding: 2.8vw;
-		font-size: 1.8vw;
-	}
-	.ceo__title {
-		font-size: 2.6vw;
-	}
-	.ceo__name {
-		font-size: 1.9vw;
-	}
-	.ceo__quote {
-		width: 7vw;
-	}
-}
-@media screen and (max-width: 767.9px) {
-	.ceo {
-		padding: 2rem;
-		max-width: 300px;
-		margin-bottom: 4rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.ceo__title {
-		font-size: 1.4rem;
-	}
-	.ceo__name {
-		font-size: 1rem;
-	}
-	.ceo__quote {
-		width: 50px;
-	}
-}
 
-@media screen and (max-width: 379.9px) {
-	.ceo {
-		padding: 1.5rem;
-		max-width: 250px;
-		font-size: 0.8rem;
-		margin-bottom: 3rem;
-	}
-	.ceo__title {
-		font-size: 1.3rem;
-	}
-	.ceo__name {
-		font-size: 0.9rem;
-	}
-	.ceo__quote {
-		width: 40px;
-	}
-}
 
 /*Assets*/
 .arrow-down {
