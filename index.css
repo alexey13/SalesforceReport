@@ -962,8 +962,8 @@ body {
 }
 .ceo__name {
 	color: #252b5f;
-	font-size: 1.6rem;
-	font-family: SalesforceSansBold;
+	font-size: 2rem;
+	font-family: SalesforceSansThin, sans-serif;
 }
 .ceo__avatar {
 	position: relative;
