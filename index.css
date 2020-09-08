@@ -161,7 +161,6 @@ body {
 	font-family: SalesforceSansBold;
 	cursor: pointer;
 	text-decoration: none;
-	transition: all 0.2s;
 	box-shadow: none;
 	text-transform: uppercase;
 }
@@ -177,28 +176,7 @@ body {
 	border-radius: 100px;
 	text-align: center;
 }
-/*Smaller end*/
 
-.button:hover,
-.button:active {
-	background-color: #f05924;
-}
-.button--download {
-	display: block;
-	width: 100%;
-	text-align: center;
-	padding: 0.5rem 0;
-	background-color: #fff;
-	color: #252b5f;
-	font-size: 1.08rem;
-}
-/*Smaller*/
-.button--download {
-	line-height: 1;
-	height: auto;
-	min-width: 0;
-}
-/*Smaller end*/
 
 
 @media screen and (max-width: 980px) {
@@ -1477,86 +1455,54 @@ span.animate__animated {
 }
 
 
-/*@-webkit-keyframes bubble-technology {
-	0% {
-		transform: translate(-74%, 62%) scale(0);
-		opacity: 0;
-	}
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-	}
-}
-@keyframes bubble-technology {
-	0% {
-		transform: translate(-74%, 62%) scale(0);
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	75% {
-		transform: translate(-64%, 52%) scale(0.25);
-		animation-timing-function: ease-in;
-	}
-}
-.animate__bubble-technology {
-	-webkit-animation-name: bubble-technology;
-  animation-name: bubble-technology;
-}
 
-
-@-webkit-keyframes bubble-partnership {
-	0% {
-		transform: translate(-203%, 129%) scale(0);
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	75% {
-		transform: translate(-183%, 129%) scale(0.25);
-		animation-timing-function: ease-in;
-	}
+.btn-6 {
+	position: relative;
+	overflow: hidden;
+	background-color: transparent;
 }
-@keyframes bubble-partnership {
-	0% {
-		transform: translate(-203%, 129%) scale(0);
-		opacity: 0;
-		animation-timing-function: ease-in;
-	}
-	75% {
-		transform: translate(-30%, 0%) scale(0.3);
-		animation-timing-function: ease-in;
-	}
+.btn-6.animate__animated .btn-6__back {
+	transition: 0.5s all;
 }
-.animate__bubble-partnership {
-	-webkit-animation-name: bubble-partnership;
-  animation-name: bubble-partnership;
+.btn-6.animate__animated:hover .btn-6__back {
+	background-color: #ff4c0a;
+}
+.btn-6__back {
+  position: absolute;
+  display: block;
+  width: 225%;
+ 	height: 562.5px;
+  top: 50%;
+	left: 50%;
+  border-radius: 50%;
+  background-color: #e84d14;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.btn-6__text {
+	position: relative;
+}
+@keyframes buttonSpan {
+	from {
+		width: 0;
+  	height: 0;
+	}
+ 	to {
+ 		width: 300px;
+ 		height: 300px;
+  }
+}
+.animate__buttonSpan {
+	-webkit-animation-name: buttonSpan;
+  animation-name: buttonSpan;
+  animation-timing-function: ease-in-out;
 }
 
 
 
-@-webkit-keyframes bubble-community {
-	0% {
-		transform: translate(-333%, 110%) scale(0);
-		opacity: 0;
-	}
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-	}
-}
-@keyframes bubble-community {
-	0% {
-		transform: translate(-333%, 110%) scale(0);
-		opacity: 0;
-	}
-	100% {
-		transform: translate(0) scale(1);
-		opacity: 1;
-	}
-}
-.animate__bubble-community {
-	-webkit-animation-name: bubble-community;
-  animation-name: bubble-community;
-}*/
 
 
 
@@ -1615,3 +1561,4 @@ span.animate__animated {
 	width: 14vw;
 	height: 14vw;
 }
+
