@@ -1342,21 +1342,45 @@ span.animate__animated {
 }
 
 @-webkit-keyframes impactLine {
+	0%{
+		stroke: #d9f0f8;
+	}
+	35% {
+		opacity: 1;
+	}
+	55% {
+		stroke: #d9f0f8;
+	}
   to {
     stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #252b5f;
   }
 }
 @keyframes impactLine {
+	0%{
+		stroke: #d9f0f8;
+	}
+	35% {
+		opacity: 1;
+	}
+	55% {
+		stroke: #d9f0f8;
+	}
  	to {
     stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #252b5f;
   }
 }
 .animate__impact-line {
 	-webkit-animation-name: impactLine;
   animation-name: impactLine;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
   stroke-dashoffset: 600px;
-  animation-iteration-count: infinite;
+  opacity: 0;
+  stroke: #d9f0f8;
 }
 
 
