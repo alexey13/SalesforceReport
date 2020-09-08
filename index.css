@@ -131,7 +131,7 @@ body {
 /*Elements*/
 .title {
 	font-size: 5.4rem;
-	font-family: SalesforceSansLight, sans-serif;
+	font-family: SalesforceSansThin, sans-serif;
 	color: #252b5f;
 	margin-bottom: 1.5rem;
 }
@@ -145,7 +145,7 @@ body {
 }
 .subtitle {
 	margin-bottom: 0;
-	font-family: SalesforceSansLight;
+	font-family: SalesforceSansLight, sans-serif;
 	font-size: 1.9rem;
 	color: #252b5f;
 }
@@ -710,9 +710,9 @@ body {
 	align-items: center;
 }
 .impact-number__value {
-	font-size: 6rem;
+	font-size: 5rem;
 	color: #3279b1;
-	font-family: SalesforceSansBold;
+	font-family: SalesforceSansLight, sans-serif;
 	margin-right: 5%;
 }
 
@@ -778,9 +778,9 @@ body {
 	height: auto;
 }
 .gap__title {
-	font-size: 1.5vw;
-	letter-spacing: 0.05vw;
-	font-family: SalesforceSansBold, sans-serif;
+	font-size: 2vw;
+	font-family: SalesforceSansLight, sans-serif;
+
 }
 .gap__title-center {
 	margin-top: 45%;
@@ -794,6 +794,8 @@ body {
 	align-items: center;
 	color: #fff;
 	font-size: 0.9vw;
+	text-transform: uppercase;
+	letter-spacing: 0.1vw;
 	font-family: SalesforceSansBold, sans-serif;
 }
 
@@ -814,20 +816,12 @@ body {
 	z-index: 2;
 }
 .bubbles__title {
-	font-size: 5rem;
+	font-size: 3.2rem;
 	margin-bottom: 0rem;
-	font-family: SalesforceSansBold;
+	font-family: SalesforceSansLight, sans-serif;
 }
 .bubbles__title--sm {
-	font-size: 3.5rem;
-}
-@media screen and (max-width: 1200px) {
-	.bubbles__title {
-		font-size: 3.2rem;
-	}
-	.bubbles__title--sm {
-		font-size: 2.45rem;
-	}
+	font-size: 2.45rem;
 }
 @media screen and (min-width: 768px) and (max-width: 980px) {
 	.bubbles__title {
@@ -839,7 +833,7 @@ body {
 }
 .bubbles__subtitle {
 	font-size: 1.2rem;
-	font-family: SalesforceSansBold;
+	font-family: SalesforceSansLight, sans-serif;
 }
 .bubbles__text {
 	margin-top: 0.5rem;
