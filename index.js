@@ -233,12 +233,16 @@ function parallax() {
 
 
 window.addEventListener('load', function() {
+	var windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+
 	addAnimeParams();
 	charElements();
 	scrollAnimate();
 	//parallax();
 	runBubbles();
-	rotateOnScroll();
+	if(windowWidth > 767.9) {
+		rotateOnScroll();
+	}
 }, false)
 
 
