@@ -106,19 +106,10 @@ body {
 	text-transform: uppercase;
 }
 .text--description {
-	font-size: 1.66rem;
+	font-size: 1.27rem;
 }
-
 .text--description-big {
-	font-size: 1.8rem;
-}
-@media screen and (max-width: 1478px) {
-	.text--description {
-		font-size: 1.27rem;
-	}
-	.text--description-big {
-		font-size: 1.38rem;
-	}
+	font-size: 1.38rem;
 }
 @media screen and (max-width: 1200px) {
 	.text--description {
@@ -139,28 +130,26 @@ body {
 
 /*Elements*/
 .title {
-	font-size: 8.3rem;
+	font-size: 6.3rem;
 	font-family: NeutratextRegular;
 	color: #252b5f;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 .title--middle {
-	font-size: 4.2rem;
+	font-size: 3.3rem;
 	margin-bottom: 0;
 }
 .title--sm {
-	font-size: 2.8rem;
+	font-size: 2.7rem;
 	margin-bottom: 0;
 }
 .subtitle {
 	margin-bottom: 0;
 	font-family: NeutratextRegular;
-	font-size: 2.6rem;
+	font-size: 2.23rem;
 	color: #252b5f;
 }
-.subtitle__impact {
-	font-size: 2.4rem;
-}
+
 
 
 .button {
