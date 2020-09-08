@@ -130,27 +130,25 @@ body {
 
 /*Elements*/
 .title {
-	font-size: 6.3rem;
-	font-family: NeutratextRegular;
+	font-size: 5.4rem;
+	font-family: SalesforceSansLight, sans-serif;
 	color: #252b5f;
 	margin-bottom: 1.5rem;
 }
 .title--middle {
-	font-size: 3.3rem;
+	font-size: 2.83rem;
 	margin-bottom: 0;
 }
 .title--sm {
-	font-size: 2.7rem;
+	font-size: 2.2rem;
 	margin-bottom: 0;
 }
 .subtitle {
 	margin-bottom: 0;
 	font-family: NeutratextRegular;
-	font-size: 2.23rem;
+	font-size: 1.9rem;
 	color: #252b5f;
 }
-
-
 
 .button {
 	height: auto;
@@ -202,36 +200,7 @@ body {
 }
 /*Smaller end*/
 
-@media screen and (max-width: 1478px) {
-	.title {
-		font-size: 6.3rem;
-		margin-bottom: 1.5rem;
-	}
-	.title--middle {
-		font-size: 3.3rem;
-	}
-	.title--sm {
-		font-size: 2.7rem;
-	}
-	.subtitle {
-		font-size: 2.23rem;
-	}
-}
-@media screen and (max-width: 1200px) {
-	.title {
-		font-size: 5.4rem;
-		margin-bottom: 1.5rem;
-	}
-	.title--middle {
-		font-size: 2.83rem;
-	}
-	.title--sm {
-		font-size: 2.2rem;
-	}
-	.subtitle {
-		font-size: 1.91rem;
-	}
-}
+
 @media screen and (max-width: 980px) {
 	.title {
 		font-size: 4.15rem;
@@ -610,18 +579,9 @@ body {
 	}
 }
 .section--hero .title {
-	font-size: 3.8rem;
-	line-height: 1;
-}
-@media screen and (max-width: 1478px) {
-	.section--hero .title {
-		font-size: 3.08rem;
-	}
-}
-@media screen and (max-width: 1200px) {
-	.section--hero .title {
-		font-size: 2.64rem;
-	}
+	font-size: 3.64rem;
+	letter-spacing: -.036em;
+	font-family: SalesforceSansThin, sans-serif;
 }
 @media screen and (max-width: 980px) {
 	.section--hero .title {
@@ -678,20 +638,8 @@ body {
 	}
 }
 .section--report .title {
-	font-size: 4.9rem;
-	margin-bottom: 5rem;
-}
-@media screen and (max-width: 1478px) {
-	.section--report .title {
-		font-size: 4rem;
-		margin-bottom: 3.85rem;
-	}
-}
-@media screen and (max-width: 1200px) {
-	.section--report .title {
-		font-size: 3.46rem;
-		margin-bottom: 3.3rem;
-	}
+	font-size: 3.46rem;
+	margin-bottom: 3.3rem;
 }
 @media screen and (max-width: 980px) {
 	.section--report .title {
@@ -830,7 +778,9 @@ body {
 	height: auto;
 }
 .gap__title {
-	font-size: 3vw;
+	font-size: 1.5vw;
+	letter-spacing: 0.05vw;
+	font-family: SalesforceSansBold, sans-serif;
 }
 .gap__title-center {
 	margin-top: 45%;
@@ -843,8 +793,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	font-size: 1.5vw;
-	font-family: NeutratextRegular;
+	font-size: 0.9vw;
+	font-family: SalesforceSansBold, sans-serif;
 }
 
 
