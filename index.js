@@ -19,10 +19,13 @@ if(slfEl) {
  * [data-letters-delay="0.05"] - set the delay of each letter depends on formula delay*index
  * [data-anime="animate__fadeInUp"] - animation class
  * [data-anime-delay="1.1"] - animation delay
+ * [data-check-viewport] - set animation on pause when leave and start when element in viewport
  * 
  */
+
 //Global class of animation element
 var animateClass = 'animate__animated';
+var animations = [];
 
 //Set animation data props to letter
 function setAnimationProps(el, child, index) {
@@ -124,7 +127,7 @@ function addAnimeParams() {
 
 //Scroll listener
 function scrollAnimate() {
-	var elements = document.querySelectorAll('[data-anime]');
+	var elements = document.querySelectorAll('[data-anime], [data-check-viewport]');
 	elements = Array.prototype.slice.call(elements);
 	var windowWidth;
 	var windowHeight;
@@ -151,41 +154,56 @@ function scrollAnimate() {
   	});
   }
 
+  function addViewportClass(element) {
+  	element.dataset.viewport = 'true';
+  }
+
+   function removeViewportClass(element) {
+  	element.dataset.viewport = 'false';
+  }
+
   function addClass(element) {
   	var animeElement = element.dataset.anime;
   	element.classList.add(animeElement, animateClass);
-    removeFromList(element)
     //On animation end remove anime attr because if parallax used it should start only after animation played
-    element.addEventListener('animationend',function(){
-    	element.classList.remove(animeElement);
-    	element.offsetHeight;//without reflow dom bublles junk sometimes
-    	element.removeAttribute('data-anime');
-    })
+    //element.addEventListener('animationend', onAnimationEnd);
+    //Deprecated: if you want to use several animation on one element create a separate wrapper for it
   }
 
+
+  function isAnyPartOfElementInViewport(el) {
+
+    var rect = el.getBoundingClientRect();
+
+    // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
+    var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+    return (vertInView && horInView);
+	}
+
+
 	function animateElement(element) {
-    var pos                 = element.getBoundingClientRect();
-    var elHeight            = pos.height;
-    var elBottomFromTop     = pos.bottom;
-    var elTopFromTop        = pos.top;
-    var elTopFromBottom     = pos.top - windowHeight;
-    var elBottomFromBottom  = pos.bottom - windowHeight;
+    
+    //Element types
+    var checkViewport = element.dataset.checkViewport === '';
+    var withAnime =  element.dataset.anime;
 
-    //Going Out
-    if( elTopFromTop <= 0 && elBottomFromTop >= 0 ) { 
-    	addClass(element);
+    if(isAnyPartOfElementInViewport(element)) {
+    	if(checkViewport) {
+    		addViewportClass(element);
+    	} 
+    	if(withAnime) {
+    		addClass(element);
+    		if(!checkViewport) {
+    			removeFromList(element)
+    		};
+    	}
+    } else {
+    	if(checkViewport) {
+    		removeViewportClass(element)
+    	}
     }
-
-    //Going In
-    else if( elTopFromBottom <= 0 && elBottomFromBottom >= 0 ) {
-      addClass(element);
-    }
-
-    //Currently in viewport
-    else if( (elTopFromTop > 0) && (elBottomFromTop < windowHeight)) {
-    	addClass(element);
-    }
-
   } 
 
 	window.addEventListener('scroll', throttledScroll, false);
@@ -245,7 +263,13 @@ window.addEventListener('load', function() {
 	}
 }, false)
 
+document.querySelector('.bubbly-button').addEventListener('mouseenter', function(e){
+  e.target.classList.add('animate');
+})
 
+document.querySelector('.bubbly-button').addEventListener('mouseleave', function(e){
+	e.target.classList.remove('animate');
+})
 
 
 //Bubble flying animation
@@ -271,16 +295,16 @@ function runBubbles() {
 
         // ... Code for Drawing the Frame ...
         elements.forEach(function(el) {
-
-        	//If element has anime data return
-        	if(el.dataset.anime) return;
-
-        	//Randomizer for each element
-        	var rand = randomInteger(1, 5);
-        	if(rand > 3) {
-        		el.style.setProperty('--bubbleX', randomInteger(-50, 50) + '%');
-			  		el.style.setProperty('--bubbleY', randomInteger(-50, 50) + '%');
+        	var isInViewport = el.dataset.viewport;
+        	if(isInViewport === 'true') {
+        		//Randomizer for each element
+	        	var rand = randomInteger(1, 5);
+	        	if(rand > 3) {
+	        		el.style.setProperty('--bubbleX', randomInteger(-50, 50) + '%');
+				  		el.style.setProperty('--bubbleY', randomInteger(-50, 50) + '%');
+	        	}
         	}
+        	
 
 				})
     }

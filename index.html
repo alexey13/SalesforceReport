@@ -15,9 +15,9 @@
 		<div class="background-color--hero" data-anime="animate__appearFromLeft"></div>
 		<div class="background--hero" data-anime="animate__appear" data-anime-delay="0.1"></div>
 		<div class="section--hero__bubble-wrapper">
-			<span class="section--hero__bubble--1 bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3"></span>
-			<span class="section--hero__bubble--2 bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--3"></span> 
-			<span class="section--hero__bubble--3 bubble__standart bubble__standart--md animation__fly animation__fly__tran--4"></span>
+			<span class="section--hero__bubble--1 bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3" data-check-viewport></span>
+			<span class="section--hero__bubble--2 bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--3" data-check-viewport></span> 
+			<span class="section--hero__bubble--3 bubble__standart bubble__standart--md animation__fly animation__fly__tran--4" data-check-viewport></span>
 		</div>
 		<div class="container position-relative">
 			<div class="row align-items-center">
@@ -26,11 +26,10 @@
 				</div>
 				<div class="column-5">
 					<div class="pl-2">
-						<div class="title mb-3" data-letters-anime="animate__fromTop" data-letters-delay="0.02" data-letters-duration="1.4" data-letters aria-label="The Community Impact Report">It’s going to take a community to restore community.</div>
-						<button class="button btn-6" data-anime="animate__fromTop" data-anime-delay="0.8" data-anime-duration="1.5">
-							<span class="btn-6__back" data-anime="animate__buttonSpan" data-anime-delay="1.3" data-anime-duration="1"></span>
-							<span class="btn-6__text" data-anime="animate__appear" data-anime-delay="2" data-anime-duration="0.3">Download the full report</span>
-						</button>
+						<div class="title mb-3" data-letters-anime="animate__fromTop" data-letters-delay="0.02" data-letters-duration="1" data-letters aria-label="The Community Impact Report">It’s going to take a community to restore community.</div>
+						<div data-anime="animate__bounceIn" data-anime-delay="1.1" data-anime-duration="1" style="display: inline-block;">
+							<button class="button bubbly-button">Download the full report</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -39,10 +38,13 @@
 
 	<section class="section section--report">
 		<div class="container">
-			<svg class="arrow-down mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.88 101.01" data-anime="animate__flash" data-anime-delay="2" data-anime-duration="7">
-	      <polyline points="10 46.82 79.44 91.01 148.88 46.82" fill="none" stroke="#e4f5fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
-	      <polyline points="10 10 79.44 54.19 148.88 10" fill="none" stroke="#e4f5fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
-			</svg>
+			<div data-anime="animate__fromTop" data-anime-delay="1.5" data-anime-duration="0.7">
+				<svg class="arrow-down mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158.88 101.01" data-anime="animate__flash" data-anime-delay="2.2" data-anime-duration="3">
+		      <polyline points="10 46.82 79.44 91.01 148.88 46.82" fill="none" stroke="#e4f5fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+		      <polyline points="10 10 79.44 54.19 148.88 10" fill="none" stroke="#e4f5fd" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+				</svg>
+			</div>
+			
 			<div class="row">
 				<div class="column-6 mb-xs-2">
 					<div class="title" data-anime="animate__fromTop">The 2020 Community Impact Report</div>
@@ -50,8 +52,13 @@
 				</div>
 				<div class="column-5">
 					<div class="impact impact--1">
-						<span class="bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3 background-skydarker" data-anime="animate__zoomIn" style="left: -5%; bottom: -5%;"></span>
-						<span class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" data-anime="animate__zoomIn" style="right: -8%; top: -8%;"></span>
+						<div data-anime="animate__zoomIn" style="position: absolute; left: -5%; bottom: -5%;">
+							<span class="bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3 background-skydarker" style="left: -5%; bottom: -5%;" data-check-viewport></span>
+						</div>
+						<div data-anime="animate__zoomIn" style="position: absolute; right: -8%; top: -8%;">
+							<span class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" style="right: -8%; top: -8%;" data-check-viewport></span>
+						</div>
+						
 						<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/img-1.png" alt="" data-anime="animate__zoomIn">
 					</div>
 				</div>
@@ -64,14 +71,18 @@
 			<div class="row align-items-center">
 				<div class="column-6">
 					<div class="impact impact--2">
-						<span class="bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3 background-skydarker" data-anime="animate__zoomIn" style="right: -5%; top: 0%;"></span>
-						<span class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" data-anime="animate__zoomIn" style="right: 0%; bottom: -8%;"></span>
+						<div data-anime="animate__zoomIn" style="position: absolute; right: -5%; top: 0%;">
+							<span class="bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3 background-skydarker" style="right: -5%; top: 0%;" data-check-viewport></span>
+						</div>
+						<div data-anime="animate__zoomIn" style="position: absolute; right: 0%; bottom: -8%;">
+							<span class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" style="right: 0%; bottom: -8%;" data-check-viewport></span>
+						</div>
 						<svg class="circle-dots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.7 245.7"  style="position: absolute; right: 5%; top: -10%; width: 35%;" data-anime="animate__zoomIn">
-						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25"/>
-						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35"/>
-						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45"/>
+						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25" data-check-viewport />
+						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35" data-check-viewport/>
+						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45" data-check-viewport/>
 						</svg>
-						<div class="image-cropped-container image-cropped-container--white" data-onscroll-rotate>
+						<div class="image-cropped-container image-cropped-container--white" data-onscroll-rotate data-check-viewport>
 							<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/report-1.png" alt="" data-anime="animate__reportCircle"  data-anime-duration="0.5" data-anime-delay="0.3">
 							<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/report-2.png" alt="" data-anime="animate__reportCircle"  data-anime-duration="0.5" data-anime-delay="0.5">
 							<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/report-3.png" alt="" data-anime="animate__reportCircle"  data-anime-duration="0.5" data-anime-delay="0.7">
@@ -111,7 +122,9 @@
 							<path d="m1 93c7.2609-130.84 182.44-106.03 183.59-3.375 0.98352 87.739 123.3 84.14 125 3.375" fill="none" stroke="#009cdb" stroke-width="2px"/>
 						</svg>
 						<div class="full-white-circle"></div>
-						<div class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" data-anime="animate__zoomIn" style="left: -10%; bottom: -10%;"></div>
+						<div data-anime="animate__zoomIn" style="position: absolute; left: -10%; bottom: -10%;">
+							<div class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" style="left: -10%; bottom: -10%;" data-check-viewport></div>
+						</div>
 						<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/goals-1.png" alt="" data-anime="animate__zoomIn"  data-anime-duration="0.4">
 						<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/goals-2.png" alt="" data-anime="animate__zoomIn"  data-anime-duration="0.4" data-anime-delay="0.2">
 						<img class="image-absolute-full" src="https://alexey13.github.io/SalesforceReport/img/goals-3.png" alt="" data-anime="animate__zoomIn"  data-anime-duration="0.4" data-anime-delay="0.25">
@@ -156,9 +169,9 @@
 					<div class="title title--middle color--white gap__title">Current Impact</div>
 				</div><div class="gap gap--second">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679.52 260.26" style="position: absolute; top: -15%; left: -5%; width: 120%;">
-			      <path d="M2.26,213c19.2-30.1,119.85-181.46,297-207,85.94-12.38,159.82,9.18,189,18,92.82,28.08,155.91,77.74,189,108" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-anime-duration="4" style="stroke: #252b5f"/>
-			      <path d="M20.26,213c9.31-13.51,123.31-173.09,324-171,168.8,1.77,272,116.59,288,135" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-anime-duration="4" style="stroke: #252b5f"/>
-			      <path d="M29.26,222c9.62-11.87,126.49-150.92,315-135,177.85,15,269.17,155.32,279,171" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-anime-duration="4" style="stroke: #252b5f"/>
+			      <path d="M2.26,213c19.2-30.1,119.85-181.46,297-207,85.94-12.38,159.82,9.18,189,18,92.82,28.08,155.91,77.74,189,108" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-check-viewport style="stroke: #252b5f"/>
+			      <path d="M20.26,213c9.31-13.51,123.31-173.09,324-171,168.8,1.77,272,116.59,288,135" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-check-viewport style="stroke: #252b5f"/>
+			      <path d="M29.26,222c9.62-11.87,126.49-150.92,315-135,177.85,15,269.17,155.32,279,171" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12.37" data-anime="animate__impact-line" data-check-viewport style="stroke: #252b5f"/>
 					</svg>
 					<div class="gap__bubble gap__bubble--first bubble__standart bubble__standart--lg" data-anime="animate__zoomIn" data-anime-duration="2.5">Technology</div>
 					<div class="gap__bubble gap__bubble--second bubble__standart bubble__standart--lg" data-anime="animate__zoomIn" data-anime-delay="1.5" data-anime-duration="1.5">Partnerships</div>
@@ -179,26 +192,30 @@
 				<div class="column-9">
 					<div class="bubbles bubbles--pair">
 
-						<div class="bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--5 background-skydarker" data-anime="animate__zoomIn" data-anime-delay="0.3" style="left: -3%; bottom: -3%;"></div>
-
-						<div class="bubble__standart bubble__standart--md animation__fly animation__fly__tran--3 background-skydarker" data-anime="animate__zoomIn" data-anime-delay="1.7" style="right: -0%; top: 0%;"></div>
+						<div data-anime="animate__zoomIn" data-anime-delay="0.3" style="left: -3%; bottom: -3%; position: absolute;">
+							<div class="bubble__standart bubble__standart--xlg background-skydarker animation__fly animation__fly__tran--5" style="left: -3%; bottom: -3%;" data-check-viewport></div>
+						</div>
+						
+						<div data-anime="animate__zoomIn" data-anime-delay="1.7" style="right: 0%; top: 0%; position: absolute;">
+							<div class="bubble__standart bubble__standart--md animation__fly animation__fly__tran--3 background-skydarker"  style="right: 0%; top: 0%;" data-check-viewport></div>
+						</div>
 
 						<svg class="circle-dots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.7 245.7"  style="position: absolute; right: -5%; top: 0%; width: 25%;" data-anime="animate__zoomIn" data-anime-delay="1.7">
-						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25"/>
-						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35"/>
-						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45"/>
+						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25" data-check-viewport/>
+						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35" data-check-viewport/>
+						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45" data-check-viewport/>
 						</svg>
 
 						<div class="bubbles__item bubbles__xl background--bluelight bubbles__item-left" data-anime="animate__zoomInFromLeft">
 							<div class="bubbles__item-inner">
-								<div class="bubbles__title" data-letters-anime="animate__fromTop" data-letters-delay="0.2" data-letters-duration="3" data-letters>$1.08B</div>
+								<div class="bubbles__title" data-letters-anime="animate__fromTop" data-letters-delay="0.15" data-letters-duration="1.5" data-letters>$1.08B</div>
 								<div class="bubbles__text">Product Donation & Discounts</div>
 							</div>
 						</div>
 					
 						<div class="bubbles__item bubbles__sm background--bluedarker bubbles__item-rigth" data-anime="animate__zoomInFromRight" data-anime-delay="1">
 							<div class="bubbles__item-inner">
-								<div class="bubbles__title bubbles__title--sm" data-letters-anime="animate__fromTop" data-letters-delay="0.4" data-letters-duration="3" data-letters>$18.7M</div>
+								<div class="bubbles__title bubbles__title--sm" data-letters-anime="animate__fromTop" data-letters-delay="0.3" data-letters-duration="1.5" data-letters>$18.7M</div>
 								<div class="bubbles__subtitle">$195/hour*</div>
 								<div class="bubbles__text">Pro Bono Value</div>
 							</div>
@@ -224,11 +241,14 @@
 			<div class="row mb-10">
 				<div class="column-4 mb-xs-1">
 					<div class="position-relative">
-						<span class="bubble__standart bubble__standart--sm animation__fly animation__fly__tran--3 background-skydarker" style="position: absolute; right: 0%; bottom: 10%;" data-anime="animate__zoomIn"></span>
+						<div data-anime="animate__zoomIn" style="position: absolute; right: 0%; bottom: 10%;">
+							<span class="bubble__standart bubble__standart--sm animation__fly animation__fly__tran--3 background-skydarker" style="position: absolute; right: 0%; bottom: 10%;" data-check-viewport></span>
+						</div>
+						
 						<svg class="circle-dots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.7 245.7"  style="position: absolute; right: -5%; bottom: -10%; width: 55%;" data-anime="animate__zoomIn" data-anime-delay="1.7">
-						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25"/>
-						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35"/>
-						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45"/>
+						  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25" data-check-viewport/>
+						  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35" data-check-viewport/>
+						  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45" data-check-viewport/>
 						</svg>
 						<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/img-2.png" alt="" data-anime="animate__zoomIn">
 					</div>
@@ -237,18 +257,18 @@
 					<div class="pl-2">
 						<div class="title title--middle mb-3" data-anime="animate__fromTop">Technology</div>
 						<div class="width-80">
-							<div class="text--description mb-3" data-anime="animate__fromTop">Salesforce oﬀers best-in-class solutions for nonproﬁts, education institutions and philanthropy.</div>
+							<div class="text--description mb-3">Salesforce offers best-in-class solutions for nonproﬁts, education institutions and philanthropy.</div>
 							<div class="impact-number mb-3">
-								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.2" data-letters-duration="2" data-letters>68%</div>
-								<div class="text--description" data-anime="animate__fromTop">of customers say Salesforce has improved their organization’s ability to achieve their mission</div>
+								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.1" data-letters-duration="1" data-letters>68%</div>
+								<div class="text--description">of customers say Salesforce has improved their organization’s ability to achieve their mission</div>
 							</div>
 						</div>
-						<div class="card" data-anime="animate__fromTop">
+						<div class="card">
 							<div class="card__image mb-xs-1">
 								<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-1.png" alt="">
 							</div>
 							<div class="card__content">
-								<div class="subtitle subtitle__card mb-3" data-letters-anime="animate__fromTop" data-letters-delay="0.01" data-letters-duration="2" data-letters>"...we're actually having the right conversation with the right people."</div>
+								<div class="subtitle subtitle__card mb-3" data-anime="animate__fromTop">"...we're actually having the right conversation with the right people."</div>
 								<div class="text--description">Small Nonproﬁt</div>
 							</div>
 						</div>
@@ -261,14 +281,14 @@
 					<div class="pr-2 text-right">
 						<div class="title title--middle mb-3" data-anime="animate__fromTop">Partnerships</div>
 						<div class="ml-auto width-80">
-							<div class="text--description mb-3" data-anime="animate__fromTop">Salesforce provides access to technology and ﬁnancial grants to help customers build a future-ready, diverse, talented and skilled workforce.</div>
+							<div class="text--description mb-3">Salesforce provides access to technology and ﬁnancial grants to help customers build a future-ready, diverse, talented and skilled workforce.</div>
 							<div class="impact-number mb-3">
-								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.2" data-letters-duration="2" data-letters>96,039</div>
-								<div class="text--description text-left" data-anime="animate__fromTop">Total pro bono hours spent helping Salesforce partners</div>
+								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.1" data-letters-duration="1" data-letters>96,039</div>
+								<div class="text--description text-left">Total pro bono hours spent helping Salesforce partners</div>
 							</div>
 						</div>
 						<div class="position-relative">
-							<svg class="figure-lines" viewBox="0 0 340.23 185.94" xmlns="http://www.w3.org/2000/svg" data-anime="animate__line" data-anime-duration="2" data-anime-delay="1" style="position:absolute; right: -30%; top: 30%; width: 50%;">
+							<svg class="figure-lines" viewBox="0 0 340.23 185.94" xmlns="http://www.w3.org/2000/svg" data-anime="animate__line" data-anime-duration="1" data-anime-delay="0.5" style="position:absolute; right: -30%; top: 30%; width: 50%;">
 								<path d="m30.64 93c3.8112-84.902 120.59-82.501 124.65 0 5.5803 113.45 174.03 124.44 183.94 0" fill="none" stroke="#009cdb" stroke-width="2px"/>
 								<path d="m20.85 93c3.5612-93.152 139.6-98.476 144.15-0.25 5.1076 110.25 158.28 107.69 164.44 0.25" fill="none" stroke="#009cdb" stroke-width="2px"/>
 								<path d="m10.93 93c2.3112-107.15 161.26-110.12 164.15-0.5 2.3535 89.181 134.78 103.19 144.44 0.5" fill="none" stroke="#009cdb" stroke-width="2px"/>
@@ -279,7 +299,7 @@
 									<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-3.png" alt="">
 								</div>
 								<div class="card__content">
-									<div class="subtitle subtitle__card mb-3" data-letters-anime="animate__fromTop" data-letters-delay="0.01" data-letters-duration="2" data-letters>"We’re spending less time on administrative tasks and more time providing our clients with housing and job opportunities."</div>
+									<div class="subtitle subtitle__card mb-3" data-anime="animate__fromTop">"We’re spending less time on administrative tasks and more time providing our clients with housing and job opportunities."</div>
 									<div class="text--description">Raven Dudley, Senior Accountant</div>
 								</div>
 							</div>
@@ -300,25 +320,25 @@
 					<div class="pl-2">
 						<div class="title title--middle mb-3" data-anime="animate__fromTop">Community</div>
 						<div class="width-80">
-							<div class="text--description mb-3" data-anime="animate__fromTop">Salesforce provides opportunities for our customers to collaborate on technology solutions for the entire social sector.</div>
+							<div class="text--description mb-3">Salesforce provides opportunities for our customers to collaborate on technology solutions for the entire social sector.</div>
 							<div class="impact-number mb-3">
-								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.2" data-letters-duration="2" data-letters>78%</div>
-								<div class="text--description" data-anime="animate__fromTop">of customer organizations are active in the Power of Us Hub.</div>
+								<div class="impact-number__value" data-letters-anime="animate__fromTop" data-letters-delay="0.1" data-letters-duration="1" data-letters>78%</div>
+								<div class="text--description">of customer organizations are active in the Power of Us Hub.</div>
 							</div>
 						</div>
 						<div class="position-relative">
 							<svg class="circle-dots" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.7 245.7"  style="position: absolute; left: -15%; bottom: -15%; width: 25%;" data-anime="animate__zoomIn" data-anime-delay="1.7">
-							  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25"/>
-							  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35"/>
-							  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45"/>
+							  <circle cx="122.85" cy="122.85" r="72.99" transform="translate(-41.01 65.12) rotate(-25.59)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="25" data-check-viewport/>
+							  <path d="M172.88,207.75A98.54,98.54,0,1,1,207.75,72.83,98.54,98.54,0,0,1,172.88,207.75Z" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="35" data-check-viewport/>
+							  <circle cx="122.85" cy="122.85" r="120.57" transform="matrix(0.99, -0.14, 0.14, 0.99, -16.44, 19.02)" fill="none" stroke="#3379b9" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4.52" stroke-dasharray="0 12" data-anime="animate__dots" data-anime-duration="45" data-check-viewport/>
 							</svg>
 
-							<div class="card position-relative" data-anime="animate__fromTop">
+							<div class="card position-relative">
 								<div class="card__image mb-xs-1">
 									<img class="img-fluid" src="https://alexey13.github.io/SalesforceReport/img/card-1.png" alt="">
 								</div>
 								<div class="card__content">
-									<div class="subtitle subtitle__card mb-3" data-letters-anime="animate__fromTop" data-letters-delay="0.01" data-letters-duration="2" data-letters>"I really appreciate the resources that are there. It got us up and running faster than I thought possible."</div>
+									<div class="subtitle subtitle__card mb-3"  data-anime="animate__fromTop">"I really appreciate the resources that are there. It got us up and running faster than I thought possible."</div>
 									<div class="text--description">Medium Higher Ed</div>
 								</div>
 							</div>
@@ -337,14 +357,16 @@
 			</div>
 			<div class="row justify-content-center mb-2">
 				<div class="column-8">
-					<div class="title title--middle text-center text-center-xs" data-letters-anime="animate__fromTop" data-letters-delay="0.03" data-letters-duration="1" data-letters>Our partners and community are what drive us to build purpose-driven technology that transforms the world.</div>
+					<div class="title title--middle text-center text-center-xs" data-letters-anime="animate__fromTop" data-letters-delay="0.01" data-letters-duration="0.5" data-letters>Our partners and community are what drive us to build purpose-driven technology that transforms the world.</div>
 				</div>
 			</div>
 			<div class="text-right text-center-xs">
 				<div class="ceo__profile">
 					<div class="ceo__avatar mr-3" data-anime="animate__zoomIn">
-						<div class="bubble__standart bubble__standart--xsm animation__fly animation__fly__tran--3 background-skydarker" data-anime="animate__zoomIn" data-anime-delay="0.7" style="left: -200%; top: 0%;"></div>
-						<div class="bubble__standart bubble__standart--sm background-skydarker" data-anime="animate__zoomIn" data-anime-delay="1" style="left: -15%; top: -5%; width: 130%; padding-top: 130%; height: auto;"></div>
+						<div data-anime="animate__zoomIn" data-anime-delay="0.3" style="position: absolute; left: -200%; top: 0%;">
+							<div class="bubble__standart bubble__standart--xsm animation__fly animation__fly__tran--3 background-skydarker" style="left: -200%; top: 0%;" data-check-viewport></div>
+						</div>
+						<div class="bubble__standart bubble__standart--sm background-skydarker" data-anime="animate__zoomIn" data-anime-delay="0.3" style="left: -15%; top: -5%; width: 130%; padding-top: 130%; height: auto;"></div>
 						<img class="ceo__image position-relative" src="https://alexey13.github.io/SalesforceReport/img/ceo.png" alt="">
 					</div>
 					<div class="position-relative">
@@ -360,19 +382,18 @@
 		<div class="background-color--hero" data-anime="animate__appearFromLeft"></div>
 		<div class="background--hero background--last-section" data-anime="animate__appear" data-anime-delay="0.1"></div>
 		<div class="section--hero__bubble-wrapper">
-			<span class="section--hero__bubble--1 bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3"></span>
-			<span class="section--hero__bubble--2 bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--3"></span> 
-			<span class="section--hero__bubble--3 bubble__standart bubble__standart--md animation__fly animation__fly__tran--4"></span>
+			<span class="section--hero__bubble--1 bubble__standart bubble__standart--lg animation__fly animation__fly__tran--3" data-check-viewport></span>
+			<span class="section--hero__bubble--2 bubble__standart bubble__standart--xlg animation__fly animation__fly__tran--3" data-check-viewport></span> 
+			<span class="section--hero__bubble--3 bubble__standart bubble__standart--md animation__fly animation__fly__tran--4" data-check-viewport></span>
 		</div>
 		<div class="container position-relative">
 			<div class="row align-items-center">
 				<div class="column-6">
 					<div class="pr-2 text-center">
 						<div class="title title--sm mb-4" data-anime="animate__fromTop">Salesforce.org is collaborating with partners and community to build a better future, together.</div>
-						<button class="button btn-6" data-anime="animate__fromTop" data-anime-delay="0.8" data-anime-duration="1.5">
-							<span class="btn-6__back" data-anime="animate__buttonSpan" data-anime-delay="1.3" data-anime-duration="1"></span>
-							<span class="btn-6__text" data-anime="animate__appear" data-anime-delay="2" data-anime-duration="0.3">Download the full report</span>
-						</button>
+						<div data-anime="animate__bounceIn" data-anime-delay="1.1" data-anime-duration="1" style="display: inline-block;">
+							<button class="button bubbly-button">Download the full report</button>
+						</div>
 					</div>
 				</div>
 				<div class="column-6 order-xs-1 mb-xs-1">
