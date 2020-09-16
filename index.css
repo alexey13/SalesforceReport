@@ -690,7 +690,7 @@ body {
 	top: -10px;
 	background: #fff;
 	border-radius: 50%;
-	z-index: 1;
+	z-index: -1;
 }
 /*Impact number component*/
 .impact-number {
