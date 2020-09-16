@@ -258,18 +258,26 @@ window.addEventListener('load', function() {
 	scrollAnimate();
 	//parallax();
 	runBubbles();
-	if(windowWidth > 767.9) {
+	if(windowWidth > 1100) {
 		rotateOnScroll();
+		parallax();
+		animateButtons();
 	}
 }, false)
 
-document.querySelector('.bubbly-button').addEventListener('mouseenter', function(e){
-  e.target.classList.add('animate');
-})
 
-document.querySelector('.bubbly-button').addEventListener('mouseleave', function(e){
-	e.target.classList.remove('animate');
-})
+
+function animateButtons() {
+	var buttons = document.querySelectorAll('.bubbly-button');
+	buttons = Array.prototype.slice.call(buttons);
+
+	buttons.forEach(function(button){
+		button.addEventListener('mouseenter', function(e){e.target.classList.add('animate')})
+		button.addEventListener('mouseleave', function(e){e.target.classList.remove('animate')})
+	})
+}
+
+
 
 
 //Bubble flying animation
@@ -382,4 +390,22 @@ function throttle(func, ms) {
 }
 
 
+function parallax() {
+	var x, y, raf;
+	var card = document.querySelector('.parallax');
+	var parent = document.querySelector('.section--last');
+
+	parent.addEventListener('mousemove', function(e) {
+	  x = (e.clientX / window.innerWidth - 0.5) * 2;
+	  y = (e.clientY / window.innerHeight - 0.5) * 2;
+
+	  raf = raf || requestAnimationFrame(update);
+	});
+
+	function update() {
+	  card.style.setProperty('--x', x);
+	  card.style.setProperty('--y', y);
+	  raf = null;
+	}
+}
 

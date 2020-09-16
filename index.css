@@ -225,6 +225,7 @@ body {
 .section--last {
 	margin-top: 5rem;
 	padding: 3rem 0;
+	overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
 	.section {
@@ -682,16 +683,52 @@ body {
 	height: 100%;
 	z-index: 2;
 }
-.full-white-circle {
+.circle-title {
 	position: absolute;
-	width: calc(100% + 20px);
-	height: calc(100% + 20px);
-	left: -10px;
-	top: -10px;
-	background: #fff;
-	border-radius: 50%;
-	z-index: -1;
+	left: 50%;
+	top: 50%;
+	color: #3f99d5;
+	font-family: SalesforceSansBold, sans-serif;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
+.circle-title > :first-child {
+	font-size: 1.6rem;
+	line-height: 0.9;
+}
+.circle-title > :nth-child(2) {
+	font-size: 1.45rem;
+	line-height: 0.95;
+}
+.circle-title > :nth-child(3) {
+	font-size: 3.4rem;
+	line-height: 0.8;
+}
+@media screen and (min-width: 768px) and (max-width: 1379.9px) {
+	.circle-title > :first-child {
+		font-size: 1.8vw;
+	}
+	.circle-title > :nth-child(2) {
+		font-size: 1.65vw;
+	}
+	.circle-title > :nth-child(3) {
+		font-size: 3.8vw;
+	}
+}
+@media screen and (max-width: 690.9px) {
+	.circle-title > :first-child {
+		font-size: 3.8vw;
+	}
+	.circle-title > :nth-child(2) {
+		font-size: 3.5vw;
+	}
+	.circle-title > :nth-child(3) {
+		font-size: 7.9vw;
+	}
+}
+
 /*Impact number component*/
 .impact-number {
 	display: flex;
@@ -1643,11 +1680,12 @@ span.animate__animated {
 
 .animate__hover-rotate {
 	transform: rotate(0);
-	transition: transform 15s cubic-bezier(.05,.84,.11,.86);
+	transition: transform 50s;
 	z-index: 1;
 }
 .animate__hover-rotate:hover {
-	transform: rotate(360deg);
+	transform: rotate(3600deg);
+	transition: transform 100s;
 }
 
 /*Onscroll rotation*/
@@ -1706,3 +1744,128 @@ span.animate__animated {
 	height: 14vw;
 }
 
+
+/* 3d parallax */
+.parallax {
+	--x: 0;
+  --y: 0;
+  transform: matrix3d(
+    1,
+    0,
+    0,
+    calc(var(--x) * 0.0001),
+    0,
+    1,
+    0,
+    calc(var(--y) * 0.0001),
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  );
+  transition: transform 0.3s ease-out;
+}
+.parallax__1 {
+  transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+}
+.parallax__2 {
+  transform: translate(calc(var(--x) * 70px), calc(var(--y) * 70px));
+}
+.parallax__3 {
+  transform: translate(calc(var(--x) * 10px), calc(var(--y) * 10px));
+}
+.parallax__4 {
+	transform: translate(calc(var(--x) * 20px), calc(var(--y) * 20px));
+}
+.parallax__5 {
+	transform: translate(calc(var(--x) * 40px), calc(var(--y) * 40px));
+}
+.last-scene-circle {
+	position: absolute;
+	left: 13%;
+	top: -41%;
+	width: 66%;
+	padding-top: 66%;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.2;
+}
+/* Back entrances */
+@-webkit-keyframes backInDown {
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px) scale(0.7);
+  }
+
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes backInDown {
+  0% {
+    -webkit-transform: translateY(-1200px) scale(0.7);
+    transform: translateY(-1200px) scale(0.7);
+  }
+
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.animate__backInDown {
+  -webkit-animation-name: backInDown;
+  animation-name: backInDown;
+}
+
+
+@-webkit-keyframes backInUp {
+  0% {
+    -webkit-transform: translateY(1200px) scale(0.7);
+    transform: translateY(1200px) scale(0.7);
+  }
+
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes backInUp {
+  0% {
+    -webkit-transform: translateY(1200px) scale(0.7);
+    transform: translateY(1200px) scale(0.7);
+  }
+
+  80% {
+    -webkit-transform: translateY(0px) scale(0.7);
+    transform: translateY(0px) scale(0.7);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.animate__backInUp {
+  -webkit-animation-name: backInUp;
+  animation-name: backInUp;
+}
