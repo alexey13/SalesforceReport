@@ -1631,6 +1631,25 @@ span.animate__animated {
   -webkit-animation-name: bounceIn;
   animation-name: bounceIn;
 }
+
+
+.animate__hover-bounce {
+	transform: scale(1);
+	transition: transform 2s cubic-bezier(.05,.84,.11,.86);
+}
+.animate__hover-bounce:hover {
+	transform: scale(1.2);
+}
+
+.animate__hover-rotate {
+	transform: rotate(0);
+	transition: transform 15s cubic-bezier(.05,.84,.11,.86);
+	z-index: 1;
+}
+.animate__hover-rotate:hover {
+	transform: rotate(360deg);
+}
+
 /*Onscroll rotation*/
 [data-viewport="true"][data-onscroll-rotate] {
 	transform: translateZ(0) rotate(calc(var(--rotate) * 1deg));
