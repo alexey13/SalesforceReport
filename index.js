@@ -170,6 +170,45 @@ function scrollAnimate() {
     //Deprecated: if you want to use several animation on one element create a separate wrapper for it
   }
 
+  function endCallback(element) {
+  	var name = element.dataset.animeOnend;
+
+  	function callback() {
+  		switch(name) {
+	  		case 'remove-goals':
+	  			var elements = document.querySelectorAll('.remove-goals');
+	  			elements = Array.prototype.slice.call(elements);
+	  			elements.forEach(function(el) {
+	  				el.remove();
+	  			});
+	  			var ref = document.querySelector('.goals-all');
+	  			ref.classList.add('animate__hover-rotate');
+	  			break;
+	  		case 'remove-report':
+	  			var elements = document.querySelectorAll('.remove-report');
+	  			elements = Array.prototype.slice.call(elements);
+	  			elements.forEach(function(el) {
+	  				el.remove();
+	  			});
+	  			document.querySelector('.report-all').style.opacity = '1';
+	  	}
+  	}
+
+  	element.addEventListener('animationend', callback);
+  }
+
+  function startCallback(element) {
+  	var name = element.dataset.animeOnstart;
+  	var delay = element.dataset.animeDelay * 1000 || 0;
+
+  	setTimeout(function() {
+  		switch(name) {
+	  		case 'remove-goals':
+	  			break;
+	  	}
+  	}, delay)
+
+  }
 
   function isAnyPartOfElementInViewport(el) {
 
@@ -188,8 +227,16 @@ function scrollAnimate() {
     //Element types
     var checkViewport = element.dataset.checkViewport === '';
     var withAnime =  element.dataset.anime;
+    var onStartCallback =  element.dataset.animeOnstart;
+    var onEndCallback =  element.dataset.animeOnend;
 
     if(isAnyPartOfElementInViewport(element)) {
+    	if(onStartCallback) {
+    		startCallback(element)
+    	}
+    	if(onEndCallback) {
+    		endCallback(element)
+    	}
     	if(checkViewport) {
     		addViewportClass(element);
     	} 
@@ -258,22 +305,22 @@ window.addEventListener('load', function() {
 	scrollAnimate();
 	//parallax();
 	runBubbles();
-	if(windowWidth > 1100) {
+	if(windowWidth > 767) {
 		rotateOnScroll();
 		parallax();
-		animateButtons();
+		addMouseEvents();
 	}
 }, false)
 
 
 
-function animateButtons() {
-	var buttons = document.querySelectorAll('.bubbly-button');
-	buttons = Array.prototype.slice.call(buttons);
+function addMouseEvents() {
+	var elements = document.querySelectorAll('.bubbly-button, .goals-all');
+	elements = Array.prototype.slice.call(elements);
 
-	buttons.forEach(function(button){
-		button.addEventListener('mouseenter', function(e){e.target.classList.add('animate')})
-		button.addEventListener('mouseleave', function(e){e.target.classList.remove('animate')})
+	elements.forEach(function(el){
+		el.addEventListener('mouseenter', function(e){e.target.classList.add('animate')})
+		el.addEventListener('mouseleave', function(e){e.target.classList.remove('animate')})
 	})
 }
 
