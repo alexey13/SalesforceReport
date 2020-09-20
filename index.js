@@ -25,7 +25,6 @@ if(slfEl) {
 
 //Global class of animation element
 var animateClass = 'animate__animated';
-var animations = [];
 
 //Set animation data props to letter
 function setAnimationProps(el, child, index) {
@@ -216,9 +215,10 @@ function scrollAnimate() {
 
     // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
     var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-    var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+    //var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
-    return (vertInView && horInView);
+    /*return (vertInView && horInView);*/
+    return vertInView;
 	}
 
 
@@ -303,11 +303,10 @@ window.addEventListener('load', function() {
 	addAnimeParams();
 	charElements();
 	scrollAnimate();
-	//parallax();
 	runBubbles();
 	if(windowWidth > 767) {
 		rotateOnScroll();
-		parallax();
+		//parallax();
 		addMouseEvents();
 	}
 }, false)

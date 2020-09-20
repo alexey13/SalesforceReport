@@ -124,7 +124,7 @@ body {
 		font-size: 1rem;
 	}
 	.text--description-big {
-		font-size: 0.9rem;
+		font-size: 1.1rem;
 	}
 }
 
@@ -146,6 +146,12 @@ body {
 	font-size: 2.2rem;
 	margin-bottom: 0;
 }
+.title--hero {
+	font-size: 3.64rem;
+	letter-spacing: -.036em;
+	font-family: SalesforceSansThin, sans-serif;
+}
+
 .subtitle {
 	margin-bottom: 0;
 	font-family: SalesforceSansLight, sans-serif;
@@ -179,16 +185,36 @@ body {
 	border-radius: 100px;
 	text-align: center;
 }
-
-
-
+.link {
+	text-decoration: none;
+	transition: color .2s linear;
+	color: #00a1e0;
+}
+.link:hover {
+	color: #16325C;
+}
+@media screen and (max-width: 1296px) {
+	.title--lg {
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 1115px) {
+	.title--lg {
+		font-size: 2.7rem;
+	}
+}
+@media screen and (max-width: 1015px) {
+	.title--lg {
+		font-size: 2.5rem;
+	}
+}
 @media screen and (max-width: 980px) {
 	.title {
 		font-size: 4.15rem;
 		margin-bottom: 1rem;
 	}
 	.title--lg {
-		font-size: 2.6rem;
+		font-size: 2.4rem;
 	}
 	.title--middle {
 		font-size: 2.15rem;
@@ -200,9 +226,22 @@ body {
 		font-size: 1.45rem;
 	}
 }
+@media screen and (max-width: 906px) {
+	.title--lg {
+		font-size: 2.2rem;
+	}
+}
+@media screen and (max-width: 838px) {
+	.title--lg {
+		font-size: 2rem;
+	}
+}
 @media screen and (max-width: 767.9px) {
 	.title {
 		line-height: 1.2;
+	}
+	.title--lg {
+		font-size: 2.5rem;
 	}
 }
 
@@ -210,27 +249,16 @@ body {
 /*Layout*/
 .section {
 	position: relative;
-	padding: 5rem 0;
-}
-.section--last {
-	margin-top: 5rem;
-	padding: 3rem 0;
-	overflow: hidden;
+	padding: 3.5rem 0;
 }
 @media screen and (max-width: 1200px) {
 	.section {
-		padding: 3.5rem 0;
-	}
-	.section--last {
-		margin-top: 3.7rem;
+		padding: 2.45rem 0;
 	}
 }
 @media screen and (max-width: 980px) {
 	.section {
-		padding: 2.5rem 0;
-	}
-	.section--last {
-		margin-top: 2.4rem;
+		padding: 1.75rem 0;
 	}
 }
 
@@ -296,7 +324,11 @@ body {
 		display: none;
 	}
 }
-
+@media screen and (max-width: 980.9px) {
+	.column-lg {
+		width: 100%;
+	}
+}
 
 /*Helpers */
 .mb-1 {
@@ -329,11 +361,11 @@ body {
 .mr-5 {
 	margin-right: 5rem;
 }
-.ml-auto {
-	margin-left: auto;
-}
 .mr-auto {
 	margin-right: auto;
+}
+.ml-auto {
+	margin-left: auto;
 }
 .pl-1 {
 	padding-left: 1rem;
@@ -406,10 +438,10 @@ body {
 		padding-right: 1.32rem;
 	}
 	.pb-xxl {
-		padding-bottom: 6.6rem;
+		padding-bottom: 4rem;
 	}
 	.pt-xxl {
-		padding-top: 6.6rem;
+		padding-top: 4rem;
 	}
 }
 @media screen and (max-width: 980px) {
@@ -459,10 +491,10 @@ body {
 		padding-right: 1rem;
 	}
 	.pb-xxl {
-		padding-bottom: 4.5rem;
+		padding-bottom: 1.75rem;
 	}
 	.pt-xxl {
-		padding-top: 4.5rem;
+		padding-top: 1.75rem;
 	}
 }
 @media screen and (max-width: 767.9px) {
@@ -488,7 +520,19 @@ body {
 		padding-bottom: 0;
 	}
 }
-
+@media screen and (max-width: 980.9px) {
+	.mb-lg-1 {
+		margin-bottom: 1rem;
+	}
+	.order-lg-1 {
+		order: -1;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.pl-xlg-2 {
+		padding-left: 2rem;
+	}
+}
 
 .text-center {
 	text-align: center;
@@ -508,8 +552,14 @@ body {
 .justify-content-center {
 	justify-content: center;
 }
+.justify-content-end {
+	justify-content: flex-end;
+}
 .position-relative {
 	position: relative;
+}
+.overflow-hidden {
+	overflow: hidden;
 }
 @media screen and (max-width: 767.9px) {
 	.text-center {
@@ -522,6 +572,11 @@ body {
 		text-align: center !important;
 	}
 }
+@media screen and (max-width: 980.9px) {
+	.text-center-md {
+		text-align: center !important;
+	}
+}
 .img-fluid {
 	position: relative;
 	max-width: 100%;
@@ -529,6 +584,9 @@ body {
 }
 .width-80 {
 	width: 80%;
+}
+.max-width-50 {
+	max-width: 50% !important;
 }
 @media screen and (max-width: 767.9px) {
 	.width-80 {
@@ -543,6 +601,7 @@ body {
 	position: relative;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
 .background-color--hero {
 	position: absolute;
@@ -550,95 +609,34 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #e7f6f8;
-}
-.background--hero {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-image: url('https://alexey13.github.io/SalesforceReport/img/hero.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-@media screen and (min-width: 768px) {
-	.section--hero {
-		padding: 3rem 0;
-	}
-}
-.section--hero .title {
-	font-size: 3.64rem;
-	letter-spacing: -.036em;
-	font-family: SalesforceSansThin, sans-serif;
-}
-@media screen and (max-width: 1200px) {
-	.section--hero .title {
-		font-size: 3.25rem;
-	}
-}
-@media screen and (max-width: 980px) {
-	.section--hero .title {
-		font-size: 2rem;
-	}
+	background-color: #bfe4f4;
 }
 .laptop {
 	position: relative;
 	width: 100%;
-	padding-top: 77%;
+	padding-top: 56%;
 }
 .laptop:after {
 	content: '';
 	position: absolute;
-	left: -20%;
+	left: -10%;
 	top: 0;
-	width: 140%;
+	width: 120%;
 	height: 100%;
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/laptop.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom;
 }
-.ipad {
-	position: relative;
-	top: 25px;
-	width: 100%;
-	padding-top: 74%;
-}
-@media screen and (max-width: 767.9px) {
-	.ipad {
-		top: 0;
-		margin-bottom: 1rem;
+@media screen and (min-width: 1380px) {
+	.laptop {
+		padding-top: 77%;
+	}
+	.laptop:after {
+		width: 140%;
+		left: -20%;
 	}
 }
-.section--hero__bubble-wrapper {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	z-index: 0;
-}
-.section--hero__bubble-wrapper > * {
-	background-color: #fff !important;
-}
-.section--hero__bubble--1 {
-	left: 5%;
-	top: 3%;
-	z-index: 1;
-}
-.section--hero__bubble--2 {
-	right: 3%;
-	bottom: 2%;
-	z-index: 1;
-}
-.section--hero__bubble--3 {
-	right: 7%;
-	top: 2%;
-	z-index: 1;
-}
-
 /*Section 2*/
 .subtitle--report {
 	margin-top: 2rem;
@@ -655,14 +653,6 @@ body {
 .impact {
 	position: relative;
 }
-.impact--1 {
-	margin-left: 2rem;
-}
-@media screen and (max-width: 767.9px) {
-	.impact--1 {
-		margin-left: 0;
-	}
-}
 
 
 /*Impact number component*/
@@ -671,23 +661,21 @@ body {
 	align-items: center;
 }
 .impact-number__value {
-	font-size: 5rem;
-	color: #3279b1;
 	font-family: SalesforceSansLight, sans-serif;
 	margin-right: 5%;
+	color: #3279b1;
 }
-@media screen and (max-width: 767.7px) {
-	.impact-number__value {
-		font-size: 2.5rem;
-	}
-}
-
-
 .section--gap {
-	padding-top: 4rem;
+	padding-top: 6%;
 	padding-bottom: 0;
 	z-index: 2;
 }
+@media screen and (min-width: 768px) {
+	.after-section-gap {
+		padding-top: 6%;
+	}
+}
+
 .gap__wrapper {
 	display: flex;
 }
@@ -695,7 +683,7 @@ body {
 	display: inline-block;
 	position: relative;
 	width: 33%;
-	height: 38vw;
+	height: 30vw;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -966,7 +954,7 @@ body {
 	background: #fff;
 }
 .card__image img {
-	max-width: 80% !important;
+	max-width: 80%;
 }
 .subtitle__card {
 	font-size: 1.7rem;
@@ -1030,7 +1018,6 @@ body {
 }
 .ceo__name {
 	color: #252b5f;
-	font-size: 2rem;
 	font-family: SalesforceSansThin, sans-serif;
 }
 .ceo__avatar {
@@ -1041,10 +1028,42 @@ body {
 	max-width: 150px;
 	min-width: 100px;
 }
-
+.ceo__quote > .word:first-child span:first-child {
+	position: relative;
+}
+.ceo__quote > .word:first-child span:first-child:before {
+	content: '';
+	position: absolute;
+	left: -200%;
+	top: 0;
+	height: 150%;
+	width: 150%;
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/card-1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.ceo__quote.animated > .word:first-child span:first-child:before {
+	visibility: visible;
+}
+@media screen and (max-width: 767.9px) {
+	.ceo__quote {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 /*Last section*/
 .ipad-image-size {
-	padding-top: 10px;
+	padding-top: 20px;
+}
+@media screen and (max-width: 980.9px) {
+	.ipad-image-size {
+		display: block;
+		padding-top: 0;
+		max-width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 .background--last-section {
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
@@ -1237,6 +1256,15 @@ span.animate__animated {
 
 
 /* appearFromLeft */
+@-webkit-keyframes appearFromLeft {
+  from {
+    transform: scaleX(0);
+  }
+
+  25% {
+    transform: scaleX(1);
+  }
+}
 @keyframes appearFromLeft {
   from {
     transform: scaleX(0);
@@ -1254,11 +1282,19 @@ span.animate__animated {
 
 
 /* Opacity */
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;
   }
-  65% {
+  100% {
   	opacity: 1;
   }
 }
@@ -1268,22 +1304,39 @@ span.animate__animated {
 }
 
 /* Ipad */
+@-webkit-keyframes ipad {
+  0% {
+  	opacity: 0;
+    transform: translateY(30px);
+	}
+	20% {
+	  opacity: 1;
+	}
+}
 @keyframes ipad {
   0% {
   	opacity: 0;
     transform: translateY(30px);
 	}
-	15% {
+	20% {
 	  opacity: 1;
 	}
 }
 .animate__ipad {
   -webkit-animation-name: ipad;
   animation-name: ipad;
+  animation-timing-function: ease-out;
 }
 
-
 /*Report */
+@-webkit-keyframes reportCircle {
+  0% {
+  	opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
 @keyframes reportCircle {
   0% {
   	opacity: 0;
