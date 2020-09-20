@@ -201,19 +201,6 @@ body {
 }
 
 
-/*Images*/
-.image-contain {
-	display: inline-block;
-	content: "";
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.image--ipad {
-	background-image: url('https://alexey13.github.io/SalesforceReport/img/ipad.png');	
-}
-
-
 /*Layout*/
 .section {
 	position: relative;
