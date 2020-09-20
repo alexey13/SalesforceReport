@@ -135,6 +135,9 @@ body {
 	color: #252b5f;
 	margin-bottom: 1.5rem;
 }
+.title--lg {
+	font-size: 3.46rem;
+}
 .title--middle {
 	font-size: 2.83rem;
 	margin-bottom: 0;
@@ -184,6 +187,9 @@ body {
 		font-size: 4.15rem;
 		margin-bottom: 1rem;
 	}
+	.title--lg {
+		font-size: 2.6rem;
+	}
 	.title--middle {
 		font-size: 2.15rem;
 	}
@@ -206,9 +212,6 @@ body {
 	position: relative;
 	padding: 5rem 0;
 }
-.section--bigpadding {
-	padding: 10rem 0;
-}
 .section--last {
 	margin-top: 5rem;
 	padding: 3rem 0;
@@ -221,9 +224,6 @@ body {
 	.section--last {
 		margin-top: 3.7rem;
 	}
-	.section--bigpadding {
-		padding: 6.6rem 0;
-	}
 }
 @media screen and (max-width: 980px) {
 	.section {
@@ -231,9 +231,6 @@ body {
 	}
 	.section--last {
 		margin-top: 2.4rem;
-	}
-	.section--bigpadding {
-		padding: 4.5rem 0;
 	}
 }
 
@@ -353,6 +350,15 @@ body {
 .pr-2 {
 	padding-right: 2rem;
 }
+.pb-xxl {
+	padding-bottom: 10rem;
+}
+.pt-xxl {
+	padding-top: 10rem;
+}
+.pb-0 {
+	padding-bottom: 0 !important;
+}
 @media screen and (max-width: 1200px) {
 	.mb-1 {
 	margin-bottom: 0.66rem;
@@ -398,6 +404,12 @@ body {
 	}
 	.pr-2 {
 		padding-right: 1.32rem;
+	}
+	.pb-xxl {
+		padding-bottom: 6.6rem;
+	}
+	.pt-xxl {
+		padding-top: 6.6rem;
 	}
 }
 @media screen and (max-width: 980px) {
@@ -445,6 +457,12 @@ body {
 	}
 	.pr-2 {
 		padding-right: 1rem;
+	}
+	.pb-xxl {
+		padding-bottom: 4.5rem;
+	}
+	.pt-xxl {
+		padding-top: 4.5rem;
 	}
 }
 @media screen and (max-width: 767.9px) {
@@ -564,6 +582,23 @@ body {
 		font-size: 2rem;
 	}
 }
+.laptop {
+	position: relative;
+	width: 100%;
+	padding-top: 77%;
+}
+.laptop:after {
+	content: '';
+	position: absolute;
+	left: -20%;
+	top: 0;
+	width: 140%;
+	height: 100%;
+	background-image: url('https://alexey13.github.io/SalesforceReport/img/laptop.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
 .ipad {
 	position: relative;
 	top: 25px;
@@ -605,32 +640,14 @@ body {
 }
 
 /*Section 2*/
-.section--report {
-	padding-top: 2rem;
-}
-@media screen and (max-width: 980px) {
-	.section--report {
-		padding-top: 1rem;
-	}
-}
-.section--report .title {
-	font-size: 3.46rem;
-	margin-bottom: 3.3rem;
-}
-@media screen and (max-width: 980px) {
-	.section--report .title {
-		font-size: 2.6rem;
-		margin-bottom: 2.5rem;
-	}
-}
-.section--report .subtitle {
+.subtitle--report {
 	margin-top: 2rem;
 	line-height: 1.2;
 	color: #253a7b;
 	width: 80%;
 }
 @media screen and (max-width: 767.9px) {
-	.section--report .subtitle {
+	.subtitle--report {
 		width: auto;
 		margin-top: 0;
 	}
@@ -639,100 +656,14 @@ body {
 	position: relative;
 }
 .impact--1 {
-	margin-left: 4rem;
-}
-.impact--2 {
-	margin-right: 4rem;
+	margin-left: 2rem;
 }
 @media screen and (max-width: 767.9px) {
 	.impact--1 {
 		margin-left: 0;
 	}
-	.impact--2 {
-		margin-right: 0;
-	}
 }
 
-.image-cropped-container {
-	position: relative;
-	display: flex;
-	width: 100%;
-	padding-top: 100%;
-	margin: 0 !important;
-	line-height: 0;
-}
-.full-white-circle {
-	position: absolute;
-	width: calc(100% + 20px);
-	height: calc(100% + 20px);
-	left: -10px;
-	top: -10px;
-	background: #fff;
-	border-radius: 50%;
-	z-index: 1;
-}
-.impact__center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	color: #3f99d5;
-}
-.image-absolute-full {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-}
-.circle-title {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	color: #3f99d5;
-	font-family: SalesforceSansBold, sans-serif;
-	letter-spacing: 0.01em;
-	text-transform: uppercase;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	z-index: 3;
-}
-.circle-title > :first-child {
-	font-size: 1.6rem;
-	line-height: 0.9;
-}
-.circle-title > :nth-child(2) {
-	font-size: 1.45rem;
-	line-height: 0.95;
-}
-.circle-title > :nth-child(3) {
-	font-size: 3.4rem;
-	line-height: 0.8;
-}
-@media screen and (min-width: 768px) and (max-width: 1379.9px) {
-	.circle-title > :first-child {
-		font-size: 1.8vw;
-	}
-	.circle-title > :nth-child(2) {
-		font-size: 1.65vw;
-	}
-	.circle-title > :nth-child(3) {
-		font-size: 3.8vw;
-	}
-}
-@media screen and (max-width: 690.9px) {
-	.circle-title > :first-child {
-		font-size: 3.8vw;
-	}
-	.circle-title > :nth-child(2) {
-		font-size: 3.5vw;
-	}
-	.circle-title > :nth-child(3) {
-		font-size: 7.9vw;
-	}
-}
 
 /*Impact number component*/
 .impact-number {
@@ -749,18 +680,6 @@ body {
 	.impact-number__value {
 		font-size: 2.5rem;
 	}
-}
-.image-cropped-container {
-	position: relative;
-	display: flex;
-	width: 100%;
-	padding-top: 100%;
-	margin: 0 !important;
-	line-height: 0;
-}
-.image-cropped-container--white {
-	border-radius: 50%;
-	background-color: #fff;
 }
 
 
@@ -1085,13 +1004,6 @@ body {
 }
 
 
-
-.ipad__last-section {
-	position: relative;
-	width: 100%;
-	padding-top: 74%;
-}
-
 .ceo {
 	position: relative;
 	padding: 3rem;
@@ -1130,20 +1042,12 @@ body {
 	min-width: 100px;
 }
 
-
-
+/*Last section*/
+.ipad-image-size {
+	padding-top: 10px;
+}
 .background--last-section {
 	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
-}
-
-
-/*Assets*/
-.arrow-down {
-	display: block;
-	width: 15%;
-	max-width: 200px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 
@@ -1162,14 +1066,15 @@ body {
 [data-parallax="3"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 6px)) translateY(calc(var(--y) * 6px));
 }
+
+
+/*Animations*/
 [data-letters-anime] {
 	visibility: hidden;
 }
-/*Animations*/
 [data-anime] {
 	visibility: hidden;
 }
-
 .animate__animated {
 	--animate-duration: 2s;
 	--animate-delay: 0;
@@ -1678,7 +1583,7 @@ span.animate__animated {
 	transition: transform 2s cubic-bezier(.05,.84,.11,.86);
 }
 .animate__hover-bounce:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .animate__hover-rotate {
@@ -1787,16 +1692,7 @@ span.animate__animated {
 .parallax__5 {
 	transform: translate(calc(var(--x) * 40px), calc(var(--y) * 40px));
 }
-.last-scene-circle {
-	position: absolute;
-	left: 13%;
-	top: -41%;
-	width: 66%;
-	padding-top: 66%;
-	border-radius: 50%;
-	background-color: #fff;
-	opacity: 0.2;
-}
+
 /* Back entrances */
 @-webkit-keyframes backInDown {
   0% {
