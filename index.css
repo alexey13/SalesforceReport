@@ -1399,8 +1399,13 @@ span.animate__animated {
   stroke-dasharray: 481;
   stroke-dashoffset: 481;
 }
-
-
+.animate__line2 {
+	-webkit-animation-name: dasharrayLine;
+  animation-name: dasharrayLine;
+  animation-fill-mode: forwards;
+  stroke-dasharray: 221;
+  stroke-dashoffset: 221;
+}
 
 @-webkit-keyframes dots {
 	from {
