@@ -614,7 +614,7 @@ body {
 .laptop {
 	position: relative;
 	width: 100%;
-	padding-top: 56%;
+	padding-top: 62%;
 }
 .laptop:after {
 	content: '';
@@ -772,7 +772,7 @@ body {
 		text-align: center;
 	}
 	.gap--first {
-		height: 200px;
+		height: 110px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -808,7 +808,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 200px;
+		height: 110px;
 		order: 2;
 	}
 	.gap__title {
@@ -825,7 +825,7 @@ body {
 		font-size: 1.5rem;
 	}
 	.gap__bubble--first {
-		left: 45%;
+		left: 52%;
 		top: 4%;
 	}
 	.gap__bubble--second {
@@ -1065,11 +1065,22 @@ body {
 		margin-right: auto;
 	}
 }
-.background--last-section {
-	background-image: url('https://alexey13.github.io/SalesforceReport/img/last-section.png');
+.background-element-width-20 {
+	position: absolute;
+	width: 18%;
 }
-
-
+.background-element-width-10 {
+	position: absolute;
+	width: 10%;
+}
+@media screen and (max-width: 980px) {
+	.background-element-width-20{
+		width: 30%;
+	}
+	.background-element-width-10 {
+		width: 20%;
+	}
+}
 
 
 /*Parallax*/
@@ -1304,27 +1315,27 @@ span.animate__animated {
 }
 
 /* Ipad */
-@-webkit-keyframes ipad {
+@-webkit-keyframes heroimage {
   0% {
   	opacity: 0;
     transform: translateY(30px);
 	}
-	20% {
+	50% {
 	  opacity: 1;
 	}
 }
-@keyframes ipad {
+@keyframes heroimage {
   0% {
   	opacity: 0;
     transform: translateY(30px);
 	}
-	20% {
+	50% {
 	  opacity: 1;
 	}
 }
-.animate__ipad {
-  -webkit-animation-name: ipad;
-  animation-name: ipad;
+.animate__heroimage {
+  -webkit-animation-name: heroimage;
+  animation-name: heroimage;
   animation-timing-function: ease-out;
 }
 
@@ -1635,14 +1646,16 @@ span.animate__animated {
   animation-name: bounceIn;
 }
 
+@media screen and (min-width: 980px) {
+	.animate__hover-bounce {
+		transform: scale(1);
+		transition: transform 2s cubic-bezier(.05,.84,.11,.86);
+	}
+	.animate__hover-bounce:hover {
+		transform: scale(1.1);
+	}
+}
 
-.animate__hover-bounce {
-	transform: scale(1);
-	transition: transform 2s cubic-bezier(.05,.84,.11,.86);
-}
-.animate__hover-bounce:hover {
-	transform: scale(1.1);
-}
 
 .animate__hover-rotate {
 	transition: transform 30s;
