@@ -188,10 +188,10 @@ body {
 .link {
 	text-decoration: none;
 	transition: color .2s linear;
-	color: #00a1e0;
+	color: #1e73be;
 }
 .link:hover {
-	color: #16325C;
+	color: #14558f;
 }
 @media screen and (max-width: 1296px) {
 	.title--lg {

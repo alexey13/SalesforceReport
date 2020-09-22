@@ -169,55 +169,9 @@ function scrollAnimate() {
     //Deprecated: if you want to use several animation on one element create a separate wrapper for it
   }
 
-  function endCallback(element) {
-  	var name = element.dataset.animeOnend;
-
-  	function callback() {
-  		switch(name) {
-	  		case 'remove-goals':
-	  			var elements = document.querySelectorAll('.remove-goals');
-	  			elements = Array.prototype.slice.call(elements);
-	  			elements.forEach(function(el) {
-	  				el.remove();
-	  			});
-	  			var ref = document.querySelector('.goals-all');
-	  			ref.classList.add('animate__hover-rotate');
-	  			break;
-	  		case 'remove-report':
-	  			var elements = document.querySelectorAll('.remove-report');
-	  			elements = Array.prototype.slice.call(elements);
-	  			elements.forEach(function(el) {
-	  				el.remove();
-	  			});
-	  			document.querySelector('.report-all').style.opacity = '1';
-	  	}
-  	}
-
-  	element.addEventListener('animationend', callback);
-  }
-
-  function startCallback(element) {
-  	var name = element.dataset.animeOnstart;
-  	var delay = element.dataset.animeDelay * 1000 || 0;
-
-  	setTimeout(function() {
-  		switch(name) {
-	  		case 'remove-goals':
-	  			break;
-	  	}
-  	}, delay)
-
-  }
-
   function isAnyPartOfElementInViewport(el) {
-
     var rect = el.getBoundingClientRect();
-
-    // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
     var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-    //var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-
-    /*return (vertInView && horInView);*/
     return vertInView;
 	}
 
@@ -227,16 +181,8 @@ function scrollAnimate() {
     //Element types
     var checkViewport = element.dataset.checkViewport === '';
     var withAnime =  element.dataset.anime;
-    var onStartCallback =  element.dataset.animeOnstart;
-    var onEndCallback =  element.dataset.animeOnend;
 
     if(isAnyPartOfElementInViewport(element)) {
-    	if(onStartCallback) {
-    		startCallback(element)
-    	}
-    	if(onEndCallback) {
-    		endCallback(element)
-    	}
     	if(checkViewport) {
     		addViewportClass(element);
     	} 
@@ -260,43 +206,6 @@ function scrollAnimate() {
 }
 
 
-//On mouse move save in css variable x and y.
-// [data-parallax="1"] - fastest
-// [data-parallax="2"]
-// [data-parallax="3"] - slowest
-function parallax() {
-	var x = 0;
-	var y = 0;
-	var targetX = 0;
-	var targetY = 0;
-
-	var el = document.querySelector('.salesforce-report');
-
-	function onMouseMove(e) {
-		x = (e.clientX / window.innerWidth - 0.5) * 2;
-	  y = (e.clientY / window.innerHeight - 0.5) * 2;
-	}
-
-	function update() {
-		if(x && y) {
-			targetX += (x - targetX)*0.05;
-  		targetY += (y - targetY)*0.05;
-
-	  	el.style.setProperty('--x', targetX);
-	  	el.style.setProperty('--y', targetY);
-		}
-	  requestAnimationFrame(update);
-	}
-
-	update();
-
-	window.addEventListener('mousemove', onMouseMove);
-	
-}
-
-
-
-
 window.addEventListener('load', function() {
 	var windowWidth = (window.innerWidth || document.documentElement.clientWidth);
 
@@ -305,8 +214,6 @@ window.addEventListener('load', function() {
 	scrollAnimate();
 	runBubbles();
 	if(windowWidth > 767) {
-		rotateOnScroll();
-		//parallax();
 		addMouseEvents();
 	}
 }, false)
@@ -364,33 +271,8 @@ function runBubbles() {
     }
 	}
 	
-	update()
-}
-
-
-/*Rotate on scoll*/
-function rotateOnScroll() {
-	var pos = 0;
-	var targetPos = pos;
-
-	var el = document.querySelector('.salesforce-report');
-
-	var trottledOnScroll = throttle(onScroll, 100);
-
-	function onScroll() {
-		pos = window.scrollY / 5;
-	}
-
-	function update() {
-		targetPos += (pos - targetPos)*0.05;
-	  el.style.setProperty('--rotate', targetPos);
-	  requestAnimationFrame(update);
-	}	
-
 	update();
-	window.addEventListener('scroll', trottledOnScroll);
 }
-
 
 
 
@@ -434,24 +316,3 @@ function throttle(func, ms) {
 
   return wrapper;
 }
-
-
-function parallax() {
-	var x, y, raf;
-	var card = document.querySelector('.parallax');
-	var parent = document.querySelector('.section--last');
-
-	parent.addEventListener('mousemove', function(e) {
-	  x = (e.clientX / window.innerWidth - 0.5) * 2;
-	  y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-	  raf = raf || requestAnimationFrame(update);
-	});
-
-	function update() {
-	  card.style.setProperty('--x', x);
-	  card.style.setProperty('--y', y);
-	  raf = null;
-	}
-}
-
