@@ -1,36 +1,36 @@
 @font-face {
-font-family: SalesforceSansBold;
-font-style: normal;
-font-weight: normal;
-src: local(SalesforceSansBold), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Bold.woff') format('woff');
+	font-family: SalesforceSansBold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(SalesforceSansBold), url("https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Bold.woff") format("woff");
 }
 
 @font-face {
-font-family: SalesforceSansRegular;
-font-style: normal;
-font-weight: normal;
-src: local(SalesforceSansRegular), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Regular.woff') format('woff');
+	font-family: SalesforceSansRegular;
+  font-style: normal;
+  font-weight: normal;
+  src: local(SalesforceSansRegular), url("https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Regular.woff") format("woff");
 }
 
 @font-face {
-font-family: SalesforceSansThin;
-font-style: normal;
-font-weight: normal;
-src: local(SalesforceSansThin), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Thin.woff') format('woff');
+	font-family: SalesforceSansThin;
+  font-style: normal;
+  font-weight: normal;
+  src: local(SalesforceSansThin), url("https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Thin.woff") format("woff");
 }
 
 @font-face {
-font-family: SalesforceSansLight;
-font-style: normal;
-font-weight: normal;
-src: local(SalesforceSansLight), url('https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Light.woff') format('woff');
+	font-family: SalesforceSansLight;
+  font-style: normal;
+  font-weight: normal;
+  src: local(SalesforceSansLight), url("https://alexey13.github.io/SalesforceReport/fonts/SalesforceSans-Light.woff") format("woff");
 }
 
 @font-face {
-font-family: NeutratextRegular;
-font-style: normal;
-font-weight: normal;
-src: local(NeutratextRegular), url('https://alexey13.github.io/SalesforceReport/fonts/neutratext-demi.woff') format('woff');
+	font-family: NeutratextRegular;
+  font-style: normal;
+  font-weight: normal;
+  src: local(NeutratextRegular), url("https://alexey13.github.io/SalesforceReport/fonts/neutratext-demi.woff") format("woff");
 }
 
 /* 
@@ -46,6 +46,10 @@ body {
 	margin: 0;
 }
 
+.salesforce-report div, .salesforce-report section {
+	margin-top: initial;
+	margin-bottom: initial;
+}
 
 /*Main wrapper*/
 .salesforce-report {
@@ -56,11 +60,13 @@ body {
 	line-height: 1.2;
 	overflow-x: hidden;
 }
+
 @media screen and (max-width: 767.9px) {
 	.salesforce-report {
 		font-size: 1rem;
 	}
 }
+
 .salesforce-report * {
 	box-sizing: border-box;
 }
@@ -69,97 +75,141 @@ body {
 	box-shadow: none !important;
 }
 
-/* Colors */
-.color--blue {
+.salesforce-report {
+  /* Colors */
+  /*Text*/
+  /*Elements*/
+  /*Smaller*/
+  /*Layout*/
+  /*Helpers */
+  /*Section 1*/
+  /*Section 2*/
+  /*Impact number component*/
+  /*Card*/
+  /*Last section*/
+  /*Parallax*/
+  /*Animations*/
+  /* Zooming entrances */
+  /* Zooming entrances */
+  /* Zooming entrances */
+  /* appearFromLeft */
+  /* Opacity */
+  /* Ipad */
+  /*Report */
+  /* Bouncing entrances  */
+  /*Onscroll rotation*/
+  /*Flying bubles*/
+  /* 3d parallax */
+  /* Back entrances */;
+}
+
+.salesforce-report .color--blue {
 	color: #252b5f;
 }
-.color--cyan {
-	color: rgb(1, 156, 220);
+
+.salesforce-report .color--cyan {
+	color: #019cdc;
 }
-.color--skycyan {
+
+.salesforce-report .color--skycyan {
 	color: #e7f6f8;
 }
-.color--orange {
+
+.salesforce-report .color--orange {
 	color: #f05924;
 }
-.background--bluelight {
+
+.salesforce-report .background--bluelight {
 	background-color: #3279b1 !important;
 }
-.background--bluedarker {
+
+.salesforce-report .background--bluedarker {
 	background-color: #214285 !important;
 }
-.background--sky {
+
+.salesforce-report .background--sky {
 	background-color: #e7f6f8 !important;
 }
-.background-skydarker {
+
+.salesforce-report .background-skydarker {
 	background-color: #c0e3f3 !important;
 }
-.color-cyan2 {
+
+.salesforce-report .color-cyan2 {
 	color: #3f99d5 !important;
 }
-.color--white {
+
+.salesforce-report .color--white {
 	color: #fff !important;
 }
 
-/*Text*/
-.text--uppercase {
+.salesforce-report .text--uppercase {
 	text-transform: uppercase;
 }
-.text--description {
+
+.salesforce-report .text--description {
 	font-size: 1.27rem;
 }
-.text--description-big {
+
+.salesforce-report .text--description-big {
 	font-size: 1.38rem;
 }
+
 @media screen and (max-width: 1200px) {
-	.text--description {
+	.salesforce-report .text--description {
 		font-size: 1.09rem;
 	}
-	.text--description-big {
+
+	.salesforce-report .text--description-big {
 		font-size: 1.18rem;
 	}
 }
+
 @media screen and (max-width: 980px) {
-	.text--description {
+	.salesforce-report .text--description {
 		font-size: 1rem;
 	}
-	.text--description-big {
+
+	.salesforce-report .text--description-big {
 		font-size: 1.1rem;
 	}
 }
 
-/*Elements*/
-.title {
+.salesforce-report .title {
 	font-size: 5.4rem;
 	font-family: SalesforceSansThin, sans-serif;
 	color: #252b5f;
 	margin-bottom: 1.5rem;
 }
-.title--lg {
+
+.salesforce-report .title--lg {
 	font-size: 3.46rem;
 }
-.title--middle {
+
+.salesforce-report .title--middle {
 	font-size: 2.83rem;
 	margin-bottom: 0;
 }
-.title--sm {
+
+.salesforce-report .title--sm {
 	font-size: 2.2rem;
 	margin-bottom: 0;
 }
-.title--hero {
+
+.salesforce-report .title--hero {
 	font-size: 3.64rem;
 	letter-spacing: -.036em;
 	font-family: SalesforceSansThin, sans-serif;
 }
 
-.subtitle {
+.salesforce-report .subtitle {
 	margin-bottom: 0;
 	font-family: SalesforceSansLight, sans-serif;
 	font-size: 1.9rem;
 	color: #252b5f;
 }
 
-.button {
+.salesforce-report .button {
 	height: auto;
 	padding: 1.35rem 1.9rem;
 	background-color: #e84d14;
@@ -173,8 +223,8 @@ body {
 	box-shadow: none;
 	text-transform: uppercase;
 }
-/*Smaller*/
-.button {
+
+.salesforce-report .button {
 	font-size: 11px;
 	line-height: 45px;
 	height: 45px;
@@ -185,425 +235,529 @@ body {
 	border-radius: 100px;
 	text-align: center;
 }
-.link {
+
+.salesforce-report .link {
 	text-decoration: none;
 	transition: color .2s linear;
 	color: #1e73be;
 }
-.link:hover {
+
+.salesforce-report .link:hover {
 	color: #14558f;
 }
+
 @media screen and (max-width: 1296px) {
-	.title--lg {
+	.salesforce-report .title--lg {
 		font-size: 3rem;
 	}
 }
+
 @media screen and (max-width: 1115px) {
-	.title--lg {
+	.salesforce-report .title--lg {
 		font-size: 2.7rem;
 	}
 }
+
 @media screen and (max-width: 1015px) {
-	.title--lg {
+	.salesforce-report .title--lg {
 		font-size: 2.5rem;
 	}
 }
+
 @media screen and (max-width: 980px) {
-	.title {
+	.salesforce-report .title {
 		font-size: 4.15rem;
 		margin-bottom: 1rem;
 	}
-	.title--lg {
+
+	.salesforce-report .title--lg {
 		font-size: 2.4rem;
 	}
-	.title--middle {
+
+	.salesforce-report .title--middle {
 		font-size: 2.15rem;
 	}
-	.title--sm {
+
+	.salesforce-report .title--sm {
 		font-size: 1.7rem;
 	}
-	.subtitle {
+
+	.salesforce-report .subtitle {
 		font-size: 1.45rem;
 	}
 }
+
 @media screen and (max-width: 906px) {
-	.title--lg {
+	.salesforce-report .title--lg {
 		font-size: 2.2rem;
 	}
 }
+
 @media screen and (max-width: 838px) {
-	.title--lg {
+	.salesforce-report .title--lg {
 		font-size: 2rem;
 	}
 }
+
 @media screen and (max-width: 767.9px) {
-	.title {
+	.salesforce-report .title {
 		line-height: 1.2;
 	}
-	.title--lg {
+
+	.salesforce-report .title--lg {
 		font-size: 2.5rem;
 	}
 }
 
-
-/*Layout*/
-.section {
+.salesforce-report .section {
 	position: relative;
 	padding: 3.5rem 0;
 }
+
 @media screen and (max-width: 1200px) {
-	.section {
+	.salesforce-report .section {
 		padding: 2.45rem 0;
 	}
 }
+
 @media screen and (max-width: 980px) {
-	.section {
+	.salesforce-report .section {
 		padding: 1.75rem 0;
 	}
 }
 
-.container {
+.salesforce-report .container {
 	max-width: 1380px;
 	width: 100%;
 	padding-right: 1rem;
 	padding-left: 1rem;
 	margin: 0 auto;
 }
-.container--1920 {
+
+.salesforce-report .container--1920 {
 	max-width: 1920px;
 }
-.row {
+
+.salesforce-report .row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -1rem;
 	margin-right: -1rem;
 }
-.row > * {
+
+.salesforce-report .row > * {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
-.column-1 {
+
+.salesforce-report .column-1 {
 	width: 8.333%;
 }
-.column-2 {
+
+.salesforce-report .column-2 {
 	width: 16.666%;
 }
-.column-3 {
+
+.salesforce-report .column-3 {
 	width: 25%;
 }
-.column-4 {
+
+.salesforce-report .column-4 {
 	width: 33.333%;
 }
-.column-5 {
+
+.salesforce-report .column-5 {
 	width: 41.666%;
 }
-.column-6 {
+
+.salesforce-report .column-6 {
 	width: 50%;
 }
-.column-7 {
+
+.salesforce-report .column-7 {
 	width: 58.33%;
 }
-.column-8 {
+
+.salesforce-report .column-8 {
 	width: 66.666%;
 }
-.column-9 {
+
+.salesforce-report .column-9 {
 	width: 74.996%;
 }
+
 @media screen and (max-width: 767.9px) {
-	.column-2,
-	.column-3,
-	.column-4,
-	.column-5,
-	.column-6,
-	.column-7,
-	.column-8,
-	.column-9 {
+	.salesforce-report .column-2,
+    .salesforce-report .column-3,
+    .salesforce-report .column-4,
+    .salesforce-report .column-5,
+    .salesforce-report .column-6,
+    .salesforce-report .column-7,
+    .salesforce-report .column-8,
+    .salesforce-report .column-9 {
 		width: 100%;
 	}
-	.column-1 {
+
+	.salesforce-report .column-1 {
 		display: none;
 	}
 }
+
 @media screen and (max-width: 980.9px) {
-	.column-lg {
+	.salesforce-report .column-lg {
 		width: 100%;
 	}
 }
 
-/*Helpers */
-.mb-1 {
-	margin-bottom: 1rem;
+.salesforce-report .mb-1 {
+	margin-bottom: 1rem !important;
 }
-.mb-2 {
-	margin-bottom: 2rem;
+
+.salesforce-report .mb-2 {
+	margin-bottom: 2rem !important;
 }
-.mb-3 {
-	margin-bottom: 3rem;
+
+.salesforce-report .mb-3 {
+	margin-bottom: 3rem !important;
 }
-.mb-4 {
-	margin-bottom: 4rem;
+
+.salesforce-report .mb-4 {
+	margin-bottom: 4rem !important;
 }
-.mb-5 {
-	margin-bottom: 5rem;
+
+.salesforce-report .mb-5 {
+	margin-bottom: 5rem !important;
 }
-.mb-7 {
-	margin-bottom: 7rem;
+
+.salesforce-report .mb-7 {
+	margin-bottom: 7rem !important;
 }
-.mb-10 {
-	margin-bottom: 10rem;
+
+.salesforce-report .mb-10 {
+	margin-bottom: 10rem !important;
 }
-.mr-2 {
+
+.salesforce-report .mr-2 {
 	margin-right: 2rem;
 }
-.mr-3 {
+
+.salesforce-report .mr-3 {
 	margin-right: 3rem;
 }
-.mr-5 {
+
+.salesforce-report .mr-5 {
 	margin-right: 5rem;
 }
-.mr-auto {
+
+.salesforce-report .mr-auto {
 	margin-right: auto;
 }
-.ml-auto {
+
+.salesforce-report .ml-auto {
 	margin-left: auto;
 }
-.pl-1 {
+
+.salesforce-report .pl-1 {
 	padding-left: 1rem;
 }
-.pl-2 {
+
+.salesforce-report .pl-2 {
 	padding-left: 2rem;
 }
-.pl-3 {
+
+.salesforce-report .pl-3 {
 	padding-left: 3rem;
 }
-.pl-4 {
+
+.salesforce-report .pl-4 {
 	padding-left: 4rem;
 }
-.pr-2 {
+
+.salesforce-report .pr-2 {
 	padding-right: 2rem;
 }
-.pb-xxl {
+
+.salesforce-report .pb-xxl {
 	padding-bottom: 10rem;
 }
-.pt-xxl {
+
+.salesforce-report .pt-xxl {
 	padding-top: 10rem;
 }
-.pb-0 {
+
+.salesforce-report .pb-0 {
 	padding-bottom: 0 !important;
 }
+
 @media screen and (max-width: 1200px) {
-	.mb-1 {
-	margin-bottom: 0.66rem;
+	.salesforce-report .mb-1 {
+		margin-bottom: 0.66rem !important;
 	}
-	.mb-2 {
-		margin-bottom: 1.32rem;
+
+	.salesforce-report .mb-2 {
+		margin-bottom: 1.32rem !important;
 	}
-	.mb-3 {
-		margin-bottom: 1.98rem;
+
+	.salesforce-report .mb-3 {
+		margin-bottom: 1.98rem !important;
 	}
-	.mb-4 {
-		margin-bottom: 2.64rem;
+
+	.salesforce-report .mb-4 {
+		margin-bottom: 2.64rem !important;
 	}
-	.mb-5 {
-		margin-bottom: 3.3rem;
+
+	.salesforce-report .mb-5 {
+		margin-bottom: 3.3rem !important;
 	}
-	.mb-7 {
-		margin-bottom: 4.62rem;
+
+	.salesforce-report .mb-7 {
+		margin-bottom: 4.62rem !important;
 	}
-	.mb-10 {
-		margin-bottom: 6.66rem;
+
+	.salesforce-report .mb-10 {
+		margin-bottom: 6.66rem !important;
 	}
-	.mr-5 {
+
+	.salesforce-report .mr-5 {
 		margin-right: 3.3rem;
 	}
-	.mr-3 {
+
+	.salesforce-report .mr-3 {
 		margin-right: 1.98rem;
 	}
-	.mr-2 {
+
+	.salesforce-report .mr-2 {
 		margin-right: 1.32rem;
 	}
-	.pl-1 {
+
+	.salesforce-report .pl-1 {
 		padding-left: 0.66rem;
 	}
-	.pl-2 {
+
+	.salesforce-report .pl-2 {
 		padding-left: 1.32rem;
 	}
-	.pl-3 {
+
+	.salesforce-report .pl-3 {
 		padding-left: 1.98rem;
 	}
-	.pl-4 {
+
+	.salesforce-report .pl-4 {
 		padding-left: 2.64rem;
 	}
-	.pr-2 {
+
+	.salesforce-report .pr-2 {
 		padding-right: 1.32rem;
 	}
-	.pb-xxl {
+
+	.salesforce-report .pb-xxl {
 		padding-bottom: 4rem;
 	}
-	.pt-xxl {
+
+	.salesforce-report .pt-xxl {
 		padding-top: 4rem;
 	}
 }
+
 @media screen and (max-width: 980px) {
-	.mb-1 {
-		margin-bottom: 0.5rem;
+	.salesforce-report .mb-1 {
+		margin-bottom: 0.5rem !important;
 	}
-	.mb-2 {
-		margin-bottom: 1rem;
+
+	.salesforce-report .mb-2 {
+		margin-bottom: 1rem !important;
 	}
-	.mb-3 {
-		margin-bottom: 1.5rem;
+
+	.salesforce-report .mb-3 {
+		margin-bottom: 1.5rem !important;
 	}
-	.mb-4 {
-		margin-bottom: 2rem;
+
+	.salesforce-report .mb-4 {
+		margin-bottom: 2rem !important;
 	}
-	.mb-5 {
-		margin-bottom: 2.5rem;
+
+	.salesforce-report .mb-5 {
+		margin-bottom: 2.5rem !important;
 	}
-	.mb-7 {
-		margin-bottom: 3rem;
+
+	.salesforce-report .mb-7 {
+		margin-bottom: 3rem !important;
 	}
-	.mb-10 {
-		margin-bottom: 4rem;
+
+	.salesforce-report .mb-10 {
+		margin-bottom: 4rem !important;
 	}
-	.mr-5 {
+
+	.salesforce-report .mr-5 {
 		margin-right: 2.5rem;
 	}
-	.mr-3 {
+
+	.salesforce-report .mr-3 {
 		margin-right: 1.5rem;
 	}
-	.mr-2 {
+
+	.salesforce-report .mr-2 {
 		margin-right: 1rem;
 	}
-	.pl-1 {
+
+	.salesforce-report .pl-1 {
 		padding-left: 0.5rem;
 	}
-	.pl-2 {
+
+	.salesforce-report .pl-2 {
 		padding-left: 1rem;
 	}
-	.pl-3 {
+
+	.salesforce-report .pl-3 {
 		padding-left: 1.5rem;
 	}
-	.pl-4 {
+
+	.salesforce-report .pl-4 {
 		padding-left: 2rem;
 	}
-	.pr-2 {
+
+	.salesforce-report .pr-2 {
 		padding-right: 1rem;
 	}
-	.pb-xxl {
+
+	.salesforce-report .pb-xxl {
 		padding-bottom: 1.75rem;
 	}
-	.pt-xxl {
+
+	.salesforce-report .pt-xxl {
 		padding-top: 1.75rem;
 	}
 }
+
 @media screen and (max-width: 767.9px) {
-	.pl-1,
-	.pl-2,
-	.pl-3,
-	.pl-4 {
+	.salesforce-report .pl-1,
+    .salesforce-report .pl-2,
+    .salesforce-report .pl-3,
+    .salesforce-report .pl-4 {
 		padding-left: 0;
 	}
-	.pr-2 {
+
+	.salesforce-report .pr-2 {
 		padding-right: 0;
 	}
-	.mb-xs-1 {
-		margin-bottom: 1rem;
+
+	.salesforce-report .mb-xs-1 {
+		margin-bottom: 1rem !important;
 	}
-	.mb-xs-2 {
-		margin-bottom: 2rem;
+
+	.salesforce-report .mb-xs-2 {
+		margin-bottom: 2rem !important;
 	}
-	.order-xs-1 {
+
+	.salesforce-report .order-xs-1 {
 		order: -1;
 	}
-	.pb-xs-0 {
+
+	.salesforce-report .pb-xs-0 {
 		padding-bottom: 0;
 	}
 }
+
 @media screen and (max-width: 980.9px) {
-	.mb-lg-1 {
-		margin-bottom: 1rem;
+	.salesforce-report .mb-lg-1 {
+		margin-bottom: 1rem !important;
 	}
-	.order-lg-1 {
+
+	.salesforce-report .order-lg-1 {
 		order: -1;
 	}
 }
+
 @media screen and (min-width: 1200px) {
-	.pl-xlg-2 {
+	.salesforce-report .pl-xlg-2 {
 		padding-left: 2rem;
 	}
 }
 
-.text-center {
+.salesforce-report .text-center {
 	text-align: center;
 }
-.text-right {
+
+.salesforce-report .text-right {
 	text-align: right;
 }
-.text-left {
+
+.salesforce-report .text-left {
 	text-align: left;
 }
-.align-items-center {
+
+.salesforce-report .align-items-center {
 	align-items: center;
 }
-.justify-content-between {
+
+.salesforce-report .justify-content-between {
 	justify-content: space-between;
 }
-.justify-content-center {
+
+.salesforce-report .justify-content-center {
 	justify-content: center;
 }
-.justify-content-end {
+
+.salesforce-report .justify-content-end {
 	justify-content: flex-end;
 }
-.position-relative {
+
+.salesforce-report .position-relative {
 	position: relative;
 }
-.overflow-hidden {
+
+.salesforce-report .overflow-hidden {
 	overflow: hidden;
 }
+
 @media screen and (max-width: 767.9px) {
-	.text-center {
+	.salesforce-report .text-center {
 		text-align: left;
 	}
-	.text-right {
+
+	.salesforce-report .text-right {
 		text-align: left;
 	}
-	.text-center-xs {
+
+	.salesforce-report .text-center-xs {
 		text-align: center !important;
 	}
 }
+
 @media screen and (max-width: 980.9px) {
-	.text-center-md {
+	.salesforce-report .text-center-md {
 		text-align: center !important;
 	}
 }
-.img-fluid {
+
+.salesforce-report .img-fluid {
 	position: relative;
 	max-width: 100%;
 	height: auto;
 }
-.width-80 {
+
+.salesforce-report .width-80 {
 	width: 80%;
 }
-.max-width-50 {
+
+.salesforce-report .max-width-50 {
 	max-width: 50% !important;
 }
+
 @media screen and (max-width: 767.9px) {
-	.width-80 {
+	.salesforce-report .width-80 {
 		width: auto;
 	}
 }
 
-
-
-/*Section 1*/
-.section--hero {
+.salesforce-report .section--hero {
 	position: relative;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
 }
-.background-color--hero {
+
+.salesforce-report .background-color--hero {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -611,75 +765,83 @@ body {
 	height: 100%;
 	background-color: #bfe4f4;
 }
-.laptop {
+
+.salesforce-report .laptop {
 	position: relative;
 	width: 100%;
 	padding-top: 62%;
 }
-.laptop:after {
+
+.salesforce-report .laptop:after {
 	content: '';
 	position: absolute;
 	left: -10%;
 	top: 0;
 	width: 120%;
 	height: 100%;
-	background-image: url('https://alexey13.github.io/SalesforceReport/img/laptop.png');
+	background-image: url("https://alexey13.github.io/SalesforceReport/img/laptop.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom;
 }
+
 @media screen and (min-width: 1380px) {
-	.laptop {
+	.salesforce-report .laptop {
 		padding-top: 77%;
 	}
-	.laptop:after {
+
+	.salesforce-report .laptop:after {
 		width: 140%;
 		left: -20%;
 	}
 }
-/*Section 2*/
-.subtitle--report {
+
+.salesforce-report .subtitle--report {
 	margin-top: 2rem;
 	line-height: 1.2;
 	color: #253a7b;
 	width: 80%;
 }
+
 @media screen and (max-width: 767.9px) {
-	.subtitle--report {
+	.salesforce-report .subtitle--report {
 		width: auto;
 		margin-top: 0;
 	}
 }
-.impact {
+
+.salesforce-report .impact {
 	position: relative;
 }
 
-
-/*Impact number component*/
-.impact-number {
+.salesforce-report .impact-number {
 	display: flex;
 	align-items: center;
 }
-.impact-number__value {
+
+.salesforce-report .impact-number__value {
 	font-family: SalesforceSansLight, sans-serif;
 	margin-right: 5%;
 	color: #3279b1;
 }
-.section--gap {
+
+.salesforce-report .section--gap {
 	padding-top: 6%;
 	padding-bottom: 0;
 	z-index: 2;
 }
+
 @media screen and (min-width: 768px) {
-	.after-section-gap {
+	.salesforce-report .after-section-gap {
 		padding-top: 6%;
 	}
 }
 
-.gap__wrapper {
+.salesforce-report .gap__wrapper {
 	display: flex;
 }
-.gap {
+
+.salesforce-report .gap {
 	display: inline-block;
 	position: relative;
 	width: 33%;
@@ -687,8 +849,9 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
 @media screen and (min-width: 1921px) {
-	.gap {
+	.salesforce-report .gap {
 		display: inline-block;
 		position: relative;
 		width: calc(1920 / 3px);
@@ -696,42 +859,48 @@ body {
 	}
 }
 
-.gap__current-background {
-  position: absolute;
-  left: -10%;
-  top: 30%;
-  width: 110%;
-  height: 100%;
-  background-color: #3f99d5;
-  border-top-right-radius: 17vw;
-  border-bottom-left-radius: 17vw;
-  z-index: -1;
-}
-.gap__potential-background {
+.salesforce-report .gap__current-background {
 	position: absolute;
-  right: -10%;
-  top: 0;
-  width: 110%;
-  height: 100%;
-  background-color: #252b5f;
-  border-top-left-radius: 14vw;
-  z-index: -1;
+	left: -10%;
+	top: 30%;
+	width: 110%;
+	height: 100%;
+	background-color: #3f99d5;
+	border-top-right-radius: 17vw;
+	border-bottom-left-radius: 17vw;
+	z-index: -1;
 }
-.tshirt-logo {
+
+.salesforce-report .gap__potential-background {
+	position: absolute;
+	right: -10%;
+	top: 0;
+	width: 110%;
+	height: 100%;
+	background-color: #252b5f;
+	border-top-left-radius: 14vw;
+	z-index: -1;
+}
+
+.salesforce-report .tshirt-logo {
 	width: 80%;
 	height: auto;
 }
-.gap__title {
+
+.salesforce-report .gap__title {
 	font-size: 2vw;
 	font-family: SalesforceSansLight, sans-serif;
 }
-.gap__title-center {
+
+.salesforce-report .gap__title-center {
 	margin-top: 45%;
 }
-.gap__title-rigth {
+
+.salesforce-report .gap__title-rigth {
 	margin-top: 20%;
 }
-.gap__bubble {
+
+.salesforce-report .gap__bubble {
 	display: flex !important;
 	justify-content: center;
 	align-items: center;
@@ -741,37 +910,44 @@ body {
 	letter-spacing: 0.1vw;
 	font-family: SalesforceSansBold, sans-serif;
 }
-.gap__bubble--first {
+
+.salesforce-report .gap__bubble--first {
 	left: 0%;
 	top: -5%;
 	background-color: #3998D4 !important;
 }
-.gap__bubble--second {
+
+.salesforce-report .gap__bubble--second {
 	left: 35%;
 	top: -20%;
 	background-color: #F3785F !important;
 }
-.gap__bubble--third {
+
+.salesforce-report .gap__bubble--third {
 	right: 0;
 	top: -16%;
 	background-color: #702C90 !important;
 }
+
 @media screen and (max-width: 767.9px) {
-	.section--gap {
+	.salesforce-report .section--gap {
 		max-width: 345px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 0;
 	}
-	.gap__wrapper {
+
+	.salesforce-report .gap__wrapper {
 		flex-direction: column;
 	}
-	.gap {
+
+	.salesforce-report .gap {
 		width: 100%;
 		height: auto;
 		text-align: center;
 	}
-	.gap--first {
+
+	.salesforce-report .gap--first {
 		height: 110px;
 		display: flex;
 		justify-content: center;
@@ -779,72 +955,84 @@ body {
 		order: -1;
 		z-index: 1;
 	}
-	.gap--first img {
+
+	.salesforce-report .gap--first img {
 		display: none;
 	}
-	.gap__current-background {
+
+	.salesforce-report .gap__current-background {
 		top: 0;
 		left: 40%;
 		width: 100vw;
 		transform: translateX(-50%);
 	}
-	.gap__potential-background {
+
+	.salesforce-report .gap__potential-background {
 		right: 40%;
 		width: 100vw;
 		transform: translateX(50%);
 	}
-	.gap--second {
+
+	.salesforce-report .gap--second {
 		display: flex;
 		height: 400px;
 		align-items: center;
 		text-align: left;
 	}
-	.gap--second svg {
+
+	.salesforce-report .gap--second svg {
 		left: 5% !important;
 		transform: rotate(90deg) translate(57%, 3%) scale(1.3);
 		z-index: -1;
 	}
-	.gap--third {
+
+	.salesforce-report .gap--third {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 110px;
 		order: 2;
 	}
-	.gap__title {
+
+	.salesforce-report .gap__title {
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 	}
-	.gap__bubble {
+
+	.salesforce-report .gap__bubble {
 		width: 110px !important;
 		height: 110px !important;
 		font-size: 0.7rem;
 		letter-spacing: 0.01rem;
 	}
-	.gap__title {
+
+	.salesforce-report .gap__title {
 		font-size: 1.5rem;
 	}
-	.gap__bubble--first {
+
+	.salesforce-report .gap__bubble--first {
 		left: 52%;
 		top: 4%;
 	}
-	.gap__bubble--second {
+
+	.salesforce-report .gap__bubble--second {
 		left: 66%;
 		top: 35%;
 	}
-	.gap__bubble--third {
+
+	.salesforce-report .gap__bubble--third {
 		left: 62%;
 		top: 69%;
 	}
 }
 
-
-.bubbles__item {
+.salesforce-report .bubbles__item {
 	display: inline-block;
 	position: relative;
 	border-radius: 100%;
 }
-.bubbles__item-inner {
+
+.salesforce-report .bubbles__item-inner {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -853,87 +1041,103 @@ body {
 	color: #fff;
 	z-index: 2;
 }
-.bubbles__title {
+
+.salesforce-report .bubbles__title {
 	font-size: 3.2rem;
 	margin-bottom: 0rem;
 	font-family: SalesforceSansLight, sans-serif;
 }
-.bubbles__title--sm {
+
+.salesforce-report .bubbles__title--sm {
 	font-size: 2.45rem;
 }
+
 @media screen and (min-width: 768px) and (max-width: 980px) {
-	.bubbles__title {
+	.salesforce-report .bubbles__title {
 		font-size: 2.49rem;
 	}
-	.bubbles__title--sm {
+
+	.salesforce-report .bubbles__title--sm {
 		font-size: 1.7rem;
 	}
 }
+
 @media screen and (max-width: 767.9px) {
-	.bubbles__title {
+	.salesforce-report .bubbles__title {
 		font-size: 2.2rem;
 	}
-	.bubbles__title--sm {
+
+	.salesforce-report .bubbles__title--sm {
 		font-size: 1.7rem;
 	}
 }
-.bubbles__subtitle {
+
+.salesforce-report .bubbles__subtitle {
 	font-size: 1.2rem;
 	font-family: SalesforceSansLight, sans-serif;
 }
-.bubbles__text {
+
+.salesforce-report .bubbles__text {
 	margin-top: 0.5rem;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-	.bubbles__subtitle,
-	.bubbles__text {
+	.salesforce-report .bubbles__subtitle,
+    .salesforce-report .bubbles__text {
 		font-size: 1rem;
 	}
 }
-.bubbles__xl {
+
+.salesforce-report .bubbles__xl {
 	width: 52%;
 	padding-top: 52%;
-	background-color: rgb(1, 156, 220);
+	background-color: #019cdc;
 }
-.bubbles__md {
+
+.salesforce-report .bubbles__md {
 	width: 45%;
 	padding-top: 45%;
-	background-color: rgb(100, 156, 220);
+	background-color: #649cdc;
 }
-.bubbles__sm {
+
+.salesforce-report .bubbles__sm {
 	width: 40%;
 	padding-top: 40%;
-	background-color: rgb(200, 156, 220);
+	background-color: #c89cdc;
 }
-.bubbles__xsm {
+
+.salesforce-report .bubbles__xsm {
 	width: 30%;
 	padding-top: 30%;
 	vertical-align: top;
 	left: 4%;
 	top: 10%;
-	background-color: rgb(100, 156, 0);
+	background-color: #649c00;
 }
-.bubbles--pair {
+
+.salesforce-report .bubbles--pair {
 	position: relative;
 }
-.bubbles__item-left {
+
+.salesforce-report .bubbles__item-left {
 	position: relative;
 	margin-right: 3%;
 }
-.bubbles__item-rigth {
+
+.salesforce-report .bubbles__item-rigth {
 	position: relative;
 	margin-left: 3%;
 }
+
 @media screen and (max-width: 767.9px) {
-	.bubbles__xl {
+	.salesforce-report .bubbles__xl {
 		width: 50%;
 		padding-top: 50%;
-		background-color: rgb(1, 156, 220);
+		background-color: #019cdc;
 	}
 }
 
-/*Card*/
-.card {
+.salesforce-report .card {
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -942,7 +1146,8 @@ body {
 	background-color: #e7f6f8;
 	font-size: 1rem;
 }
-.card__image {
+
+.salesforce-report .card__image {
 	display: flex;
 	width: 175px;
 	height: 175px;
@@ -953,18 +1158,21 @@ body {
 	border-radius: 50%;
 	background: #fff;
 }
-.card__image img {
+
+.salesforce-report .card__image img {
 	max-width: 80%;
 }
-.subtitle__card {
+
+.salesforce-report .subtitle__card {
 	font-size: 1.7rem;
 }
 
 @media screen and (max-width: 1300px) {
-	.card {
+	.salesforce-report .card {
 		padding: 2rem 2rem;
 	}
-	.card__image {
+
+	.salesforce-report .card__image {
 		width: 135px;
 		height: 135px;
 		margin-right: 2rem;
@@ -972,35 +1180,39 @@ body {
 }
 
 @media screen and (max-width: 980px) {
-	.subtitle__card {
+	.salesforce-report .subtitle__card {
 		font-size: 1rem;
 	}
 }
+
 @media screen and (max-width: 767.9px) {
-	.card {
+	.salesforce-report .card {
 		padding: 1rem 1rem;
 	}
-	.card__image {
+
+	.salesforce-report .card__image {
 		width: 20vw;
 		height: 20vw;
 		margin-right: 5vw;
 	}
-	.card__image--section-quote {
+
+	.salesforce-report .card__image--section-quote {
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
-
-.ceo {
+.salesforce-report .ceo {
 	position: relative;
 	padding: 3rem;
 	text-align: center;
 }
-.ceo > * {
+
+.salesforce-report .ceo > * {
 	position: relative;
 }
-.ceo::before {
+
+.salesforce-report .ceo::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1010,54 +1222,63 @@ body {
 	background-color: #a3d8ec;
 	border-radius: 100%;
 }
-.ceo__profile {
+
+.salesforce-report .ceo__profile {
 	display: inline-flex;
 	align-items: center;
 	text-align: left;
 	color: #252b5f;
 }
-.ceo__name {
+
+.salesforce-report .ceo__name {
 	color: #252b5f;
 	font-family: SalesforceSansThin, sans-serif;
 }
-.ceo__avatar {
+
+.salesforce-report .ceo__avatar {
 	position: relative;
 }
-.ceo__image {
+
+.salesforce-report .ceo__image {
 	width: 10vw;
 	max-width: 150px;
 	min-width: 100px;
 }
-.ceo__quote > .word:first-child span:first-child {
+
+.salesforce-report .ceo__quote > .word:first-child span:first-child {
 	position: relative;
 }
-.ceo__quote > .word:first-child span:first-child:before {
+
+.salesforce-report .ceo__quote > .word:first-child span:first-child:before {
 	content: '';
 	position: absolute;
 	left: -200%;
 	top: 0;
 	height: 150%;
 	width: 150%;
-	background-image: url('https://alexey13.github.io/SalesforceReport/img/card-1.png');
+	background-image: url("https://alexey13.github.io/SalesforceReport/img/card-1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.ceo__quote.animated > .word:first-child span:first-child:before {
+
+.salesforce-report .ceo__quote.animated > .word:first-child span:first-child:before {
 	visibility: visible;
 }
+
 @media screen and (max-width: 767.9px) {
-	.ceo__quote {
+	.salesforce-report .ceo__quote {
 		max-width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
-/*Last section*/
-.ipad-image-size {
+
+.salesforce-report .ipad-image-size {
 	padding-top: 20px;
 }
+
 @media screen and (max-width: 980.9px) {
-	.ipad-image-size {
+	.salesforce-report .ipad-image-size {
 		display: block;
 		padding-top: 0;
 		max-width: 85%;
@@ -1065,615 +1286,654 @@ body {
 		margin-right: auto;
 	}
 }
-.background-element-width-20 {
+
+.salesforce-report .background-element-width-20 {
 	position: absolute;
 	width: 18%;
 }
-.background-element-width-10 {
+
+.salesforce-report .background-element-width-10 {
 	position: absolute;
 	width: 10%;
 }
+
 @media screen and (max-width: 980px) {
-	.background-element-width-20{
+	.salesforce-report .background-element-width-20 {
 		width: 30%;
 	}
-	.background-element-width-10 {
+
+	.salesforce-report .background-element-width-10 {
 		width: 20%;
 	}
 }
 
-
-/*Parallax*/
-[data-parallax="1"]:not([data-anime]) {
+.salesforce-report [data-parallax="1"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 20px)) translateY(calc(var(--y) * 20px));
 }
-[data-parallax="2"]:not([data-anime]) {
+
+.salesforce-report [data-parallax="2"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 10px)) translateY(calc(var(--y) * 10px));
 }
-[data-parallax="-2"]:not([data-anime]) {
+
+.salesforce-report [data-parallax="-2"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 13px)) translateY(calc(var(--y) * 13px));
 }
-[data-parallax="3"]:not([data-anime]) {
+
+.salesforce-report [data-parallax="3"]:not([data-anime]) {
 	transform: translateX(calc(var(--x) * 6px)) translateY(calc(var(--y) * 6px));
 }
 
+.salesforce-report [data-letters-anime] {
+	visibility: hidden;
+}
 
-/*Animations*/
-[data-letters-anime] {
+.salesforce-report [data-anime] {
 	visibility: hidden;
 }
-[data-anime] {
-	visibility: hidden;
-}
-.animate__animated {
+
+.salesforce-report .animate__animated {
 	--animate-duration: 2s;
 	--animate-delay: 0;
-
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
-
 	-webkit-animation-duration: var(--animate-duration);
-  animation-duration: var(--animate-duration);
-
+	animation-duration: var(--animate-duration);
 	-webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  visibility: visible;
-
-  animation-delay: 0s;
-  -webkit-animation-delay: var(--animate-delay);
-  animation-delay: var(--animate-delay);
-
-  backface-visibility: hidden;
+	animation-fill-mode: both;
+	visibility: visible;
+	animation-delay: 0s;
+	-webkit-animation-delay: var(--animate-delay);
+	animation-delay: var(--animate-delay);
+	backface-visibility: hidden;
 }
-span.animate__animated {
+
+.salesforce-report span.animate__animated {
 	display: inline-block;
 }
-.animate__animated[data-viewport="false"] {
+
+.salesforce-report .animate__animated[data-viewport="false"] {
 	animation-play-state: paused;
 }
-.word {
+
+.salesforce-report .word {
 	display: inline-block;
 	white-space: nowrap;
 }
 
 @-webkit-keyframes fromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
 	}
+
 	50% {
-	  opacity: 1;
+		opacity: 1;
 	}
-}
-@keyframes fromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-	}
-	50% {
-	  opacity: 1;
-	}
-}
-.animate__fromTop {
-	-webkit-animation-name: fromTop;
-  animation-name: fromTop;
-  animation-duration: 0.8s;
 }
 
+@keyframes fromTop {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+.salesforce-report .animate__fromTop {
+	-webkit-animation-name: fromTop;
+	animation-name: fromTop;
+	animation-duration: 0.8s;
+}
 
 @keyframes bubblesToRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
 	}
+
 	50% {
-	  opacity: 1;
+		opacity: 1;
 	}
-}
-.animate__bubblesToRight {
-  animation-name: bubblesToRight;
 }
 
-/* Zooming entrances */
+.salesforce-report .animate__bubblesToRight {
+	animation-name: bubblesToRight;
+}
+
 @-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
+	50% {
+		opacity: 1;
+	}
 }
+
 @keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
-}
-.animate__zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
+	50% {
+		opacity: 1;
+	}
 }
 
+.salesforce-report .animate__zoomIn {
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+}
 
-
-
-/* Zooming entrances */
 @-webkit-keyframes zoomInFromLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
-    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+		transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
+	50% {
+		opacity: 1;
+	}
 }
+
 @keyframes zoomInFromLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
-    transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+		transform: translate(-100%, -17%) scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
-}
-.animate__zoomInFromLeft {
-  -webkit-animation-name: zoomInFromLeft;
-  animation-name: zoomInFromLeft;
+	50% {
+		opacity: 1;
+	}
 }
 
+.salesforce-report .animate__zoomInFromLeft {
+	-webkit-animation-name: zoomInFromLeft;
+	animation-name: zoomInFromLeft;
+}
 
-
-
-/* Zooming entrances */
 @-webkit-keyframes zoomInFromRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
-    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+		transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
+	50% {
+		opacity: 1;
+	}
 }
+
 @keyframes zoomInFromRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
-    transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
-  }
+	from {
+		opacity: 0;
+		-webkit-transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+		transform: translate(100%, -17%) scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    opacity: 1;
-  }
-}
-.animate__zoomInFromRight {
-  -webkit-animation-name: zoomInFromRight;
-  animation-name: zoomInFromRight;
+	50% {
+		opacity: 1;
+	}
 }
 
+.salesforce-report .animate__zoomInFromRight {
+	-webkit-animation-name: zoomInFromRight;
+	animation-name: zoomInFromRight;
+}
 
-
-/* appearFromLeft */
 @-webkit-keyframes appearFromLeft {
-  from {
-    transform: scaleX(0);
-  }
+	from {
+		transform: scaleX(0);
+	}
 
-  25% {
-    transform: scaleX(1);
-  }
+	25% {
+		transform: scaleX(1);
+	}
 }
+
 @keyframes appearFromLeft {
-  from {
-    transform: scaleX(0);
-  }
+	from {
+		transform: scaleX(0);
+	}
 
-  25% {
-    transform: scaleX(1);
-  }
+	25% {
+		transform: scaleX(1);
+	}
 }
-.animate__appearFromLeft {
+
+.salesforce-report .animate__appearFromLeft {
 	transform-origin: left;
-  -webkit-animation-name: appearFromLeft;
-  animation-name: appearFromLeft;
+	-webkit-animation-name: appearFromLeft;
+	animation-name: appearFromLeft;
 }
 
-
-/* Opacity */
 @-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-  	opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
+
 @keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-  	opacity: 1;
-  }
-}
-.animate__appear {
-  -webkit-animation-name: appear;
-  animation-name: appear;
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
-/* Ipad */
+.salesforce-report .animate__appear {
+	-webkit-animation-name: appear;
+	animation-name: appear;
+}
+
 @-webkit-keyframes heroimage {
-  0% {
-  	opacity: 0;
-    transform: translateY(30px);
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
 	}
+
 	50% {
-	  opacity: 1;
+		opacity: 1;
 	}
 }
+
 @keyframes heroimage {
-  0% {
-  	opacity: 0;
-    transform: translateY(30px);
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
 	}
+
 	50% {
-	  opacity: 1;
+		opacity: 1;
 	}
 }
-.animate__heroimage {
-  -webkit-animation-name: heroimage;
-  animation-name: heroimage;
-  animation-timing-function: ease-out;
+
+.salesforce-report .animate__heroimage {
+	-webkit-animation-name: heroimage;
+	animation-name: heroimage;
+	animation-timing-function: ease-out;
 }
 
-/*Report */
 @-webkit-keyframes reportCircle {
-  0% {
-  	opacity: 0;
+	0% {
+		opacity: 0;
 	}
+
 	100% {
-	  opacity: 1;
+		opacity: 1;
 	}
-}
-@keyframes reportCircle {
-  0% {
-  	opacity: 0;
-	}
-	100% {
-	  opacity: 1;
-	}
-}
-.animate__reportCircle {
-  -webkit-animation-name: reportCircle;
-  animation-name: reportCircle;
 }
 
+@keyframes reportCircle {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.salesforce-report .animate__reportCircle {
+	-webkit-animation-name: reportCircle;
+	animation-name: reportCircle;
+}
 
 @-webkit-keyframes flash {
-  from,
+	from,
   50%,
   to {
-    opacity: 1;
-  }
+		opacity: 1;
+	}
 
-  25%,
+	25%,
   75% {
-    opacity: 0;
-  }
+		opacity: 0;
+	}
 }
+
 @keyframes flash {
-  from,
+	from,
   50%,
   to {
-    opacity: 1;
-  }
+		opacity: 1;
+	}
 
-  25%,
+	25%,
   75% {
-    opacity: 0;
-  }
-}
-.animate__flash {
-  -webkit-animation-name: flash;
-  animation-name: flash;
-  animation-iteration-count: 3;
+		opacity: 0;
+	}
 }
 
+.salesforce-report .animate__flash {
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	animation-iteration-count: 3;
+}
 
 @-webkit-keyframes dasharrayLine {
-  to {
-  	stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
+
 @keyframes dasharrayLine {
- 	to {
-  	stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }
-.animate__line {
+
+.salesforce-report .animate__line {
 	-webkit-animation-name: dasharrayLine;
-  animation-name: dasharrayLine;
-  animation-fill-mode: forwards;
-  stroke-dasharray: 481;
-  stroke-dashoffset: 481;
+	animation-name: dasharrayLine;
+	animation-fill-mode: forwards;
+	stroke-dasharray: 481;
+	stroke-dashoffset: 481;
 }
-.animate__line2 {
+
+.salesforce-report .animate__line2 {
 	-webkit-animation-name: dasharrayLine;
-  animation-name: dasharrayLine;
-  animation-fill-mode: forwards;
-  stroke-dasharray: 221;
-  stroke-dashoffset: 221;
+	animation-name: dasharrayLine;
+	animation-fill-mode: forwards;
+	stroke-dasharray: 221;
+	stroke-dashoffset: 221;
 }
 
 @-webkit-keyframes dots {
 	from {
 		transform: rotate(0);
 	}
-  to {
-  	transform: rotate(360deg);
-  }
+
+	to {
+		transform: rotate(360deg);
+	}
 }
+
 @keyframes dots {
- 	from {
+	from {
 		transform: rotate(0);
 	}
-  to {
-  	transform: rotate(360deg);
-  }
+
+	to {
+		transform: rotate(360deg);
+	}
 }
-.animate__dots {
+
+.salesforce-report .animate__dots {
 	-webkit-animation-name: dots;
-  animation-name: dots;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: center;
+	animation-name: dots;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: center;
 }
 
 @-webkit-keyframes impactLineInfinity {
 	from {
 		stroke-dashoffset: 0;
 	}
-  to {
-    stroke-dashoffset: -100;
-  }
+
+	to {
+		stroke-dashoffset: -100;
+	}
 }
+
 @keyframes impactLineInfinity {
 	from {
 		stroke-dashoffset: 0;
 	}
-  to {
-    stroke-dashoffset: -100;
-  }
+
+	to {
+		stroke-dashoffset: -100;
+	}
 }
+
 @-webkit-keyframes impactLine {
-	0%{
+	0% {
 		opacity: 0;
 		stroke: #d9f0f8;
 	}
+
 	35% {
 		opacity: 1;
 	}
+
 	55% {
 		stroke: #d9f0f8;
 	}
-  to {
-    stroke-dashoffset: 0;
-    stroke: #252b5f;
-  }
+
+	to {
+		stroke-dashoffset: 0;
+		stroke: #252b5f;
+	}
 }
+
 @keyframes impactLine {
-	0%{
+	0% {
 		opacity: 0;
 		stroke: #d9f0f8;
 	}
+
 	35% {
 		opacity: 1;
 	}
+
 	55% {
 		stroke: #d9f0f8;
 	}
- 	to {
-    stroke-dashoffset: 0;
-    stroke: #252b5f;
-  }
+
+	to {
+		stroke-dashoffset: 0;
+		stroke: #252b5f;
+	}
 }
 
-
-.animate__impact-line {
+.salesforce-report .animate__impact-line {
 	-webkit-animation-name: impactLine, impactLineInfinity;
-  animation-name: impactLine, impactLineInfinity;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(.17,.67,.47,.86), linear;
-  animation-duration: 4s, 2s;
-  animation-delay: 0s, 4s;
-  animation-iteration-count: 1, infinite;
-  stroke-dashoffset: 600px;
-  stroke: #d9f0f8;
+	animation-name: impactLine, impactLineInfinity;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.17, 0.67, 0.47, 0.86), linear;
+	animation-duration: 4s, 2s;
+	animation-delay: 0s, 4s;
+	animation-iteration-count: 1, infinite;
+	stroke-dashoffset: 600px;
+	stroke: #d9f0f8;
 }
 
-
-
-.bubbly-button {
+.salesforce-report .bubbly-button {
 	position: relative;
 	transition: all ease-in 0.3s;
 }
-.bubbly-button:before, .bubbly-button:after {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  left: 0%;
-  z-index: -1000;
-  transition: all ease-in-out 0.5s;
-  background-repeat: no-repeat;
-  pointer-events: none;
+
+.salesforce-report .bubbly-button:before, .salesforce-report .bubbly-button:after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	z-index: -1000;
+	transition: all ease-in-out 0.5s;
+	background-repeat: no-repeat;
+	pointer-events: none;
 }
-.bubbly-button:before {
-  display: none;
-  top: -75%;
-  background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #fff 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+
+.salesforce-report .bubbly-button:before {
+	display: none;
+	top: -75%;
+	background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 20%, #fff 20%, transparent 30%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
+	background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
-.bubbly-button:after {
-  display: none;
-  bottom: -75%;
-  background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
-  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+
+.salesforce-report .bubbly-button:after {
+	display: none;
+	bottom: -75%;
+	background-image: radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, transparent 10%, #fff 15%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%), radial-gradient(circle, #fff 20%, transparent 20%);
+	background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
-.bubbly-button.animate {
-  transform: scale(1.15);
-  transition: all ease-out 0.2s;
+
+.salesforce-report .bubbly-button.animate {
+	transform: scale(1.15);
+	transition: all ease-out 0.2s;
 }
-.bubbly-button.animate:before {
-  display: block;
-  animation: topBubbles ease-in-out 0.75s forwards;
+
+.salesforce-report .bubbly-button.animate:before {
+	display: block;
+	animation: topBubbles ease-in-out 0.75s forwards;
 }
-.bubbly-button.animate:after {
-  display: block;
-  animation: bottomBubbles ease-in-out 0.75s forwards;
+
+.salesforce-report .bubbly-button.animate:after {
+	display: block;
+	animation: bottomBubbles ease-in-out 0.75s forwards;
 }
 
 @keyframes topBubbles {
-  0% {
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
-  50% {
-    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-  }
-  100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-  }
-}
-@keyframes bottomBubbles {
-  0% {
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-  }
-  50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-  }
-  100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-  }
+	0% {
+		background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+	}
+
+	50% {
+		background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+	}
+
+	100% {
+		background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
 }
 
-/* Bouncing entrances  */
+@keyframes bottomBubbles {
+	0% {
+		background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+	}
+
+	50% {
+		background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+	}
+
+	100% {
+		background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+		background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+	}
+}
+
 @-webkit-keyframes bounceIn {
-  from,
+	from,
   20%,
   40%,
   60%,
   80%,
   to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
 
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
 
-  20% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
-  }
+	20% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
 
-  40% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9);
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+	40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
 
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(1.03, 1.03, 1.03);
-    transform: scale3d(1.03, 1.03, 1.03);
-  }
+	60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	}
 
-  80% {
-    -webkit-transform: scale3d(0.97, 0.97, 0.97);
-    transform: scale3d(0.97, 0.97, 0.97);
-  }
+	80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	}
 
-  to {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+	to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
 }
+
 @keyframes bounceIn {
-  from,
+	from,
   50%,
   to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
 
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
 
-  50% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+	50% {
+		-webkit-transform: scale3d(1.2, 1.2, 1.2);
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
 }
-.animate__bounceIn {
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
+
+.salesforce-report .animate__bounceIn {
+	-webkit-animation-name: bounceIn;
+	animation-name: bounceIn;
 }
 
 @media screen and (min-width: 980px) {
-	.animate__hover-bounce {
+	.salesforce-report .animate__hover-bounce {
 		transform: scale(1);
-		transition: transform 2s cubic-bezier(.05,.84,.11,.86);
+		transition: transform 2s cubic-bezier(0.05, 0.84, 0.11, 0.86);
 	}
-	.animate__hover-bounce:hover {
+
+	.salesforce-report .animate__hover-bounce:hover {
 		transform: scale(1.1);
 	}
 }
 
-
-.animate__hover-rotate {
+.salesforce-report .animate__hover-rotate {
 	transition: transform 30s;
 	opacity: 1 !important;
 	z-index: 1;
 }
-.animate__hover-rotate.animate {
+
+.salesforce-report .animate__hover-rotate.animate {
 	transform: rotate(3600deg);
 	transition: transform 30s;
 }
 
-/*Onscroll rotation*/
-[data-viewport="true"][data-onscroll-rotate] {
+.salesforce-report [data-viewport="true"][data-onscroll-rotate] {
 	transform: translateZ(0) rotate(calc(var(--rotate) * 1deg));
 }
 
-/*Flying bubles*/
-.bubble__standart {
+.salesforce-report .bubble__standart {
 	display: inline-block;
 	position: absolute;
 	width: 5.4vw;
@@ -1681,161 +1941,160 @@ span.animate__animated {
 	border-radius: 100%;
 	background-color: #e7f6f8;
 }
-.animation__fly {
+
+.salesforce-report .animation__fly {
 	--bubbleX: 0;
 	--bubbleY: 0;
 	transform: translateX(var(--bubbleX)) translateY(var(--bubbleY));
 	transition-timing-function: linear;
 }
-.animation__fly__tran--3 {
+
+.salesforce-report .animation__fly__tran--3 {
 	transition-duration: 6s;
 }
-.animation__fly__tran--4 {
+
+.salesforce-report .animation__fly__tran--4 {
 	transition-duration: 8s;
 }
-.animation__fly__tran--5 {
+
+.salesforce-report .animation__fly__tran--5 {
 	transition-duration: 10s;
 }
-.animation__fly__tran--6 {
+
+.salesforce-report .animation__fly__tran--6 {
 	transition-duration: 12s;
 }
-.animation__fly__tran--7 {
+
+.salesforce-report .animation__fly__tran--7 {
 	transition-duration: 14s;
 }
-.bubble__standart--xsm {
+
+.salesforce-report .bubble__standart--xsm {
 	width: 3.2vw;
 	height: 3.2vw;
 }
-.bubble__standart--sm {
+
+.salesforce-report .bubble__standart--sm {
 	width: 4.7vw;
 	height: 4.7vw;
 }
-.bubble__standart--md {
+
+.salesforce-report .bubble__standart--md {
 	width: 6.5vw;
 	height: 6.5vw;
 }
-.bubble__standart--lg {
+
+.salesforce-report .bubble__standart--lg {
 	width: 9vw;
 	height: 9vw;
 }
-.bubble__standart--xlg {
+
+.salesforce-report .bubble__standart--xlg {
 	width: 14vw;
 	height: 14vw;
 }
 
-
-/* 3d parallax */
-.parallax {
+.salesforce-report .parallax {
 	--x: 0;
-  --y: 0;
-  transform: matrix3d(
-    1,
-    0,
-    0,
-    calc(var(--x) * 0.0001),
-    0,
-    1,
-    0,
-    calc(var(--y) * 0.0001),
-    0,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    1
-  );
-  transition: transform 0.3s ease-out;
+	--y: 0;
+	transform: matrix3d(1, 0, 0, calc(var(--x) * 0.0001), 0, 1, 0, calc(var(--y) * 0.0001), 0, 0, 1, 1, 0, 0, 0, 1);
+	transition: transform 0.3s ease-out;
 }
-.parallax__1 {
-  transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+
+.salesforce-report .parallax__1 {
+	transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
 }
-.parallax__2 {
-  transform: translate(calc(var(--x) * 70px), calc(var(--y) * 70px));
+
+.salesforce-report .parallax__2 {
+	transform: translate(calc(var(--x) * 70px), calc(var(--y) * 70px));
 }
-.parallax__3 {
-  transform: translate(calc(var(--x) * 10px), calc(var(--y) * 10px));
+
+.salesforce-report .parallax__3 {
+	transform: translate(calc(var(--x) * 10px), calc(var(--y) * 10px));
 }
-.parallax__4 {
+
+.salesforce-report .parallax__4 {
 	transform: translate(calc(var(--x) * 20px), calc(var(--y) * 20px));
 }
-.parallax__5 {
+
+.salesforce-report .parallax__5 {
 	transform: translate(calc(var(--x) * 40px), calc(var(--y) * 40px));
 }
 
-/* Back entrances */
 @-webkit-keyframes backInDown {
-  0% {
-    -webkit-transform: translateY(-1200px) scale(0.7);
-    transform: translateY(-1200px) scale(0.7);
-  }
+	0% {
+		-webkit-transform: translateY(-1200px) scale(0.7);
+		transform: translateY(-1200px) scale(0.7);
+	}
 
-  80% {
-    -webkit-transform: translateY(0px) scale(0.7);
-    transform: translateY(0px) scale(0.7);
-  }
+	80% {
+		-webkit-transform: translateY(0px) scale(0.7);
+		transform: translateY(0px) scale(0.7);
+	}
 
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
 }
+
 @keyframes backInDown {
-  0% {
-    -webkit-transform: translateY(-1200px) scale(0.7);
-    transform: translateY(-1200px) scale(0.7);
-  }
+	0% {
+		-webkit-transform: translateY(-1200px) scale(0.7);
+		transform: translateY(-1200px) scale(0.7);
+	}
 
-  80% {
-    -webkit-transform: translateY(0px) scale(0.7);
-    transform: translateY(0px) scale(0.7);
-  }
+	80% {
+		-webkit-transform: translateY(0px) scale(0.7);
+		transform: translateY(0px) scale(0.7);
+	}
 
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-.animate__backInDown {
-  -webkit-animation-name: backInDown;
-  animation-name: backInDown;
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
 }
 
+.salesforce-report .animate__backInDown {
+	-webkit-animation-name: backInDown;
+	animation-name: backInDown;
+}
 
 @-webkit-keyframes backInUp {
-  0% {
-    -webkit-transform: translateY(1200px) scale(0.7);
-    transform: translateY(1200px) scale(0.7);
-  }
+	0% {
+		-webkit-transform: translateY(1200px) scale(0.7);
+		transform: translateY(1200px) scale(0.7);
+	}
 
-  80% {
-    -webkit-transform: translateY(0px) scale(0.7);
-    transform: translateY(0px) scale(0.7);
-  }
+	80% {
+		-webkit-transform: translateY(0px) scale(0.7);
+		transform: translateY(0px) scale(0.7);
+	}
 
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
 }
+
 @keyframes backInUp {
-  0% {
-    -webkit-transform: translateY(1200px) scale(0.7);
-    transform: translateY(1200px) scale(0.7);
-  }
+	0% {
+		-webkit-transform: translateY(1200px) scale(0.7);
+		transform: translateY(1200px) scale(0.7);
+	}
 
-  80% {
-    -webkit-transform: translateY(0px) scale(0.7);
-    transform: translateY(0px) scale(0.7);
-  }
+	80% {
+		-webkit-transform: translateY(0px) scale(0.7);
+		transform: translateY(0px) scale(0.7);
+	}
 
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
 }
-.animate__backInUp {
-  -webkit-animation-name: backInUp;
-  animation-name: backInUp;
+
+.salesforce-report .animate__backInUp {
+	-webkit-animation-name: backInUp;
+	animation-name: backInUp;
 }
