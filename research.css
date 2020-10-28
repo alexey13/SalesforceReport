@@ -62,9 +62,9 @@ div, section {
 /*Main wrapper*/
 .research-page {
 	--rotate: 0;
-	color: #58575c;
+	color: #585858;
 	font-size: 1.4rem;
-	font-family: SalesforceSansLight;
+	font-family: SalesforceSansRegular;
 	line-height: 1.2;
 	overflow-x: hidden;
 }
@@ -180,7 +180,7 @@ a {
 
 .subtitle {
 	margin-bottom: 0;
-	font-family: SalesforceSansRegular, sans-serif;
+	font-family: SalesforceSansBook, sans-serif;
 	font-size: 1.7rem;
 	line-height: 1.2;
 	color: #285d8f;
@@ -2073,4 +2073,110 @@ Research page
 */
 .color--285 {
 	color: #285d8f;
+}
+.background-pill {
+	position: relative;
+}
+.background-pill:before {
+	content: '';
+	position: absolute;
+	left: -4rem;
+	top: -3rem;
+	width: calc(100% + 8rem);
+	height: calc(100% + 6rem);
+	background-color: #e7f6f8;
+	z-index: -1;
+	border-radius: 50px;
+}
+
+/*Themes */
+.themes {
+	display: flex;
+	justify-content: space-between;
+}
+.themes__item {
+	text-align: center;
+	width: 23%;
+}
+.themes__icon {
+	width: 30px;
+	height: 30px;
+}
+.themes__header {
+	font-family: SalesforceSansBold, sans-serif;
+}
+
+/*Pie*/
+.pies {
+	display: flex;
+	justify-content: space-around;
+}
+.pie {
+	width: 33%;
+}
+.pie__number {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-family: NeutratextRegular, sans-serif;
+	font-size: 4rem;
+	transform: translate(-50%, -50%);
+	color: #1f3566;
+}
+.pie__chart {
+	width: 100%;
+	height: auto;
+	transform: rotate(-90deg);
+}
+.pie__chart--back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: auto;
+}
+@-webkit-keyframes pieLine {
+	to {
+		stroke-dashoffset: 209;
+	}
+}
+@keyframes pieLine {
+	to {
+		stroke-dashoffset: 209;
+	}
+}
+.animate__pie32 {
+	-webkit-animation-name: pieLine;
+	animation-name: pieLine;
+	animation-fill-mode: forwards;
+	stroke-dashoffset: 274;
+
+	stroke-dasharray: 265;
+}
+.animate__pie34 {
+	-webkit-animation-name: pieLine;
+	animation-name: pieLine;
+	animation-fill-mode: forwards;
+	stroke-dashoffset: 274;
+
+	stroke-dasharray: 274;
+}
+.animate__pie77 {
+	-webkit-animation-name: pieLine;
+	animation-name: pieLine;
+	animation-fill-mode: forwards;
+	stroke-dashoffset: 370;
+
+	stroke-dasharray: 370;
+}
+.animate__pie79 {
+	-webkit-animation-name: pieLine;
+	animation-name: pieLine;
+	animation-fill-mode: forwards;
+	stroke-dashoffset: 379;
+
+	stroke-dasharray: 379;
+}
+.left-border-2px {
+	border-left: 2px solid #585858;
 }
