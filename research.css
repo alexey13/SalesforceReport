@@ -732,6 +732,7 @@ a {
 	position: relative;
 	display: flex;
 	align-items: center;
+	padding-bottom: 0;
 	overflow: hidden;
 }
 
@@ -2096,11 +2097,11 @@ Research page
 }
 .themes__item {
 	text-align: center;
-	width: 23%;
+	width: 16%;
 }
 .themes__icon {
-	width: 30px;
-	height: 30px;
+	width: 100%;
+	height: auto;
 }
 .themes__header {
 	font-family: SalesforceSansBold, sans-serif;
