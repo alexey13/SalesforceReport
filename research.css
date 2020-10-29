@@ -2181,3 +2181,83 @@ Research page
 .left-border-2px {
 	border-left: 2px solid #585858;
 }
+
+/*Progress Line*/
+.progress-line {
+	display: flex;
+	align-items: center;
+}
+.progress-line__desc {
+	width: 50%;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+	border-right: 2px solid #585858;
+}
+.progress-line__chart-wrapper {
+	width: 50%;
+	padding-left: 5px;
+}
+.progress-line__chart {
+	display: block;
+	text-align: right;
+	width: 30px;
+	padding: 0.25rem;
+	background-color: #149fda;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.progress-line__counter {
+	color: #fff;
+	font-family: NeutratextRegular, sans-serif;
+	line-height: 1;
+}
+@-webkit-keyframes progressLine {
+	to {
+		width: 100%;
+	}
+}
+@keyframes progressLine {
+	to {
+		width: 100%;
+	}
+}
+.animate__progress-chart {
+	-webkit-animation-name: progressLine;
+	animation-name: progressLine;
+	animation-fill-mode: forwards;
+}
+.progress-line-fill {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	color: #fff;
+}
+.progress-line-fill:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+	background-color: #c4e4f9;
+	z-index: -1;
+}
+.progress-line-fill__chart-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.progress-line-fill__chart {
+	display: block;
+	width: 70px;
+	height: 100%;
+	background-color: #149fda;
+	border-radius: 50px;
+}
