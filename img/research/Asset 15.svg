@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 101.7">
+  <title>Asset 15</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path d="M101.7,50.85A50.85,50.85,0,1,1,50.85,0,50.85,50.85,0,0,1,101.7,50.85" fill="#006cad"/>
+      <circle cx="50.85" cy="50.85" r="45.76" transform="translate(-15.59 23.33) rotate(-22.5)" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <path d="M46.18,76.35H69a14.26,14.26,0,1,0,0-28.51H44.76a5.7,5.7,0,1,1,0-11.4h5.7v2.85l12.83-8.55L50.46,22.19v4.27h-5.7a15.68,15.68,0,0,0,0,31.36H69a4.28,4.28,0,1,1,0,8.56H29.08" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    </g>
+  </g>
+</svg>

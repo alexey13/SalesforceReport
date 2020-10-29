@@ -744,31 +744,31 @@ a {
 	background-color: #bfe4f4;
 }
 
-.laptop {
+.hero-image {
 	position: relative;
 	width: 100%;
 	padding-top: 62%;
 }
 
-.laptop:after {
+.hero-image:after {
 	content: '';
 	position: absolute;
 	left: -10%;
 	top: 0;
 	width: 120%;
 	height: 100%;
-	background-image: url("https://alexey13.github.io/SalesforceReport/img/laptop.png");
+	background-image: url("https://alexey13.github.io/SalesforceReport/img/research/hero.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom;
 }
 
 @media screen and (min-width: 1380px) {
-	.laptop {
+	.hero-image {
 		padding-top: 77%;
 	}
 
-	.laptop:after {
+	.hero-image:after {
 		width: 140%;
 		left: -20%;
 	}

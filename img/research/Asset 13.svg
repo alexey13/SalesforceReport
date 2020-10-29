@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.7 101.7">
+  <title>Asset 13</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path d="M101.7,50.85A50.85,50.85,0,1,1,50.85,0,50.85,50.85,0,0,1,101.7,50.85" fill="#006cad"/>
+      <path d="M50.85,96.61A45.77,45.77,0,1,1,96.62,50.85,45.76,45.76,0,0,1,50.85,96.61Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <path d="M51.69,25.35C53.91,28.5,68.5,35,74.51,35V57.77C74.51,68.49,53,80.58,51.7,80.58h0c-1.26,0-22.81-12.09-22.81-22.81V35c5.81,0,20.61-6.45,22.83-9.6Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <path d="M63.7,67.37v-4.8c0-4-7.84-7.21-12-7.21s-12,3.24-12,7.21v4.8" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+      <path d="M51.69,51.76a5.83,5.83,0,0,1-6-6v-2.4a6,6,0,1,1,12,0v2.4A5.84,5.84,0,0,1,51.69,51.76Z" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+    </g>
+  </g>
+</svg>
