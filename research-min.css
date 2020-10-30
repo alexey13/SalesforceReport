@@ -95,12 +95,6 @@ Research page
 	box-shadow: none !important;
 }
 
-.research-page p {
-	margin-bottom: none !important;
-	margin-top: none !important;
-	line-height: 0;
-}
-
 .research-page .text--description {
 	font-size: 1.27rem;
 }
