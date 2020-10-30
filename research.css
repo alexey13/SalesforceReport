@@ -86,7 +86,9 @@ a {
 	box-shadow: none !important;
 }
 p {
-	display: none !important;
+	margin-bottom: none !important;
+	margin-top: none !important;
+	line-height: 0;
 }
 .text--description {
 	font-size: 1.27rem;

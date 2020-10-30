@@ -96,7 +96,9 @@ Research page
 }
 
 .research-page p {
-	display: none !important;
+	margin-bottom: none !important;
+	margin-top: none !important;
+	line-height: 0;
 }
 
 .research-page .text--description {
