@@ -61,6 +61,8 @@ body {
 	font-family: SalesforceSansRegular, sans-serif;
 	line-height: 1.2;
 	overflow-x: hidden;
+	position: relative;
+	z-index: 1;
 }
 
 @media screen and (max-width: 767.9px) {
@@ -91,6 +93,10 @@ Research page
 
 .research-page a {
 	box-shadow: none !important;
+}
+
+.research-page p {
+	display: none !important;
 }
 
 .research-page .text--description {
