@@ -63,8 +63,8 @@ div, section {
 .research-page {
 	--rotate: 0;
 	color: #585858;
-	font-size: 1.4rem;
-	font-family: SalesforceSansRegular;
+	font-size: 1.27rem;
+	font-family: SalesforceSansRegular, sans-serif;
 	line-height: 1.2;
 	overflow-x: hidden;
 }
@@ -121,16 +121,16 @@ a {
 }
 
 .title--lg {
-	font-size: 3.46rem;
+	font-size: 3.46rem !important;
 }
 
 .title--middle {
-	font-size: 2.83rem;
+	font-size: 2.83rem !important;
 	margin-bottom: 0;
 }
 
 .title--sm {
-	font-size: 2.2rem;
+	font-size: 2.2rem !important;
 	margin-bottom: 0;
 }
 
@@ -159,7 +159,7 @@ a {
 }
 
 .button {
-	font-size: 11px;
+	font-size: 16px;
 	line-height: 45px;
 	height: 45px;
 	letter-spacing: 1px;
@@ -174,27 +174,32 @@ a {
 	text-decoration: none;
 	transition: color .2s linear;
 	color: #1e73be;
+	font-family: SalesforceSansLight, sans-serif;
 }
 
 .link:hover {
 	color: #14558f;
 }
 
+.font-SalesforceSansBook {
+	font-family: SalesforceSansBook, sans-serif;
+}
+
 @media screen and (max-width: 1296px) {
 	.title--lg {
-		font-size: 3rem;
+		font-size: 3rem !important;
 	}
 }
 
 @media screen and (max-width: 1115px) {
 	.title--lg {
-		font-size: 2.7rem;
+		font-size: 2.7rem !important;
 	}
 }
 
 @media screen and (max-width: 1015px) {
 	.title--lg {
-		font-size: 2.5rem;
+		font-size: 2.5rem !important;
 	}
 }
 
@@ -205,15 +210,15 @@ a {
 	}
 
 	.title--lg {
-		font-size: 2.4rem;
+		font-size: 2.4rem !important;
 	}
 
 	.title--middle {
-		font-size: 2.15rem;
+		font-size: 2.15rem !important;
 	}
 
 	.title--sm {
-		font-size: 1.7rem;
+		font-size: 1.7rem !important;
 	}
 
 	.subtitle {
@@ -229,7 +234,7 @@ a {
 
 @media screen and (max-width: 838px) {
 	.title--lg {
-		font-size: 2rem;
+		font-size: 2rem !important;
 	}
 }
 
@@ -239,13 +244,13 @@ a {
 	}
 
 	.title--lg {
-		font-size: 2.5rem;
+		font-size: 2.5rem !important;
 	}
 }
 
 .section {
 	position: relative;
-	padding: 3.5rem 0;
+	padding: 2.45rem 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -943,6 +948,21 @@ span.animate__animated {
 	display: inline-block;
 	white-space: nowrap;
 }
+@-webkit-keyframes opacityStandart {
+	0% {
+		opacity: 0;
+	}
+}
+@keyframes opacityStandart {
+	0% {
+		opacity: 0;
+	}
+}
+.animate__opacityStandart {
+	-webkit-animation-name: opacityStandart;
+	animation-name: opacityStandart;
+}
+
 
 @-webkit-keyframes fromTop {
 	0% {
@@ -954,7 +974,6 @@ span.animate__animated {
 		opacity: 1;
 	}
 }
-
 @keyframes fromTop {
 	0% {
 		opacity: 0;
@@ -965,13 +984,105 @@ span.animate__animated {
 		opacity: 1;
 	}
 }
-
 .animate__fromTop {
 	-webkit-animation-name: fromTop;
 	animation-name: fromTop;
 	animation-duration: 0.8s;
 }
 
+
+@-webkit-keyframes fromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+
+@keyframes fromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+.animate__fromLeft {
+	-webkit-animation-name: fromLeft;
+	animation-name: fromLeft;
+	animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+
+@keyframes fromRight {
+	0% {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+.animate__fromRight {
+	-webkit-animation-name: fromRight;
+	animation-name: fromRight;
+	animation-duration: 0.8s;
+}
+
+
+@-webkit-keyframes fromRightBig {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+
+@keyframes fromRightBig {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+.animate__fromRightBig {
+	-webkit-animation-name: fromRightBig;
+	animation-name: fromRightBig;
+}
+
+
+@-webkit-keyframes bubblesToRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
 @keyframes bubblesToRight {
 	0% {
 		opacity: 0;
@@ -1385,6 +1496,13 @@ span.animate__animated {
 	animation: bottomBubbles ease-in-out 0.75s forwards;
 }
 
+.js-hover__scale {
+	transition: all 0.3s;
+}
+.js-hover__scale.animate {
+	transform: scale(1.1);
+	transition: all 0.3s;
+}
 @keyframes topBubbles {
 	0% {
 		background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -1708,7 +1826,10 @@ Research page
 	z-index: -1;
 	border-radius: 50px;
 }
-
+.block-pill--b-b-0:before {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
 /*Themes */
 .themes {
 	display: flex;
@@ -1716,7 +1837,7 @@ Research page
 }
 .themes__item {
 	text-align: center;
-	width: 16%;
+	width: 18%;
 }
 .themes__icon {
 	width: 100%;
@@ -1802,11 +1923,17 @@ Research page
 .left-border-2px {
 	border-left: 2px solid #585858;
 }
-
+.right-border-2px {
+	border-right: 2px solid #585858;
+}
 /*Progress Line*/
 .progress-line {
 	display: flex;
 	align-items: center;
+	height: 35px;
+}
+.progress-line--md {
+	height: 60px;
 }
 .progress-line__desc {
 	padding-right: 10px;
@@ -1816,28 +1943,36 @@ Research page
 	border-right: 2px solid #585858;
 }
 .progress-line__chart-wrapper {
+	height: 100%;
 	flex-grow: 1;
 	padding-left: 5px;
 }
 .progress-line__chart {
-	display: block;
-	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
 	width: 30px;
 	padding: 0.25rem;
 	background-color: #149fda;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+.progress-line__chart--counter-left {
+	justify-content: flex-start;
 }
 .progress-line__chart--middle {
-	padding: 1rem;
-	border-top-right-radius: 35px;
-	border-bottom-right-radius: 35px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 .progress-line__counter {
 	color: #fff;
 	font-family: NeutratextRegular, sans-serif;
 	line-height: 0;
+	position: relative;
+	top: -4px;
 }
+
 @-webkit-keyframes progressLine {
 	to {
 		width: 100%;
@@ -2042,11 +2177,15 @@ Research page
 .pr-2 {
 	padding-right: 2rem;
 }
-
+.pb-1 {
+	padding-bottom: 1rem;
+}
 .pb-xxl {
 	padding-bottom: 10rem;
 }
-
+.pt-1 {
+	padding-top: 1rem;
+}
 .pt-xxl {
 	padding-top: 10rem;
 }
@@ -2127,11 +2266,15 @@ Research page
 	.pr-2 {
 		padding-right: 1.32rem;
 	}
-
+	.pb-1 {
+		padding-bottom: 0.66rem;
+	}
 	.pb-xxl {
 		padding-bottom: 4rem;
 	}
-
+	.pt-1 {
+		padding-top: 0.66rem;
+	}
 	.pt-xxl {
 		padding-top: 4rem;
 	}
@@ -2210,9 +2353,14 @@ Research page
 	.pr-2 {
 		padding-right: 1rem;
 	}
-
+	.pb-1 {
+		padding-bottom: 0.5rem;
+	}
 	.pb-xxl {
 		padding-bottom: 1.75rem;
+	}
+	.pt-1 {
+		padding-top: 0.5rem;
 	}
 	.pt-xxl {
 		padding-top: 1.75rem;
@@ -2278,8 +2426,20 @@ Research page
 .d-flex {
 	display: flex;
 }
+.h-100 {
+	height: 100%;
+}
 .align-items-center {
 	align-items: center;
+}
+.align-items-start {
+	align-items: flex-start;
+}
+.align-items-end {
+	align-items: flex-end;
+}
+.flex-column {
+	flex-direction: column;
 }
 .justify-content-between {
 	justify-content: space-between;

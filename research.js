@@ -226,7 +226,7 @@ window.addEventListener('load', function() {
 
 
 function addMouseEvents() {
-	var elements = document.querySelectorAll('.bubbly-button, .goals-all');
+	var elements = document.querySelectorAll('.bubbly-button, .goals-all, .js-hover__scale');
 	elements = Array.prototype.slice.call(elements);
 
 	elements.forEach(function(el){

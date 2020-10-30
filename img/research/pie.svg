@@ -1,5 +1,6 @@
 <svg version="1.1" viewBox="0 0 76.162 76.162" xmlns="http://www.w3.org/2000/svg">
-	<g transform="translate(-69.277 -63.322)" fill="none" stroke-linejoin="bevel" stroke-width="11.906">
+	<circle cx="38.534" cy="36.77" r="31.548" fill="#fff" style="paint-order:stroke markers fill"/>
+	<g transform="translate(-69.277,-63.322)" fill="none" stroke-linejoin="bevel" stroke-width="11.906">
 		<path d="m139.49 101.4a32.128 32.128 0 01-32.128 32.128 32.128 32.128 0 01-32.128-32.128 32.128 32.128 0 0132.128-32.128 32.128 32.128 0 0132.128 32.128z" stroke="#c4e4f9" style="paint-order:stroke markers fill"/>
 		<path d="m139.49 101.4a32.128 32.128 0 01-32.128 32.128 32.128 32.128 0 01-32.128-32.128 32.128 32.128 0 0132.128-32.128 32.128 32.128 0 0132.128 32.128z" stroke="#149fda" style="paint-order:stroke markers fill"/>
 	</g>
