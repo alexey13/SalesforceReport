@@ -1074,6 +1074,32 @@ span.animate__animated {
 	animation-name: fromRightBig;
 }
 
+@-webkit-keyframes fromLeftBig {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+
+@keyframes fromLeftBig {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	70% {
+		opacity: 1;
+	}
+}
+.animate__fromLeftBig {
+	-webkit-animation-name: fromLeftBig;
+	animation-name: fromLeftBig;
+}
+
 
 @-webkit-keyframes bubblesToRight {
 	0% {
@@ -1850,6 +1876,12 @@ Research page
 .themes__item {
 	text-align: center;
 	width: 18%;
+	color: inherit;
+	text-decoration: none;
+	transition: transform 0.3s;
+}
+.themes__item:hover {
+	transform: scale(1.05);
 }
 .themes__icon {
 	width: 100%;
@@ -1976,6 +2008,7 @@ Research page
 .progress-line__chart--middle {
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
+	width: 70px;
 }
 .progress-line__counter {
 	color: #fff;
@@ -2028,7 +2061,7 @@ Research page
 }
 .progress-line-fill__chart {
 	display: block;
-	width: 70px;
+	width: 150px;
 	height: 100%;
 	background-color: #149fda;
 	border-radius: 50px;

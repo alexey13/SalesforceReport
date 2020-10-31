@@ -19,7 +19,14 @@ if(slfEl) {
  * [data-letters-delay="0.05"] - set the delay of each letter depends on formula delay*index
  * [data-anime="animate__fadeInUp"] - animation class
  * [data-anime-delay="1.1"] - animation delay
+ * [data-trigger-target="name"] - name of data-trigger-el. the trigger to start animation will be another element. For example All animations start when whole section appears in view
+ * [data-trigger-el="name"] - this element is used as a trigger to start
  * [data-check-viewport] - set animation on pause when leave and start when element in viewport
+ * [data-scroll-margin="0.2"] - number 0 - 1 set the margin from top and bottom to start animation
+ * [data-counter="75"] - counter last value
+ * [data-counter-postfix="%"] - postfix
+ * [data-counter-duration="3"] - duration
+ * [data-counter-delay="4"] - delay
  * 
  */
 
@@ -126,11 +133,11 @@ function addAnimeParams() {
 
 //Scroll listener
 function scrollAnimate() {
-	var elements = document.querySelectorAll('[data-anime], [data-check-viewport], [data-counter]');
+	var elements = document.querySelectorAll('[data-anime], [data-check-viewport], [data-counter], [data-trigger-el]');
 	elements = Array.prototype.slice.call(elements);
+
 	var windowWidth;
 	var windowHeight;
-
 
 	function onScroll() {
 		elements.forEach(function(element) {
@@ -169,39 +176,75 @@ function scrollAnimate() {
     //Deprecated: if you want to use several animation on one element create a separate wrapper for it
   }
 
-  function isAnyPartOfElementInViewport(el) {
+  //Check the element in viewport. Margin number 0-1
+  function isAnyPartOfElementInViewport(el, margin) {
     var rect = el.getBoundingClientRect();
-    var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    var vertInView;
+    if(margin) {
+    	var marginPixelsValue = windowHeight * margin;
+    	vertInView = (rect.top + marginPixelsValue <= windowHeight) && ((rect.top + rect.height - marginPixelsValue) >= 0);
+    } else {
+    	vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    }
+    
     return vertInView;
 	}
 
 
-	function animateElement(element) {
-    
-    //Element types
+	function runActions(element) {
+		//Element types
     var checkViewport = element.dataset.checkViewport === '';
     var withAnime =  element.dataset.anime;
     var withCounter = element.dataset.counter;
 
-    if(isAnyPartOfElementInViewport(element)) {
-    	if(checkViewport) {
-    		addViewportClass(element);
-    	} 
-    	if(withAnime) {
-    		addClass(element);
-    		if(!checkViewport) {
-    			removeFromList(element)
-    		};
+		if(checkViewport) {
+  		addViewportClass(element);
+  	} 
+  	if(withAnime) {
+  		addClass(element);
+  		if(checkViewport) {
+  			removeFromList(element)
+  		};
+  	}
+  	if(withCounter) {
+  		runCounter(element);
+  		removeFromList(element);
+  	}
+	}
+
+	function animateElement(element) {
+    
+    //When start the trigger types
+    var checkMargin = element.dataset.scrollMargin || '';
+    var isHaveTriggerTarget = element.dataset.triggerTarget || '';
+    var checkViewport = element.dataset.checkViewport === '';
+
+    if(isHaveTriggerTarget) {
+    	return;
+    } else if(isAnyPartOfElementInViewport(element, checkMargin)) {
+
+    	//As a starter for another elements
+    	var isTrigger = element.dataset.triggerEl || '';
+
+    	if(isTrigger) {
+    		elements.forEach(function(el) {
+    			if(el.dataset.triggerTarget && el.dataset.triggerTarget === isTrigger) {
+    				runActions(el)
+    			}
+    		})
+
+    	} else {
+    		runActions(element)
     	}
-    	if(withCounter) {
-    		runCounter(element);
-    		removeFromList(element);
-    	}
+
     } else {
     	if(checkViewport) {
     		removeViewportClass(element)
     	}
     }
+
+
+    
   } 
 
 	window.addEventListener('scroll', throttledScroll, false);
@@ -221,6 +264,7 @@ window.addEventListener('load', function() {
 	if(windowWidth > 767) {
 		addMouseEvents();
 	}
+	addScrollSmooth()
 }, false)
 
 
@@ -285,11 +329,14 @@ function runCounter(element) {
 	var finalNumber = element.dataset.counter;
 	var postFix = element.dataset.counterPostfix;
 	var duration = element.dataset.counterDuration || 1;
+	var delay = element.dataset.counterDelay * 1000 || 0;
+
 	var numbersArray = [];
 	for (var i = 0; i <= finalNumber; i++) {
 		numbersArray.push(i);
 	}
 
+	var start;
 	var now;
 	var then;
 	var interval = (duration * 1000) / numbersArray.length;
@@ -299,12 +346,17 @@ function runCounter(element) {
 	function update(now) {
 
 		if (!then) { 
-			then = now; 
+			then = now;
+			start = now;
 		}
 
     raf = requestAnimationFrame(update);
-    delta = now - then;
 
+    if(now - start < delay) {
+    	return;
+    }
+
+    delta = now - then;
     if (delta > interval) {
 
       then = now - (delta % interval);
@@ -322,6 +374,29 @@ function runCounter(element) {
 	
 	update();
 }
+
+
+/*
+Use the native js solution that not will wotrk and Safari. On Safari it will jump to section
+[data-scrollsmooth]
+<a href="#connection" class="themes__item" data-scrollsmooth></a>
+*/
+function addScrollSmooth() {
+	var elements = document.querySelectorAll('[data-scrollsmooth]');
+	elements = Array.prototype.slice.call(elements);
+	elements.forEach(function(el){
+		el.addEventListener('click', function(e){
+			e.preventDefault();
+			var targetSelector = e.currentTarget.getAttribute('href');
+			console.log(targetSelector)
+			// Scroll to a certain element
+			document.querySelector(targetSelector).scrollIntoView({ 
+			  behavior: 'smooth' 
+			});
+		})
+	})
+}
+
 
 
 //Helpers
