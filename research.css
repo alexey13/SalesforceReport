@@ -87,11 +87,11 @@ a {
 }
 
 .text--description {
-	font-size: 1.27rem;
+	font-size: 1.143rem;
 }
 
 .text--description-big {
-	font-size: 1.38rem;
+	font-size: 1.242rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -115,7 +115,7 @@ a {
 }
 
 .title {
-	font-size: 5.4rem;
+	font-size: 4.86rem;
 	font-family: SalesforceSansLight, sans-serif;
 	color: #252b5f;
 	margin-bottom: 1.5rem;
@@ -123,23 +123,23 @@ a {
 }
 
 .title--lg {
-	font-size: 3.46rem !important;
+	font-size: 3.114rem !important;
 }
 
 .title--middle {
-	font-size: 2.83rem !important;
+	font-size: 2.547rem !important;
 	margin-bottom: 0;
 }
 
 .title--sm {
-	font-size: 2.2rem !important;
+	font-size: 1.98rem !important;
 	margin-bottom: 0;
 }
 
 .subtitle {
 	margin-bottom: 0;
 	font-family: SalesforceSansBook, sans-serif;
-	font-size: 1.7rem;
+	font-size: 1.53rem;
 	line-height: 1.2;
 	color: #285d8f;
 }
@@ -149,7 +149,7 @@ a {
 	height: auto;
 	padding: 1.35rem 1.9rem;
 	background-color: #e84d14;
-	font-size: 1.39rem;
+	font-size: 1.251rem;
 	border: 0;
 	border-radius: 3rem;
 	color: #ffffff;
@@ -161,7 +161,7 @@ a {
 }
 
 .button {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 45px;
 	height: 45px;
 	letter-spacing: 1px;
@@ -189,54 +189,54 @@ a {
 
 @media screen and (max-width: 1296px) {
 	.title--lg {
-		font-size: 3rem !important;
+		font-size: 2.7rem !important;
 	}
 }
 
 @media screen and (max-width: 1115px) {
 	.title--lg {
-		font-size: 2.7rem !important;
+		font-size: 2.43rem !important;
 	}
 }
 
 @media screen and (max-width: 1015px) {
 	.title--lg {
-		font-size: 2.5rem !important;
+		font-size: 2.25rem !important;
 	}
 }
 
 @media screen and (max-width: 980px) {
 	.title {
-		font-size: 4.15rem;
+		font-size: 3.73rem;
 		margin-bottom: 1rem;
 	}
 
 	.title--lg {
-		font-size: 2.4rem !important;
+		font-size: 2.16rem !important;
 	}
 
 	.title--middle {
-		font-size: 2.15rem !important;
+		font-size: 1.935rem !important;
 	}
 
 	.title--sm {
-		font-size: 1.7rem !important;
+		font-size: 1.53rem !important;
 	}
 
 	.subtitle {
-		font-size: 1.45rem;
+		font-size: 1.287rem;
 	}
 }
 
 @media screen and (max-width: 906px) {
 	.title--lg {
-		font-size: 2.2rem;
+		font-size: 1.98rem;
 	}
 }
 
 @media screen and (max-width: 838px) {
 	.title--lg {
-		font-size: 2rem !important;
+		font-size: 1.8rem !important;
 	}
 }
 
@@ -246,7 +246,7 @@ a {
 	}
 
 	.title--lg {
-		font-size: 2.5rem !important;
+		font-size: 2.25rem !important;
 	}
 }
 
@@ -1895,7 +1895,7 @@ Research page
 	width: 18%;
 	color: inherit;
 	text-decoration: none;
-	transition: transform 0.3s;
+	transition: transform 0.2s;
 }
 @media screen and (max-width: 586px) {
 	.themes {
@@ -1929,6 +1929,12 @@ Research page
 }
 .themes__item:hover {
 	transform: scale(1.05);
+}
+.themes__item svg path {
+	transition: all 0.2s;
+}
+.themes__item:hover svg path:first-child {
+	fill: #e84d14;
 }
 .themes__icon {
 	width: 100%;
