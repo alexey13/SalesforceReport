@@ -406,10 +406,9 @@ function shareComponent() {
 	var URL = location.href;
 	var TITLE = document.title;
 	var DESC = 'Learn more in a virtual forum with The Chronicle of Higher Education on December 8th, 2020';
-	var IMG_PATH = 'https://alexey13.github.io/SalesforceReport/img/research/img-1.png';
 
 	var Share = {
-		facebook: function(purl, ptitle, pimg, text) {
+		facebook: function(pur) {
 			url  = 'http://www.facebook.com/sharer.php';
 			url += '?u='     + encodeURIComponent(purl);
 			Share.popup(url);
@@ -441,7 +440,7 @@ function shareComponent() {
 			var t = e.currentTarget.dataset.share;
 			switch(t) {
 				case 'facebook':
-					Share.facebook(URL, TITLE, IMG_PATH, DESC);
+					Share.facebook(URL);
 					break;
 				case 'twitter':
 					Share.twitter(URL, TITLE);

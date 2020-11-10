@@ -49,6 +49,10 @@ font, margins:
 	980: 0.5;
 	767.9: 0.77?;
 */
+body {
+	margin: 0;
+}
+
 /*Main wrapper*/
 .research-page {
 	--rotate: 0;
@@ -75,7 +79,8 @@ Research page
 */
   /*Themes */
   /*Pie*/
-  /*Progress Line*/;
+  /*Progress Line*/
+  /*Share*/;
 }
 
 .research-page div, .research-page section {
@@ -2228,6 +2233,62 @@ Research page
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 	.research-page .institution {
 		width: 31%;
+	}
+}
+
+.research-page .share {
+	display: flex;
+	padding: 2rem 0;
+	margin: 0 -1rem;
+	border-top: 1px solid #d7d7d7;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.research-page .share__item {
+	width: 105px;
+	margin: 0 1rem;
+	border: none;
+	border-radius: 5px;
+	box-shadow: none;
+	color: #fff;
+	font-family: SalesforceSansBold, sans-serif;
+	text-align: center;
+	cursor: pointer;
+	line-height: 2;
+}
+
+.research-page .share__item--twitter {
+	background-color: #1a95e0;
+}
+
+.research-page .share__item--facebook {
+	background-color: #1777f2;
+}
+
+.research-page .share__item--linkedin {
+	background-color: #0173b1;
+}
+
+.research-page .share__icon {
+	position: relative;
+	top: -2px;
+	width: 20px;
+	height: auto;
+	vertical-align: middle;
+}
+
+.research-page .share__icon path {
+	fill: #fff;
+}
+
+@media screen and (max-width: 500px) {
+	.research-page .share {
+		padding: 1.5rem 0;
+		margin: 0 -0.5rem;
+	}
+
+	.research-page .share__item {
+		margin: 0 0.5rem;
 	}
 }
 
