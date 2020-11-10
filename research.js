@@ -264,7 +264,8 @@ window.addEventListener('load', function() {
 	if(windowWidth > 767) {
 		addMouseEvents();
 	}
-	addScrollSmooth()
+	addScrollSmooth();
+	shareComponent();
 }, false)
 
 
@@ -397,6 +398,64 @@ function addScrollSmooth() {
 	})
 }
 
+/**
+ * Share component
+ * [data-share]
+ */
+function shareComponent() {
+	var URL = location.href;
+	var TITLE = document.title;
+	var DESC = 'Learn more in a virtual forum with The Chronicle of Higher Education on December 8th, 2020';
+	var IMG_PATH = 'https://alexey13.github.io/SalesforceReport/img/research/img-1.png';
+
+	var Share = {
+		facebook: function(purl, ptitle, pimg, text) {
+			url  = 'http://www.facebook.com/sharer.php?s=100';
+			url += '&p[title]='     + encodeURIComponent(ptitle);
+			url += '&p[summary]='   + encodeURIComponent(text);
+			url += '&p[url]='       + encodeURIComponent(purl);
+			url += '&p[images][0]=' + encodeURIComponent(pimg);
+			Share.popup(url);
+		},
+		twitter: function(purl, ptitle) {
+			url  = 'http://twitter.com/share?';
+			url += 'text='      + encodeURIComponent(ptitle);
+			url += '&url='      + encodeURIComponent(purl);
+			url += '&counturl=' + encodeURIComponent(purl);
+			Share.popup(url);
+		},
+		linkedin: function (purl, ptitle, text) {
+      url = 'https://www.linkedin.com/shareArticle';
+      url += '?mini=true';
+      url += '&url=' + encodeURIComponent(purl);
+      url += '&title=' + encodeURIComponent(ptitle);
+      url += '&summary=' + encodeURIComponent(text);
+      Share.popup(url);
+    },
+		popup: function(url) {
+			window.open(url,'','toolbar=0,status=0,width=626,height=436');
+		}
+	};
+
+	var elements = document.querySelectorAll('[data-share]');
+	elements = Array.prototype.slice.call(elements);
+	elements.forEach(function(el) {
+		el.addEventListener('click', function(e) {
+			var t = e.currentTarget.dataset.share;
+			switch(t) {
+				case 'facebook':
+					Share.facebook(URL, TITLE, IMG_PATH, DESC);
+					break;
+				case 'twitter':
+					Share.twitter(URL, TITLE);
+				case 'linkedin':
+					Share.linkedin(URL, TITLE, DESC);
+					break;
+			}
+		})
+	})
+
+}
 
 
 //Helpers

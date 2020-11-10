@@ -2176,6 +2176,21 @@ Research page
 }
 
 
+/*Share*/
+.share {
+	display: flex;
+	padding: 1rem 0;
+	margin: 0 -1rem;
+	border-top: 1px solid #585858;
+	border-bottom: 1px solid #585858;
+}
+.share__item {
+	margin: 0 1rem;
+}
+
+
+
+
 
 .color--blue {
 	color: #252b5f;
