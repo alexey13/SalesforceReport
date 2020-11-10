@@ -2187,7 +2187,13 @@ Research page
 .share__item {
 	margin: 0 1rem;
 }
-
+.share__icon {
+	width: 15px;
+	height: auto;
+}
+.share__icon path {
+	fill: #fff;
+}
 
 
 
