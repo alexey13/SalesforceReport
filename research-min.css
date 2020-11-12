@@ -2260,6 +2260,9 @@ Research page
 	text-align: center;
 	cursor: pointer;
 	line-height: 2;
+	padding: 0;
+	text-transform: none;
+	font-weight: normal;
 }
 
 .research-page .share__item--twitter {
@@ -2278,6 +2281,7 @@ Research page
 	position: relative;
 	top: -2px;
 	width: 20px;
+	margin-right: 5px;
 	height: auto;
 	vertical-align: middle;
 }
