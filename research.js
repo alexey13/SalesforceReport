@@ -381,6 +381,7 @@ function runCounter(element) {
 Use the native js solution that not will wotrk and Safari. On Safari it will jump to section
 [data-scrollsmooth]
 <a href="#connection" class="themes__item" data-scrollsmooth></a>
+<button class="themes__item" data-scrollsmooth="#connection"></button>
 */
 function addScrollSmooth() {
 	var elements = document.querySelectorAll('[data-scrollsmooth]');
@@ -388,8 +389,7 @@ function addScrollSmooth() {
 	elements.forEach(function(el){
 		el.addEventListener('click', function(e){
 			e.preventDefault();
-			var targetSelector = e.currentTarget.getAttribute('href');
-			console.log(targetSelector)
+			var targetSelector = e.currentTarget.dataset.scrollsmooth || e.currentTarget.getAttribute('href');
 			// Scroll to a certain element
 			document.querySelector(targetSelector).scrollIntoView({ 
 			  behavior: 'smooth' 

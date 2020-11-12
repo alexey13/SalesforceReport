@@ -1916,6 +1916,10 @@ Research page
 	color: inherit;
 	text-decoration: none;
 	transition: transform 0.2s;
+	border: 0;
+	cursor: pointer;
+	background-color: transparent;
+	padding: 0;
 }
 
 @media screen and (max-width: 586px) {
