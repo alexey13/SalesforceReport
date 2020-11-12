@@ -1911,6 +1911,7 @@ Research page
 }
 
 .research-page .themes__item {
+	position: relative;
 	text-align: center;
 	width: 18%;
 	color: inherit;
@@ -2294,6 +2295,18 @@ Research page
 	.research-page .share__item {
 		margin: 0 0.5rem;
 	}
+}
+
+.research-page .stretched-link::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	pointer-events: auto;
+	content: "";
+	background-color: transparent;
 }
 
 .research-page .color--blue {
