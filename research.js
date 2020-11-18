@@ -406,7 +406,8 @@ function shareComponent() {
 	var URL = location.href;
 	var TITLE = document.title;
 	var DESC = 'Learn more in a virtual forum with The Chronicle of Higher Education on December 8th, 2020';
-
+	var url;
+	
 	var Share = {
 		facebook: function(purl) {
 			url  = 'http://www.facebook.com/sharer.php';
